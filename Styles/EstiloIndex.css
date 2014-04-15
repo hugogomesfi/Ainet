@@ -1,0 +1,265 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/Mar/2014, 20:50:23
+    Author     : HugoF
+*/
+body{margin: 0;background-color: white;min-height: 1024px;}
+
+/*--------------------Barra de navegação Topo------------------------------*/
+#navBar{ width: 100%; position: fixed; top: 0px;border-bottom: 1px solid grey;z-index: 999; height: 50px;box-shadow: inset 0 0 5px 5px grey;background-color: #AE4200; box-shadow: 0px 0px 5px 0px black;} 
+#menuTopo{position: relative;width: 600px;left: 110px;text-align: center;height: 50px;float: left;} 
+#menuTopo ul {top: 0; bottom: 0;margin: 0; padding: 0;position: absolute; width: 100%;}
+#menuTopo ul li{ color: white; padding-top:10px; border-radius: 5px;margin-top: 5px;position: relative;display: inline-block;font-size: 13px;font-weight: 700;width: 90px;height: 30px;  font-family: "Trebuchet MS", Helvetica, sans-serif;} 
+
+#menuTopo a{text-decoration: none; position: relative;vertical-align: central;}
+#menuTopo li:hover{ background-color: white;color: black !important;}
+
+
+
+
+
+.noSub{ display: inline-block;} 
+.haveSub{display: inline-block;} 
+.haveSub ul{ border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;top: 40px !important;visibility: hidden;background-color: #AE4200!important;height: 150px;width: 150px !important;}
+.haveSub:hover ul{visibility: visible;}
+.haveSub ul li:hover { display:block;background-color: white !important;} 
+.haveSub ul li{width: 150px !important;margin-left: 0px !important;float: left !important; }
+/*
+
+
+
+#menuTopo a{text-decoration: none; } 
+
+
+.haveSub:hover ul{visibility: visible; }
+.haveSub ul li:hover { display:block;} 
+
+.haveSub ul li{ width: 35%;} */
+#menuTopo2{ padding-right: 50px;float: right; width: 465px;height: 50px;font-family: "Trebuchet MS", Helvetica, sans-serif;}
+#search{float: left; margin-top: 2%;position: relative;}
+
+#caixaTexto{width: 350px; height: 25px;border-radius: 5px;text-align: center;border: 1px solid grey;}
+
+
+#login{float: right; height: 50px; width: 100px;text-align: center;color: white;border-radius: 5px;} 
+#login:hover{background-color: goldenrod;border-left: 0.1px solid grey;border-right: 0.1px solid grey;}
+#login {position: relative;text-decoration: none;}
+#login span{font-size: 13px;font-weight: 700;}
+#login ul{padding: 0;}
+
+
+
+#submenuLogin {height: 400px;width: 350px !important;float: right;background-color: goldenrod;opacity: 0.9; }
+/*#login ul li:hover ul {visibility: visible;}
+#submenuLogin{visibility: hidden;}*/
+#mostraMenuLogin{height: 35px;margin-top: 10px;margin-bottom: 5px;}
+
+.loginTextFild{width: 200px;height: 25px;margin-bottom: 10px;}
+#linha{height: 1px; border-bottom: 1px solid grey;}
+
+
+
+
+
+
+
+#IconTopo{float: left; position: relative;height: 100%;width: 10%;} 
+#IconTopo img{padding-left: 4%; padding-top: 1%; width: 150px; height: 150px; z-index: 999; position: absolute; }
+
+
+
+#conteudoCentro{padding-bottom: 100px;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888;margin-top: 100px; background-color: white; width: 80%;margin-left: 10%;}
+#conteudoFundo{position: relative;bottom: 0;background-color: black; min-height: 150px;text-align: center;padding-top: 20px;}
+
+#conteudoFundo ul li{font-size: 13px;display: inline-block; padding: 5px;font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;}
+#conteudoFundo a{text-decoration: none; color: white;}
+#conteudoFundo a:hover{color: blue;}
+
+
+
+#conteudoCentro table{width: 60%; height: 300px;background-repeat: no-repeat;padding-left: 10%;}
+#imagem:hover{background:url('../Styles/Images/message_color.png'); z-index: 4; background-repeat: no-repeat;}
+#imagem{background:url('../Styles/Images/message_black.png');background-repeat: no-repeat;}
+#imagemFundo img{width: 300px;float: left;}
+.imagemDoIcon{width: 100px;}
+
+
+
+
+#noticias{position: relative; min-height: 400px;padding-left: 10%;background-color: white;top: 50px; border-bottom: 5px solid lightgray;}
+#noticia1{position: relative;float: left;}
+#noticia2{float: left;}
+#noticia3{float: left;}
+#noticia4{float: left;}
+.noticia{width: 19%;margin: 1%;min-height: 300px;position: relative;}
+.noticia h5{border-radius: 5px;text-align: center;border: 1px solid lightgray;background-color: #E7E7E7;height: 25px;padding-top: 10px;}
+.resumo_noticia{ width: 100%;position: relative;text-align: center;font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;font-size: 13px;}
+.resumo_noticia p{position: relative;}
+
+.img_noticia img{z-index: 800;height: 100px; position: relative; width: 100%;}
+
+
+#tabela{position: relative;height: 300px;}
+#tabela img{width: 50px; height: 50px;}
+#tabela td{width: 100px;}
+
+#tabela a:hover{color: red;}
+#tabela a{text-decoration: none;color: #000;font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;font-size: 13px;}
+
+#arrowUp img{width: 20px; height: 20px;margin-left: 50%;}
+
+#publicacaoMedicos{padding: 10px;position: relative;margin-left: 10%;width: 80%; margin-bottom: 50px; height: 400px;}
+.publicacao{border: 1px solid grey;height: 300px;width: 32%; margin-left: 5px;border-radius: 5px;text-align: center;}
+.publicacao img{width: 100%;border-top-left-radius: 5px;border-top-right-radius: 5px; height: 160px;}
+.publicacao h5{margin: 0;}
+#pub_1{float: left;position: relative;}
+#pub_2{float: left;}
+#pub_3{float: left;}
+
+.btnpub{color: #E7E7E7;height: 25px;width: 100%; border: 1px solid grey; border-radius: 4px;margin-bottom: 0;background-color: #AE4200;}
+
+#especialidades ul{
+    padding-left: 0px;
+    float: left;
+    width: 30%;
+    height: 100%;
+    list-style-type: none;
+    margin-left: 1%;
+   
+}
+   #especialidades ul li{ font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+                          position: relative;
+    
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    
+    text-align: center;
+  
+    margin-top: 2%;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #3E8CD2;
+    color: #FFF;
+    border: 0px none;
+    outline: 0px none;
+    width: 100%;
+    height: 30px;
+    
+}
+
+#especialidades ul li:hover {
+    background: #AE4200;
+    //box-shadow: inset 0px 0px 40px 5px #0033cc;
+}
+
+
+#especialidadeCorpo{
+    float: left;
+    background-color: #00620C;
+    min-height: 600px;
+    width: 60%;
+    margin-left: 5%;
+}
+#especialidades{
+    
+    background-color: #ffffff;
+    min-height: 1024px;
+}
+
+
+
+/*pagina das noticias*/
+.noticias{ position: relative; top: 30px; margin-top: 2%; border-bottom: 1px solid lightgray;
+            border-top-left-radius: 10px; border-top-right-radius: 10px; ;
+          width: 80%; height: 300px; left: 10%; background-color: #F5F5F5;}
+
+/*.noticias div{border: 1px solid black;} */
+
+.noticiasEsq{height: 100%; position: relative; width: 40%; float: left;}
+.noticiasEsq img{width: 95%; height: 60%; border-radius: 5px; margin-left: 5%; margin-top: 6%;}
+.noticiasDir{height: 100%; position: relative; width: 60%;float: left;}
+
+
+#noticeTitle{padding-top: 1px;width: 100%; height: 50px; }
+#noticeTitle h4{  text-align: center; color: #AE4200;}
+#noticeDate{height: 80px; margin-top: 3%; margin-left: 5%;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;font-size: small;
+            font-weight: bold;font-style: italic;}
+
+
+#noticeSpecialidade h6{margin: 10px;}
+#noticeSpecialidade{margin-left: 10%; width: 100%; font-weight: bold; height:30px; padding-top: 20px;
+                    text-align: left; font-family: "Trebuchet MS", Helvetica, sans-serif; 
+                    margin-right: 10%;}
+.linhaHugo{border-bottom: 1px solid lightgray;   margin-right: 20%; }
+#noticeText{height: 170px; padding-left: 7%; padding-right: 7%; padding-top: 5%;
+            font-family: "Trebuchet MS", Helvetica, sans-serif; text-align: justify; overflow: hidden; }
+#noticeAuthor{width: 100%;height: 31px; padding-left: 7%; font-weight: bold;
+              font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: small;}
+#btnNoticias{float: right; margin-right: 14%; background-color:#AE4200;
+             color: #E7E7E7; width: 20%;padding:2px;text-decoration:none;border-radius:10px; }
+
+
+
+
+
+/*pagina das noticias Grande*/
+#noticiaGrande{top: 30px; margin-top: 2%; left: 5%;position: relative;width: 90%; min-height: 900px; }
+#noticiaGesq{width: 60%; min-height: 850px;}
+
+#titleBnoticia{text-align: center; color: #3E8CD2;height: 60px; padding-top: 10px; 
+               padding-bottom: 40px; width: 100%; }
+#noticiaGimg{width: 65%;  float: left;}
+#imgNoticiaBig{width: 90%; height: 88%; border-radius: 20px; padding-left: 2%; padding-top: 3%;}
+#txtNoticeGrande{padding-left: 2%; padding-right: 2%; 
+                 font-family: "Trebuchet MS", Helvetica, sans-serif; text-align: justify;
+                 min-height: 850px; width: 95%; }
+#noticiaGdata_autor{width:90%; height: 50px;padding-left: 2%;padding-top: 4%;}
+#NGdata{width: 40%; background: #F5F5F5; float: right; font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: small; font-weight: bold;font-style: italic; text-align: right;}
+#NGespecialidade{width: 40%;margin-bottom: 7px;font-weight: bold; font-size: large;
+                 font-family: "Trebuchet MS", Helvetica, sans-serif;}
+#NGautor{width: 40%;font-weight: bold;font-size: large;
+         font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+
+
+#noticiaGdir{width: 36%; height: 100%; position: absolute; right: 0; top: 0; border-left: 2px solid #E7E7E7; }
+#noticiaRelacionadas{  height: 94%; width: 95%; float: right;  }
+.campoNoticiaLitle{height: 10%; width: 100%; margin-bottom: 40%;}
+#noticiaRelacionadasTitle{text-align: center; color: #3E8CD2;height: 4%; padding-top: 10px; float: right;
+                         padding-bottom: 20px;  width: 95%; font-style: italic; margin-bottom: 20px;
+                         font-family: "Trebuchet MS", Helvetica, sans-serif; }
+#imgNoticiaLitle{ height: 125px; width: 100%;top: 0;}
+#titleNoticiaLitle{ width: 100%; text-align: center; color: #AE4200; 
+                    font-family: "Trebuchet MS", Helvetica, sans-serif;
+                    height: 15%; width: 100%; }
+#titleNoticiaLitle h4{margin-top: 0; }
+
+
+
+
+
+
+
+
+
+.titulo{margin-left: 5%;}
+#formulario{margin-left: 2%;height: 500px;}
+#formularioDireito{position: relative; padding: 2%;float: left;margin-left: 2%; border-radius: 5px;border: 1px solid gray;height: 475px; background-color: lightgray;}
+#corpoNoticia textarea{ height: 400px;}
+#corpoNoticia{width: 60%;float: left;}
+#publicar{ position: absolute;background-color: red; bottom: 10%;right: 10%;}
+
+
+
+
+#contentor{ background-color: lightgrey;position: relative; padding: 2%;}
+#container1{width: 100%;height: 196px;margin-bottom: 2%;}
+#container2{width: 100%; clear: right;height: 196px;}
+//#mapagoogle{position: absolute;background-color: yellow; top: 0;right: 0;width: 40%;height: 100%;}
+.contacto{border-radius: 5px;margin-left: 2%;float: left;background-color: white; width: 30%; height: 100%; }
