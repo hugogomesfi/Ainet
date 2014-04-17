@@ -13,7 +13,7 @@
         
         
         <div id="corpoNoticia">
-        <textarea>Corpo da Noticia Aqui!</textarea>
+        <textarea>Corpogvyvgy da Noticia Aqui!</textarea>
     </div>
         
         <div id="formularioDireito">
