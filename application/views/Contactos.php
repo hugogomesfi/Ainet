@@ -7,6 +7,8 @@
 <div id="container1">
     <div class="contacto">
         <h5>Santa Casa da Misericórdia de Leiria</h5>
+        <p>Sede: Rua Trindade Coelho,nº8,</p> 
+        <p>Apartado 1109 2401-801 Leiria</p>
     </div>
     <div class="contacto">
         <h5>Lar Nossa Sra. da Encarnação</h5>
