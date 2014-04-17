@@ -7,13 +7,13 @@
 
 
 
-<h1 class="titulo">ComporNoticia2</h1>
+<h1 class="titulo">ComporNoticia</h1>
 <div id="formulario">
     <form method="POST">
         
         
         <div id="corpoNoticia">
-        <textarea>Corpo da Noticia Aqui......!</textarea>
+        <textarea>Corpo da Noticia Aqui!</textarea>
     </div>
         
         <div id="formularioDireito">
