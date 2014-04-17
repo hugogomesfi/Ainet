@@ -235,8 +235,8 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 
 
 /*pagina das noticias Grande*/
-#noticiaGrande{top: 30px; margin-top: 2%; left: 5%;position: relative;width: 90%; min-height: 900px; }
-#noticiaGesq{width: 60%; min-height: 850px;}
+#noticiaGrande{top: 30px; margin-top: 2%; left: 5%;position: relative;width: 90%; height: 900px; }
+#noticiaGesq{width: 60%;float: left;}
 
 #titleBnoticia{text-align: center; color: #3E8CD2;height: 60px; padding-top: 10px; 
                padding-bottom: 40px; width: 100%; }
@@ -255,9 +255,9 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 
 
 
-#noticiaGdir{width: 36%; height: 100%; position: absolute; right: 0; top: 0; border-left: 2px solid #E7E7E7; }
-#noticiaRelacionadas{  height: 94%; width: 95%; float: right;  }
-.campoNoticiaLitle{height: 10%; width: 100%; margin-bottom: 40%;}
+#noticiaGdir{width: 30%; float: left;  margin-left: 4%; border-left: 2px solid #E7E7E7; }
+#noticiaRelacionadas{  margin-left: 10px;  }
+.campoNoticiaLitle{height: 10%; width: 100%; margin-bottom: 30%;}
 #noticiaRelacionadasTitle{text-align: center; color: #3E8CD2;height: 4%; padding-top: 10px; float: right;
                          padding-bottom: 20px;  width: 95%; font-style: italic; margin-bottom: 35px;
                          font-family: "Trebuchet MS", Helvetica, sans-serif; }
