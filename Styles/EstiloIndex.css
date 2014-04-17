@@ -219,6 +219,46 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 
 
 
+
+
+/*pagina das noticias Grande*/
+#noticiaGrande{top: 30px; margin-top: 2%; left: 5%;position: relative;width: 90%; min-height: 900px; }
+#noticiaGesq{width: 60%; min-height: 850px;}
+
+#titleBnoticia{text-align: center; color: #3E8CD2;height: 60px; padding-top: 10px; 
+               padding-bottom: 40px; width: 100%; }
+#noticiaGimg{width: 65%;  float: left;}
+#imgNoticiaBig{width: 90%; height: 88%; border-radius: 20px; padding-left: 2%; padding-top: 3%;}
+#txtNoticeGrande{padding-left: 2%; padding-right: 2%; 
+                 font-family: "Trebuchet MS", Helvetica, sans-serif; text-align: justify;
+                 min-height: 850px; width: 95%; }
+#noticiaGdata_autor{width:90%; height: 50px;padding-left: 2%;padding-top: 4%;}
+#NGdata{width: 40%; background: #F5F5F5; float: right; font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: small; font-weight: bold;font-style: italic; text-align: right;}
+#NGespecialidade{width: 40%;margin-bottom: 7px;font-weight: bold; font-size: large;
+                 font-family: "Trebuchet MS", Helvetica, sans-serif;}
+#NGautor{width: 40%;font-weight: bold;font-size: large;
+         font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+
+
+#noticiaGdir{width: 36%; height: 100%; position: absolute; right: 0; top: 0; border-left: 2px solid #E7E7E7; }
+#noticiaRelacionadas{  height: 94%; width: 95%; float: right;  }
+.campoNoticiaLitle{height: 10%; width: 100%; margin-bottom: 40%;}
+#noticiaRelacionadasTitle{text-align: center; color: #3E8CD2;height: 4%; padding-top: 10px; float: right;
+                         padding-bottom: 20px;  width: 95%; font-style: italic; margin-bottom: 35px;
+                         font-family: "Trebuchet MS", Helvetica, sans-serif; }
+#imgNoticiaLitle{ height: 125px; width: 100%;top: 0;}
+#titleNoticiaLitle{ width: 100%; text-align: center; color: #AE4200; 
+                    font-family: "Trebuchet MS", Helvetica, sans-serif;
+                    height: 15%; width: 100%; }
+#titleNoticiaLitle h4{margin-top: 0; }
+
+
+
+
+
+
 .titulo{margin-left: 5%;}
 #formulario{margin-left: 2%;height: 500px;}
 #formularioDireito{position: relative; padding: 2%;float: left;margin-left: 2%; border-radius: 5px;border: 1px solid gray;height: 475px; background-color: lightgray;}
