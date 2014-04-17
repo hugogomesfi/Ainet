@@ -7,7 +7,7 @@
 
 
 
-<h1 class="titulo">Compor Noticia</h1>
+<h1 class="titulo">ComporNoticia2</h1>
 <div id="formulario">
     <form method="POST">
         
