@@ -72,7 +72,7 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 
 
 
-#conteudoCentro{padding-bottom: 100px;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888;margin-top: 100px; background-color: white; width: 80%;margin-left: 10%;}
+#conteudoCentro{overflow: auto;padding-bottom: 100px;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888;margin-top: 100px; background-color: white; width: 80%;margin-left: 10%;}
 #conteudoFundo{position: relative;bottom: 0;background-color: black; min-height: 150px;text-align: center;padding-top: 20px;}
 
 #conteudoFundo ul li{font-size: 13px;display: inline-block; padding: 5px;font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;}
@@ -163,16 +163,17 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 //#conteudoCentro{padding-bottom: 100px;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888;margin-top: 100px; background-color: white; width: 80%;margin-left: 10%;}
 #especialidadeCorpo{
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 15px;
     box-shadow: 0px 10px 40px 2px #888888;
     float: left;
-    
-    background-color: #3E8CD2;
-   
-    width: 60%;
+   // background-color: #3E8CD2;
+   background-color: #FFF;
+    width: 59%;
     margin-left: 5%;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 #especialidades{
     
@@ -180,9 +181,21 @@ body{margin: 0;background-color: white;min-height: 1024px;}
     min-height: 1024px;
     opacity: 90%;
 }
+#especialidadeTitulo{
+   text-align: center;
+}
 #answer1, #answer2, #answer3, #answer4, #answer5, #answer6, #answer7, #answer8 ,#answer9, #answer10, #answer11, #answer12, #answer13, #answer14, #answer15, #answer16, #answer17, #answer18, #answer19, #answer20, #answer21, #answer22, #answer23, #answer24, #answer25, #answer26, #answer27, #answer28 {display: none;}
-
-
+.textoAnswer{
+     float: left;
+    width: 50%;
+    text-align: justify;
+}
+.infMedicos{
+     float: left;
+    width: 40%;
+    margin-left: 3%;
+}
+.infMedicos img{height: 93px;margin-top: 30px;}
 
 
 
