@@ -10,9 +10,9 @@
         $('[class^="question"]').on('click', function(e) {
             e.preventDefault();
             var numb = this.className.replace('question', '');
-            $("html, body").animate({scrollTop: 0}, 600);
+            $("html, body").animate({scrollTop: 0}, 400);
             $('[id^="answer"]').hide();
-            $('#answer' + numb).show("slow");
+            $('#answer' + numb).delay(400).show("slow");
             return false;
         });
 
@@ -21,7 +21,7 @@
 </script>
 
 <div id="especialidades"><div id="especialidadeTitulo"><h1>Especialidades</h1></div>
-    <ul>
+    <ul class="menuEspecialidadeUl">
         <li class="question1">acupuntura</li>
         <li class="question2"> AUDIOLOGIA</li>
         <li class="question3"> CARDIOLOGIA</li>
@@ -53,7 +53,7 @@
     </ul>
     <div id="especialidadeCorpo">
         <div class="clear" class="question"></div>
-        <div id="answer1" ><div class="textoAnswer"><header> <h2>Acupuntura</h2> </header>
+        <div id="answer1" ><div class="textoAnswer"><div class="tituloAnswer">Acupuntura</div>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis sem id auctor vulputate. Proin molestie eros nulla, sit amet sollicitudin risus aliquet quis. Etiam vestibulum egestas nunc, id ornare est aliquet eget. Etiam quis turpis justo. Pellentesque quis porttitor ligula. Aliquam eu odio dapibus, gravida lacus ac, rhoncus lacus. Donec sem leo, blandit sed sagittis tristique, convallis vel augue. Fusce rhoncus sagittis ligula placerat tempor.
 
@@ -95,15 +95,75 @@
 
                 Proin sed sem sagittis, faucibus dui eget, convallis nisl. Cras posuere iaculis nibh sit amet convallis. Vivamus sit amet consequat mauris, vitae lacinia est. Praesent pulvinar lectus arcu, vel sagittis tortor porta ut. Sed pharetra malesuada ultrices. Duis sagittis interdum tincidunt. Nulla non arcu porta, malesuada orci eget, gravida nulla. Curabitur sit amet laoreet ligula, at faucibus odio. Praesent tempus hendrerit nisi, et malesuada leo consequat sit amet. In tempor dictum augue, at vestibulum lorem sollicitudin vel. Pellentesque vestibulum tortor molestie aliquet condimentum. Mauris luctus dolor eu erat posuere, quis imperdiet dolor sollicitudin.  </div>
 
+
+
+
+
+
+            <!--            <div class="infMedicos">
+                            <div class="img_medico">
+                                <img src="Styles/Images/medico.png"></img>
+                            </div>
+                            <div class="textoImg_medico">
+                                <div class="nomeMedico"> <div>Dr.Daniel Gil</div> </div><div> <span  class="contactos">Telefone:</span>222222222 </div> <div class="areaClinica"> Área Clinica: Alergologia e Pneumologia</div> <div class="especialidade">Especialidade: Pneumologia</div>
+                            </div>
+                        </div>-->
+
+            <!--dividir informação medico em 3 partes-->
             <div class="infMedicos">
-                <div class="img_medico">
-                <img src="Styles/Images/medico.png"></img>
+
+                <!--parte da foto-->
+                <div class="topLeftInfMedicos">
+
+
+                    <img src="Styles/Images/medico.png"></img>
                 </div>
-                <div class="textoImg_medico">
-                <header> <h3>Dr.Daniel Gil</h3> <p><h4>Telefone:</h4>222222222</p> </header>
+
+                <div class="topRightInfMedicos">
+                    <h5>Nome Medico</h5>
+                    <ul class="medico-contacts">
+                        <li>
+                            <span class="tel">Tel:239 484491 </span>
+                        </li>
+                        <li>
+                            <span class="tel">Email: </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bottomInfMedicos">
+                    <span>Área Clinica: </span>
+                    <a class="department">Alergologia e Pneumologia</a>
+
+                    <p>
+                        <span>Especialidade: </span>
+                        Pneumologia
+                    </p>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+            <div class="legenda">Protocolos</div>
+            <ul class="unit-info">
+                <li>
+                    <span>Telefone</span>
+                    <p>239 484491 / 239 096982</p>
+                </li>
+                <li>
+                    <button>
+                </li>
+                <li>
+            </ul>
+
         </div>
+
         <div id="answer2">audiologoa sadasfass asf dsf s df sdg dhdfsa f ds f sd f sd fas</div>
         <div id="answer3">3 <div class="noticias">
                 <div class="noticiasEsq">
@@ -192,10 +252,10 @@
         <div id="answer28">28</div>
 
         <div class="new_member_box_display" id="answer">Text will appear here when one of the tabs above is clicked</div>
-
     </div>
 </div>
 </div>
+
 
 
 <?php $this->load->view('foot_Site.html'); ?>
