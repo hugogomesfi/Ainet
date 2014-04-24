@@ -6,6 +6,7 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <base href="<?php echo $this->config->item('base_url') ?>" />
         <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css"></link>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
         <script type="text/javascript">
@@ -269,6 +270,4 @@
                 
                 </img>
             </div>
-            <div id="arrowUp">
-                <img src="Styles/Images/up-arrow.png" id="pracima"/>
-            </div>
+            
