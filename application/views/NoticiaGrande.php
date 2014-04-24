@@ -18,6 +18,23 @@ $(document).ready(function(){
   });
 });</script>-->
 
+<!--<script> 
+$(document).ready(function(){
+    
+  $("#titleBnoticia").hover(
+          function(){
+             $("#titleBnoticia").css({font: 25px 'Trebuchet MS';});  
+         },
+          function (){
+             $("#titleBnoticia").css({font: 15px 'Trebuchet MS';}); 
+          }  
+        
+        
+    
+   );
+ });
+
+</script>-->
 
 
 
@@ -59,21 +76,21 @@ Foi um dos fundadores do Instituto de Empreendedorismo Social e padrinho do proj
     </div>
     </div>
     <div id="noticiaGdir">
-        <div id="noticiaRelacionadasTitle">
+        <header id="noticiaRelacionadasTitle">
                 <h3>Notícias relacionadas...</h3>
-        </div>
+        </header>
         <div id="noticiaRelacionadas">
             <div class="campoNoticiaLitle">
                 <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
                 <div id="titleNoticiaLitle">
-                    <h4 id="aqui">titulo da noticia</h4>
+                    <p>titulo da noticia</p>
                 </div>
             </div>
             
             <div class="campoNoticiaLitle">
                 <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
                 <div id="titleNoticiaLitle">
-                    <h4>titulo da noticia</h4>
+                    <p>titulo da noticia</p>
                 </div>
             </div>
             
