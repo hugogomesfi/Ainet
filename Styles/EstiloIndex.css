@@ -131,7 +131,7 @@ body{margin: 0;background-color: white;min-height: 1024px;}
     margin-left: 1%;
    
 }
-   #especialidades ul li{ font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+   .menuEspecialidadeUl li{ font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
                           position: relative;
     
     border-radius: 15px;
@@ -162,12 +162,13 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 
 //#conteudoCentro{padding-bottom: 100px;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888;margin-top: 100px; background-color: white; width: 80%;margin-left: 10%;}
 #especialidadeCorpo{
-    padding-top: 10px;
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 15px;
     box-shadow: 0px 10px 40px 2px #888888;
     float: left;
+   //  -moz-box-orient: horizontal;
    // background-color: #3E8CD2;
    background-color: #FFF;
     width: 59%;
@@ -187,17 +188,58 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 #answer1, #answer2, #answer3, #answer4, #answer5, #answer6, #answer7, #answer8 ,#answer9, #answer10, #answer11, #answer12, #answer13, #answer14, #answer15, #answer16, #answer17, #answer18, #answer19, #answer20, #answer21, #answer22, #answer23, #answer24, #answer25, #answer26, #answer27, #answer28 {display: none;}
 .textoAnswer{
      float: left;
+ // -moz-box-orient: horizontal;
     width: 50%;
     text-align: justify;
 }
 .infMedicos{
+  
      float: left;
-    width: 40%;
+    width: 46%;
     margin-left: 3%;
+    border-radius: 15px;
+    border:1px solid #a1a1a1;
+    
+    
+  
 }
-.infMedicos img{height: 93px;margin-top: 30px;}
+.topLeftInfMedicos{ float: left; width: 40%; height: 130px;}
+.topRightInfMedicos{float: left; width: 60%;height: 130px;}
+.bottomInfMedicos{}
+.topRightInfMedicos h5{margin-bottom: 0;}
+.medico-contacts{height: 100%}
+.tel{}
 
 
+
+
+
+.nomeEnumeroMedico{width: 68%;float: left;}
+.img_medico{width: 100px;}
+.infMedicos img{height: 93px;margin-top: 5px;margin-left: 5px;border-radius: 15px; border:2px solid #a1a1a1;}
+.textoImg_medico{-moz-box-orient: horizontal; }
+.tituloAnswer{font-weight: 900;margin-bottom: 10px;font-size: large;}
+.contactos{font-weight: bold}
+.protocolos{
+-moz-box-orient: horizontal;
+height: auto;
+margin-bottom: 2px;
+display: block;
+padding: 5px 15px;
+color: #000;
+font-size: 100%;
+background-color: #EEEEEE;}
+
+.unit-info{
+border-radius: 15px;
+text-align: center;
+height: auto;
+margin-bottom: 2px;
+display: block;
+padding: 5px 15px;
+font-size: 100%;
+background-color: #EEEEEE;
+}
 
 .noticias{ position: relative; top: 30px; margin-top: 2%; border-bottom: 1px solid lightgray;
             border-top-left-radius: 10px; border-top-right-radius: 10px; ;
