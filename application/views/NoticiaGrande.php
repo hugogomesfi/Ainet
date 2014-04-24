@@ -2,7 +2,7 @@
 
 
 
-<script> 
+<!--<script> 
 $(document).ready(function(){
   $("#noticiaRelacionadasTitle").hover(function(){
     $(this).slideUp(){
@@ -16,7 +16,7 @@ $(document).ready(function(){
       
     });
   });
-});</script>
+});</script>-->
 
 
 
@@ -78,6 +78,20 @@ Foi um dos fundadores do Instituto de Empreendedorismo Social e padrinho do proj
             </div>
             
             <div class="campoNoticiaLitle">
+                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
+                <div id="titleNoticiaLitle">
+                    <h4>titulo da noticia</h4>
+                </div>
+            </div>
+            
+            <div class="campoNoticiaLitle">
+                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
+                <div id="titleNoticiaLitle">
+                    <h4>titulo da noticia</h4>
+                </div>
+            </div>
+            
+                        <div class="campoNoticiaLitle">
                 <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
                 <div id="titleNoticiaLitle">
                     <h4>titulo da noticia</h4>
