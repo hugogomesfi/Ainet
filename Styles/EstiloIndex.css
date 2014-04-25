@@ -10,7 +10,7 @@ and open the template in the editor.
 body{margin: 0;background-color: white;min-height: 1024px;}
 
 /*--------------------Barra de navegação Topo------------------------------*/
-#navBar{ right: 1%;left: 1%; position: fixed; top: 0px;border-bottom: 1px solid grey;z-index: 999; height: 50px;box-shadow: inset 0 0 5px 5px grey;background-color: #AE4200; box-shadow: 0px 0px 5px 0px black;} 
+#navBar{ right: 0;left: 0; position: fixed; top: 0px;border-bottom: 1px solid grey;z-index: 999; height: 50px;box-shadow: inset 0 0 5px 5px grey;background-color: #AE4200; box-shadow: 0px 0px 5px 0px black;} 
 #menuTopo{position: absolute;width: 600px;left: 110px;text-align: center;height: 50px;} 
 #menuTopo ul {top: 0; bottom: 0;margin: 0; padding: 0;position: absolute; width: 100%;}
 #menuTopo ul li{ color: white; padding-top:10px; border-radius: 5px;margin-top: 5px;position: relative;display: inline-block;font-size: 13px;font-weight: 700;width: 90px;height: 30px;  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;} 
@@ -135,7 +135,6 @@ body{margin: 0;background-color: white;min-height: 1024px;}
     margin-left: 1%;
    
 }
-   .menuEspecialidadeUl li{ font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
    #especialidades ul li{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                           position: relative;
     
@@ -186,60 +185,10 @@ body{margin: 0;background-color: white;min-height: 1024px;}
     
 }
 #answer1, #answer2, #answer3, #answer4, #answer5, #answer6, #answer7, #answer8 ,#answer9, #answer10, #answer11, #answer12, #answer13, #answer14, #answer15, #answer16, #answer17, #answer18, #answer19, #answer20, #answer21, #answer22, #answer23, #answer24, #answer25, #answer26, #answer27, #answer28 {display: none;}
-.textoAnswer{
-     float: left;
- 
-    width: 50%;
-    text-align: justify;
-}
-.infMedicos{
-  
-     float: left;
-    width: 46%;
-    margin-left: 3%;
-    border-radius: 15px;
-    border:1px solid #a1a1a1;
-    
-    
-  
-}
-.topLeftInfMedicos{ float: left; width: 40%; height: 130px;}
-.topRightInfMedicos{float: left; width: 60%;height: 130px;}
-.bottomInfMedicos{}
-.topRightInfMedicos h5{margin-bottom: 0;}
-.medico-contacts{height: 100%}
-.tel{}
 
 
 
 
-
-.nomeEnumeroMedico{width: 68%;float: left;}
-.img_medico{width: 100px;}
-.infMedicos img{height: 93px;margin-top: 5px;margin-left: 5px;border-radius: 15px; border:2px solid #a1a1a1;}
-.textoImg_medico{-moz-box-orient: horizontal; }
-.tituloAnswer{font-weight: 900;margin-bottom: 10px;font-size: large;}
-.contactos{font-weight: bold}
-.protocolos{
--moz-box-orient: horizontal;
-height: auto;
-margin-bottom: 2px;
-display: block;
-padding: 5px 15px;
-color: #000;
-font-size: 100%;
-background-color: #EEEEEE;}
-
-.unit-info{
-border-radius: 15px;
-text-align: center;
-height: auto;
-margin-bottom: 2px;
-display: block;
-padding: 5px 15px;
-font-size: 100%;
-background-color: #EEEEEE;
-}
 
 .noticias{ position: relative; top: 30px; margin-top: 2%; border-bottom: 1px solid lightgray;
             border-top-left-radius: 10px; border-top-right-radius: 10px; ;
@@ -309,129 +258,6 @@ background-color: #EEEEEE;
 
 #titleNoticiaLitle{ width: 90%; text-align: center; color: #AE4200; 
                     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-   #especialidades ul li{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-                          position: relative;
-    
-    border-radius: 15px;
-    color: rgb(255, 255, 255);
-    
-    text-align: center;
-  
-    margin-top: 2%;
-    font-size: 18px;
-    text-transform: uppercase;
-    background: #3E8CD2;
-    color: #FFF;
-    border: 0px none;
-    outline: 0px none;
-    width: 100%;
-    height: 30px;
-    
-}
-
-#especialidades ul li:hover {
-    background: #AE4200;
-    
-}
-
-#especialidades ul li:active {
-    background: #F6A953;
-}
-
-
-#especialidadeCorpo{
-    padding-top: 10px;
-    padding-left: 10px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 40px 2px #888888;
-    float: left;
-    
-    background-color: #3E8CD2;
-   
-    width: 60%;
-    margin-left: 5%;
-    margin-top: 20px;
-}
-#especialidades{
-    
-    background-color: #ffffff;
-    min-height: 1024px;
-    
-}
-#answer1, #answer2, #answer3, #answer4, #answer5, #answer6, #answer7, #answer8 ,#answer9, #answer10, #answer11, #answer12, #answer13, #answer14, #answer15, #answer16, #answer17, #answer18, #answer19, #answer20, #answer21, #answer22, #answer23, #answer24, #answer25, #answer26, #answer27, #answer28 {display: none;}
-
-
-
-
-
-.noticias{ position: relative; top: 30px; margin-top: 2%; border-bottom: 1px solid lightgray;
-            border-top-left-radius: 10px; border-top-right-radius: 10px; ;
-          width: 80%; height: 300px; left: 10%; background-color: #F5F5F5;}
-
-/*.noticias div{border: 1px solid black;} */
-
-.noticiasEsq{height: 100%; position: relative; width: 40%; float: left;}
-.noticiasEsq img{width: 95%; height: 60%; border-radius: 5px; margin-left: 5%; margin-top: 6%;}
-.noticiasDir{height: 100%; position: relative; width: 60%;float: left;}
-
-
-#noticeTitle{padding-top: 1px;width: 100%; height: 50px; }
-#noticeTitle h4{  text-align: center; color: #AE4200;}
-#noticeDate{height: 80px; margin-top: 3%; margin-left: 5%;
-            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: small;
-            font-weight: bold;font-style: italic;}
-
-
-#noticeSpecialidade h6{margin: 10px;}
-#noticeSpecialidade{margin-left: 10%; width: 100%; font-weight: bold; height:30px; padding-top: 20px;
-                    text-align: left; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
-                    margin-right: 10%;}
-.linhaHugo{border-bottom: 1px solid lightgray;   margin-right: 20%; }
-#noticeText{height: 170px; padding-left: 7%; padding-right: 7%; padding-top: 5%;
-            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  text-align: justify; overflow: hidden; }
-#noticeAuthor{width: 100%;height: 31px; padding-left: 7%; font-weight: bold;
-              font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: small;}
-#btnNoticias{float: right; margin-right: 14%; background-color:#AE4200;
-             color: #E7E7E7; width: 20%;padding:2px;text-decoration:none;border-radius:10px; }
-
-
-
-
-
-
-/*pagina das noticias Grande*/
-#noticiaGrande{top: 30px; margin-top: 2%; left: 5%;position: relative;width: 100%; height: 900px; margin-left: 5px; }
-#noticiaGesq{width: 60%;float: left;}
-
-#titleBnoticia{text-align: center; color: #3E8CD2; padding-top: 10px; 
-               padding-bottom: 40px; width: 100%;font: 15px 'Trebuchet MS'; }
-#noticiaGimg{width: 65%;  float: left;}
-#imgNoticiaBig{width: 90%; height: 88%; border-radius: 20px; padding-left: 2%; padding-top: 3%;}
-#txtNoticeGrande{padding-left: 2%; padding-right: 2%; 
-                 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  text-align: justify;
-                 min-height: 850px; width: 95%; }
-#noticiaGdata_autor{width:90%; height: 50px;padding-left: 2%;padding-top: 4%;}
-#NGdata{width: 40%; background: #F5F5F5; float: right; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
-        font-size: small; font-weight: bold;font-style: italic; text-align: right;}
-#NGespecialidade{width: 40%;margin-bottom: 7px;font-weight: bold; font-size: large;
-                 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
-#NGautor{width: 40%;font-weight: bold;font-size: large;
-         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  }
-
-
-
-#noticiaGdir{width: 25%; float: left;  margin-left: 4%; border-left: 2px solid #E7E7E7; padding-left: 18px; }
-#noticiaRelacionadas{  margin-left: 60px;  }
-.campoNoticiaLitle{width: 250px; height: 180px; margin-bottom: 10px; margin: 20px auto; border-bottom-style:groove;
-                    float: right;}
-#noticiaRelacionadasTitle h3{text-align: center; color: #3E8CD2;  float: right; margin-bottom: 60px;
-                          width: 250px; height: 20px; font-style: italic; 
-                         font-family: "Trebuchet MS", Helvetica, sans-serif; }
-#imgNoticiaLitle{ height: 100px; width: 230px; top: 0; border-radius: 15px; margin-left: 10px;
-                    box-shadow: 0px 10px 40px 2px #888888;}
-
-#titleNoticiaLitle{ width: 90%; text-align: center; color: #AE4200; 
-                    font-family: "Trebuchet MS", Helvetica, sans-serif;
                     height: 60px; font-weight: bold;
                     transition:  1s,  width 2s, height 2s, color 2s;
                     margin: auto;
@@ -489,7 +315,7 @@ background: linear-gradient(#82AEE1 10%,white 98% ); /* Standard syntax */positi
 #formSection legend{font-size: 24px;font-weight: 600;}
 #formSection input {}
 .formItem{margin: 1px;text-align: left;padding: 4px;}
-
+#imgfundo{width: 100%;height: 450px;}
 
 
 
