@@ -147,4 +147,4 @@ Foi um dos fundadores do Instituto de Empreendedorismo Social e padrinho do proj
 </div>
 
 
-<?php $this->load->view('foot_Site.html'); ?>
+<?php $this->load->view('foot_Site'); 
