@@ -7,10 +7,10 @@ and open the template in the editor.
     Created on : 17/Mar/2014, 20:50:23
     Author     : HugoF
 */
-body{margin: 0;background-color: white;min-height: 1024px;}
+body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;}
 
 /*--------------------Barra de navegação Topo------------------------------*/
-#navBar{ right: 0;left: 0; position: fixed; top: 0px;border-bottom: 1px solid grey;z-index: 999; height: 50px;box-shadow: inset 0 0 5px 5px grey;background-color: #AE4200; box-shadow: 0px 0px 5px 0px black;} 
+#navBar{ right: 0;left: 0; position: fixed; top: 0px;border-bottom: 1px solid grey;z-index: 999; height: 50px;box-shadow: inset 0 0 5px 5px grey;background-image: url(Images/noisy_net.png); box-shadow: 0px 0px 5px 0px black;} 
 #menuTopo{position: absolute;width: 600px;left: 110px;text-align: center;height: 50px;} 
 #menuTopo ul {top: 0; bottom: 0;margin: 0; padding: 0;position: absolute; width: 100%;}
 #menuTopo ul li{ color: white; padding-top:10px; border-radius: 5px;margin-top: 5px;position: relative;display: inline-block;font-size: 13px;font-weight: 700;width: 90px;height: 30px;  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;} 
@@ -24,10 +24,10 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 
 .noSub{ display: inline-block;} 
 .haveSub{display: inline-block;} 
-.haveSub ul{ border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;top: 40px !important;visibility: hidden;background-color: #AE4200!important;height: 150px;width: 150px !important;}
+.haveSub ul{ border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;top: 40px !important;visibility: hidden;background-image: url(Images/noisy_net.png)!important;height: 150px;width: 150px !important;}
 .haveSub:hover ul{visibility: visible;}
 .haveSub ul li:hover { display:block;background-color: white !important;} 
-.haveSub ul li{width: 150px !important;margin-left: 0px !important;float: left !important; }
+.haveSub ul li{width: 150px !important;margin-left: 0px !important;float: left !important;border-radius: 0 !important; }
 /*
 
 
@@ -73,7 +73,7 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 
 
 #conteudoCentro{padding-bottom: 100px;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888;margin-top: 100px; background-color: white; min-width: 1000px;margin-left: 10%; margin-right: 10%;}
-#conteudoFundo{position: relative;bottom: 0;background-color: black; min-height: 150px;text-align: center;padding-top: 20px;}
+#conteudoFundo{position: relative;bottom: 0;background-image: url(Images/navy_blue.png); min-height: 150px;text-align: center;padding-top: 20px;}
 
 #conteudoFundo ul li{font-size: 13px;display: inline-block; padding: 5px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
 #conteudoFundo a{text-decoration: none; color: white;}
@@ -124,7 +124,7 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 
 .btnpub{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;position: absolute; bottom: 10px; left: 10px;color: #E7E7E7;height: 30px;width: 35%; border: 1px solid grey; border-radius: 4px;margin-bottom: 0;background-color: #428BCA;}
 .btnpub:hover{background-color: #3276B1;}
-
+/*//////////////////////////////////////////////////////////////////////especialidedes ////////////////////////////////////////////*/
 
 #especialidades ul{
     padding-left: 0px;
@@ -152,6 +152,7 @@ body{margin: 0;background-color: white;min-height: 1024px;}
     outline: 0px none;
     width: 100%;
     height: 30px;
+    vertical-align: middle;
     
 }
 
@@ -166,30 +167,38 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 
 
 #especialidadeCorpo{
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 15px;
     box-shadow: 0px 10px 40px 2px #888888;
     float: left;
-    
-    background-color: #3E8CD2;
-   
-    width: 60%;
+   //  -moz-box-orient: horizontal;
+   // background-color: #3E8CD2;
+   background-color: #FFF;
+    width: 59%;
     margin-left: 5%;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 #especialidades{
     
     background-color: #ffffff;
     min-height: 1024px;
-    
+    opacity: 90%;
+    overflow: auto;
 }
 #answer1, #answer2, #answer3, #answer4, #answer5, #answer6, #answer7, #answer8 ,#answer9, #answer10, #answer11, #answer12, #answer13, #answer14, #answer15, #answer16, #answer17, #answer18, #answer19, #answer20, #answer21, #answer22, #answer23, #answer24, #answer25, #answer26, #answer27, #answer28 {display: none;}
+.textoAnswer{
+     float: left;
+ // -moz-box-orient: horizontal;
+    width: 50%;
+    text-align: justify;
+}
 
 
 
-
-
+/*//////////////////////////////////////////////////////////////////////especialidedes fim ////////////////////////////////////////////*/
 .noticias{ position: relative; top: 30px; margin-top: 2%; border-bottom: 1px solid lightgray;
             border-top-left-radius: 10px; border-top-right-radius: 10px; ;
           width: 80%; height: 300px; left: 10%; background-color: #F5F5F5;}
