@@ -92,7 +92,9 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-#noticias{padding-top: 30px;background-image: url(Images/pw_maze_black.png); padding-left: 10%;padding-right: 10%; position: relative; min-height: 400px; }
+#noticias{padding-top: 30px;background-image: url(Images/pw_maze_black.png); padding-left: 11%;padding-right: 11%; position: relative; min-height: 400px; }
+#noticias2{background-image: url(Images/pw_maze_black.png); padding-left: 11%;padding-right: 11%; position: relative; min-height: 400px; }
+
 #noticia1{position: relative;float: left;}
 #noticia2{float: left;}
 #noticia3{float: left;}

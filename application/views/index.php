@@ -130,8 +130,66 @@ function mudaImagem(){
     
             </div>
 
+<div class="linhaHugo"></div>
 
-            
+   <div id="noticias2">
+            <div id="noticia1" class="noticia">
+                <h5>Titulo da Noticia</h5>
+                <div class="img_noticia">
+                    <img src="Styles/Images/147657108.jpg"></img>
+                </div>
+                <div class="resumo_noticia">
+                    <p>Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo. 
+                       
+                    </p></div>
+                <div>
+                    <input type="button" value="Ler Mais" class="btnpub"></>
+                    
+                </div>
+            </div>
+            <div id="noticia2"class="noticia">
+                <h5>Noticia2</h5>
+                <div class="img_noticia">
+                    <img src="Styles/Images/Doenças do comportamento alimentar.jpg"></img>
+                </div>
+                <div class="resumo_noticia"><p>Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo. 
+                       
+                    </p></div>
+                <div>
+                    <input type="button" value="Ler Mais" class="btnpub"></>
+                </div>
+            </div>
+            <div id="noticia3"class="noticia">
+                <h5>Noticia3</h5>
+                
+                <div class="img_noticia">
+                    <img src="Styles/Images/Meia Maratona.jpg"></img>
+                </div>
+                <div class="resumo_noticia"><p>Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo. 
+                       
+                    </p></div>
+                <div>
+                   <input type="button" value="Ler Mais" class="btnpub"></>
+                </div>
+            </div>
+            <div id="noticia4"class="noticia">
+                <h5>Noticia4</h5>
+               
+                <div class="img_noticia">
+                    <img src="Styles/Images/abertura.jpg"></img>
+                </div>
+                <div class="resumo_noticia">
+                   <p>Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo. 
+                       
+                    </p>
+                </div>
+                <div>
+                    <input type="button" value="Ler Mais" class="btnpub"></>
+                </div>
+            </div>
+    
+    
+            </div>         
         
         
         
