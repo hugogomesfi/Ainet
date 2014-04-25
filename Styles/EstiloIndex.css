@@ -280,6 +280,44 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     background: #F6A953;
 }
 
+.cartaoProtocolo{
+   
+   background-image: url(Images/geometry.png);
+  // border: 1px solid black;
+  border: 1px solid #D8D8D8;
+   border-radius: 5px;
+   position: relative;
+  
+   margin-top: 15px;
+   margin-bottom: 15px;
+   margin-right: 2px;
+   margin-left:  2px;
+   padding: 2px;
+   overflow: auto;
+   
+}
+.cantoEsquerdoCartaoProtocolo{
+    float: left;
+    width: 30%;
+    
+}
+.cantoDireitoCartaoProtocolo{
+    float: left;
+    
+    width: 70%;
+}
+
+.cantoDireitoCartaoProtocolo h4{
+    margin: 7px;
+}
+.cartaoProtocolo :hover{
+    opacity: 0.5;
+}
+
+.cartaoProtocolo :active{
+    color: #ffffff;
+}
+
 
 /*//////////////////////////////////////////////////////////////////////especialidedes fim ////////////////////////////////////////////*/
 .noticias{ position: relative; top: 30px; margin-top: 2%; border-bottom: 1px solid lightgray;

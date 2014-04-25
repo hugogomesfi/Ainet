@@ -148,18 +148,23 @@
                 </div>
                 <h5>PROTOCOLOS</h5>
                 <div class="cartaoProtocolo">
-
-
-                    <div class="cantoEsquerdoCartaoMedico">
-                        <img src="Styles/Images/medico.png"/>
+                    <div class="cantoEsquerdoCartaoProtocolo">
+                        <!--<img src="Styles/Images/medico.png"/>-->
                     </div>
-                    <div class="cantoSupDireitoCartaoMedico">
-                        <h6>Nome Medico</h6> 
-                        <h6>Telefone: 222222222</h6>
+                    <div class="cantoDireitoCartaoProtocolo">
+                        <h4>Nome da Entidade</h4>   
                     </div>
-
-
                 </div>
+                
+                               <div class="cartaoProtocolo">
+                    <div class="cantoEsquerdoCartaoProtocolo">
+                        <!--<img src="Styles/Images/medico.png"/>-->
+                    </div>
+                    <div class="cantoDireitoCartaoProtocolo">
+                        <h4>Nome da Entidade</h4>   
+                    </div>
+                </div>
+                
 
             </div>
         </div>
