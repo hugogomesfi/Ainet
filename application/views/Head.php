@@ -158,15 +158,16 @@
             <!--        <img src="../../Styles/Images/image.png"alt="logotipo"></img>-->
         </div>
         
-           <script src="js/jquery.bxslider.min.js"></script>
-<!-- bxSlider CSS file -->
-<link href="Styles/jquery.bxslider.css" rel="stylesheet" />
+           
+
     
         <script type="text/javascript">
             //<![CDATA[
           $(document).ready(function(){
               
-               $('.bxslider').bxSlider();
+             setInterval(function (){mudaImagem();},10000);
+              
+               
                
 				$(window).bind('scroll',function(e){
 			   		parallaxScroll();
@@ -199,12 +200,7 @@
 			});
           
           
-          var slider = $('.bxslider').bxSlider({
-  mode: 'horizontal',
-  auto: true,
-  autoControls: true
-  
-});
+         
 
 
             
