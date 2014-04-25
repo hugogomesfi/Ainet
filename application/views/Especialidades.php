@@ -10,9 +10,9 @@
         $('[class^="question"]').on('click', function(e) {
             e.preventDefault();
             var numb = this.className.replace('question', '');
-            $("html, body").animate({scrollTop: 0}, 600);
+            $("html, body").animate({scrollTop: 0}, 400);
             $('[id^="answer"]').hide();
-            $('#answer' + numb).show("slow");
+            $('#answer' + numb).delay(400).show("slow");
             return false;
         });
 
@@ -95,76 +95,76 @@
 
                 Proin sed sem sagittis, faucibus dui eget, convallis nisl. Cras posuere iaculis nibh sit amet convallis. Vivamus sit amet consequat mauris, vitae lacinia est. Praesent pulvinar lectus arcu, vel sagittis tortor porta ut. Sed pharetra malesuada ultrices. Duis sagittis interdum tincidunt. Nulla non arcu porta, malesuada orci eget, gravida nulla. Curabitur sit amet laoreet ligula, at faucibus odio. Praesent tempus hendrerit nisi, et malesuada leo consequat sit amet. In tempor dictum augue, at vestibulum lorem sollicitudin vel. Pellentesque vestibulum tortor molestie aliquet condimentum. Mauris luctus dolor eu erat posuere, quis imperdiet dolor sollicitudin.  </div>
 
-            <div class="infMedicos">
-                <div class="img_medico">
-                <img src="Styles/Images/medico.png"></img>
+            <!--todo o conteudo do lado direito , informação do medico e protocolos-->
+            <div class="textoAnswerRight">
+                <!--div com toda a infor do medico cartaoMedico-->
+                <h5>PROFISSIONAIS</h5>
+                <div class="cartaoMedico">
+
+                    <div class="parteCimaCartaoMedico">
+
+                        <div class="cantoEsquerdoCartaoMedico">
+                            <img src="Styles/Images/medico.png"/>
+                        </div>
+
+                        <div class="cantoSupDireitoCartaoMedico">
+
+                            <h6>Nome Medico</h6> 
+                            <h6>Telefone: 222222222</h6>
+
+                        </div>
+                    </div>
+
+                    <div class="inferiorCartaoMedico">
+                        <h6>Especialidade: Pneumologia </h6> 
+                        <h6>Área Clinica: Alergologia e Pneumologia</h6>
+                        <div class="btnMarcarConsulta">Marcar Consulta</div>
+                    </div>
+
                 </div>
-                <div class="textoImg_medico">
-                <header> <h3>Dr.Daniel Gil</h3> <p><h4>Telefone:</h4>222222222</p> </header>
+
+                <div class="cartaoMedico">
+
+                    <div class="parteCimaCartaoMedico">
+
+                        <div class="cantoEsquerdoCartaoMedico">
+                            <img src="Styles/Images/medico.png"/>
+                        </div>
+
+                        <div class="cantoSupDireitoCartaoMedico">
+
+                            <h6>Nome Medico</h6> 
+                            <h6>Telefone: 222222222</h6>
+
+                        </div>
+                    </div>
+
+                    <div class="inferiorCartaoMedico">
+                        <h6>Especialidade: Pneumologia </h6> 
+                        <h6>Área Clinica: Alergologia e Pneumologia</h6>
+                        <div class="btnMarcarConsulta">Marcar Consulta</div>
+                    </div>
+
                 </div>
+                <h5>PROTOCOLOS</h5>
+                <div class="cartaoProtocolo">
+
+
+                    <div class="cantoEsquerdoCartaoMedico">
+                        <img src="Styles/Images/medico.png"/>
+                    </div>
+                    <div class="cantoSupDireitoCartaoMedico">
+                        <h6>Nome Medico</h6> 
+                        <h6>Telefone: 222222222</h6>
+                    </div>
+
+
+                </div>
+
             </div>
         </div>
         <div id="answer2">audiologoa sadasfass asf dsf s df sdg dhdfsa f ds f sd f sd fas</div>
-        <div id="answer3">3 <div class="noticias">
-                <div class="noticiasEsq">
-                    <div id="noticeTitle">
-                        <h4>Ambulância avariou a caminho de hospital</h4>
-                    </div>
-                    <a href='<?php echo site_url('/NoticiaGrande/index'); ?>' alt=" " >
-                        <img src="Styles/Images/n_.jpg"></img>
-                    </a>
-                    <div id="noticeDate">
-                        <span>05/04/2014</span>
-                    </div>
-                </div>
-
-                <div class="noticiasDir">
-                    <div id="noticeSpecialidade">
-                        <h6>Ginecologia</h6>
-                        <div class="linhaHugo"></div>
-                    </div>
-                    <div id="noticeText">
-                        <span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines detectou um sinal rádio com uma frequência de 37.5kHz por segundo - a mesma que teriam as caixas negras da aeronave. No entanto, não há ainda confirmação se este sinal estará relacionado com o avião despaarecido há quatro semanas quando voava de Kuala Lumpur para Pequim.</span>
-                    </div>
-                    <div id="noticeAuthor">
-                        <span>Dr Manel Da Costa</span>
-                        <a href='<?php echo site_url('/NoticiaGrande/index'); ?>' alt=" " >
-                            <input id="btnNoticias" type="button" value="Ler mais" alt="ler mais">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="noticias">
-                <div class="noticiasEsq">
-                    <div id="noticeTitle">
-                        <h4>Ambulância avariou a caminho de hospital</h4>
-                    </div>
-                    <a href=" " alt=" " >
-                        <img src="Styles/Images/n_.jpg"></img>
-                    </a>
-                    <div id="noticeDate">
-                        <span>05/04/2014</span>
-                    </div>
-                </div>
-
-                <div class="noticiasDir">
-                    <div id="noticeSpecialidade">
-                        <h6>Ginecologia</h6>
-                        <div class="linhaHugo"></div>
-                    </div>
-                    <div id="noticeText">
-                        <span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines detectou um sinal rádio com uma frequência de 37.5kHz por segundo - a mesma que teriam as caixas negras da aeronave. No entanto, não há ainda confirmação se este sinal estará relacionado com o avião despaarecido há quatro semanas quando voava de Kuala Lumpur para Pequim.</span>
-                    </div>
-                    <div id="noticeAuthor">
-                        <span>Dr Manel Da Costa</span>
-                        <a href='<?php echo site_url('/NoticiaGrande/index'); ?>' alt=" " >
-                            <input id="btnNoticias" type="button" value="Ler mais" alt="ler mais">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <div id="answer3">3</div>
         <div id="answer4">4</div>
         <div id="answer5">5</div>
         <div id="answer6">6</div>
