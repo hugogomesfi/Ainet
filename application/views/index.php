@@ -1,7 +1,10 @@
 
 <?php  $this->load->view('Head');?>
-      
+
+  <img src="Styles/Images/imgfundo2.jpg" id="imgfundo">
+  
 <div id="publicacaoMedicos">
+    
     <div class="publicacao" id="pub_1">
         <img src="Styles/Images/medicin_1.jpg"></img>
         <h5>Medicamentos</h5>
@@ -36,7 +39,7 @@
 
 </div>
 
-            
+ <img/>            
             
             
             <ul class="bxslider" >

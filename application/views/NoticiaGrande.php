@@ -76,14 +76,10 @@ Foi um dos fundadores do Instituto de Empreendedorismo Social e padrinho do proj
     </div>
     </div>
     <div id="noticiaGdir">
-        
         <header id="noticiaRelacionadasTitle">
                 <h3>Notícias relacionadas...</h3>
         </header>
-        
-        
         <div id="noticiaRelacionadas">
-            
             <div class="campoNoticiaLitle">
                 <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
                 <div id="titleNoticiaLitle">
