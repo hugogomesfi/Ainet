@@ -71,7 +71,7 @@ function mudaImagem(){
     </div>
    
 
-<div id="noticias">
+<div class="noticiasprimeiro">
             <div class="noticia1">
                 <h5>Titulo da Noticia</h5>
                 <div class="img_noticia">
@@ -132,7 +132,7 @@ function mudaImagem(){
 
 <div class="linhaHugo"></div>
 
-   <div id="noticias">
+   <div class="noticiasprimeiro">
             <div class="noticia1">
                 <h5>Titulo da Noticia</h5>
                 <div class="img_noticia">
@@ -147,7 +147,7 @@ function mudaImagem(){
                     
                 </div>
             </div>
-            <div class="noticia2" ">
+            <div class="noticia2">
                 <h5>Noticia2</h5>
                 <div class="img_noticia">
                     <img src="Styles/Images/147657108.jpg" alt="imagem de noticia"/>
