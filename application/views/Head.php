@@ -177,7 +177,7 @@
 			   		var scrolledY = $(window).scrollTop();
 					//$('.bgWrapper').css('background-position','center -'+((scrolledY*0.2))+'px');
 					//$('.shark').css('top','-'+((scrolledY*0.8))+'px');
-					//$('#tabela').css('top','+'+((scrolledY*0.6))+'px');
+					//$('#tabelaimagem').css('top','+'+((scrolledY*0.8))+'px');
 			   	}
 
                                  $("#pracima").click(function (event){
