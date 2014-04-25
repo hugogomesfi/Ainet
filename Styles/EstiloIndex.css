@@ -105,7 +105,7 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 .img_noticia img{z-index: 800;height: 100px; position: relative; width: 100%;}
 
 
-#tabela{position: relative;height: 300px;}
+#tabela{position: relative;height: 300px;width: 600px;padding-left: 100px;}
 #tabela img{width: 50px; height: 50px;}
 #tabela td{width: 100px;}
 
@@ -115,8 +115,8 @@ body{margin: 0;background-color: white;min-height: 1024px;}
 #arrowUp img{width: 20px; height: 20px;margin-left: 50%;}
 
 #publicacaoMedicos{padding: 5px;position: relative;margin-left: 5%;width: 95%; margin-bottom: 50px; height: 500px;}
-.publicacao{opacity: 0.9;background-color: white;border: 1px solid grey;height: 400px;width: 264px; border-radius: 5px;text-align: center;}
-.publicacao img{width: 260px; height: 180px;margin-top: 3px;}
+.publicacao{opacity: 0.9;background-color: white;border: 1px solid grey;height: 400px;width: 294px; border-radius: 5px;text-align: center;}
+.publicacao img{width: 290px; height: 180px;margin-top: 3px;}
 .publicacao h5{text-align: left;margin: 10px; color: #333333;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 24px;}
 #pub_1{float: left;position: relative;}
 #pub_2{float: left;position: relative;}
@@ -318,8 +318,9 @@ background: linear-gradient(#82AEE1 10%,white 98% ); /* Standard syntax */positi
 
 
 #imgfundo{width: 100%;height: 500px;}
+#tabelaimagem td{padding: 10px;width: 227px;}
 
-#tabelaimagem{padding-left: 50px;background-image: url(Images/imgfundo2.jpg);width: 100%;height: 500px;background-repeat: no-repeat;background-size: 100%; }
+#tabelaimagem{padding-left: 20px;background-image: url(Images/imgfundo2.jpg);width: 100%;height: 500px;background-repeat: no-repeat;background-size: 100%; }
 
 
 

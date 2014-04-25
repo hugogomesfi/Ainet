@@ -1,6 +1,14 @@
 
 <?php  $this->load->view('Head');?>
 
+<script>
+function mudaImagem(){
+    
+    $('#tabelaimagem').css('background-image','+'+((scrolledY*0.8))+'px');
+}
+
+</script>
+
     <table id="tabelaimagem">
         
     <tr>
