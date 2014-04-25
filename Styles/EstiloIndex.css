@@ -10,7 +10,7 @@ and open the template in the editor.
 body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;}
 
 /*--------------------Barra de navegação Topo------------------------------*/
-#navBar{ right: 0;left: 0; position: fixed; top: 0px;border-bottom: 1px solid grey;z-index: 999; height: 50px;box-shadow: inset 0 0 5px 5px grey;background-image: url(Images/noisy_net.png); box-shadow: 0px 0px 5px 0px black;} 
+#navBar{ right: 0;left: 0; position: fixed; top: 0px;border-bottom: 1px solid grey;z-index: 999; height: 50px;box-shadow: inset 0 0 5px 5px blue;background-image: url(Images/noisy_net.png); box-shadow: 0px 0px 5px 0px blue;} 
 #menuTopo{position: absolute;width: 600px;left: 110px;text-align: center;height: 50px;} 
 #menuTopo ul {top: 0; bottom: 0;margin: 0; padding: 0;position: absolute; width: 100%;}
 #menuTopo ul li{ color: white; padding-top:10px; border-radius: 5px;margin-top: 5px;position: relative;display: inline-block;font-size: 13px;font-weight: 700;width: 90px;height: 30px;  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;} 
@@ -72,7 +72,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-#conteudoCentro{padding-bottom: 100px;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888;margin-top: 100px; background-color: white; min-width: 1000px;margin-left: 10%; margin-right: 10%;}
+#conteudoCentro{padding-bottom: 0;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888;margin-top: 100px; background-color: white; min-width: 1000px;margin-left: 10%; margin-right: 10%;}
 #conteudoFundo{position: relative;bottom: 0;background-image: url(Images/navy_blue.png); min-height: 150px;text-align: center;padding-top: 20px;}
 
 #conteudoFundo ul li{font-size: 13px;display: inline-block; padding: 5px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
@@ -92,17 +92,17 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-#noticias{background-image: url(Images/pw_maze_black.png); padding-left: 6%;padding-right: 6%; position: relative; min-height: 400px; }
+#noticias{padding-top: 30px;background-image: url(Images/pw_maze_black.png); padding-left: 10%;padding-right: 10%; position: relative; min-height: 400px; }
 #noticia1{position: relative;float: left;}
 #noticia2{float: left;}
 #noticia3{float: left;}
 #noticia4{float: left;}
-.noticia{width: 200px;margin: 1%;min-height: 300px;position: relative;}
-.noticia h5{border-radius: 5px;text-align: center;border: 1px solid lightgray;background-color: #E7E7E7;height: 25px;padding-top: 10px;}
+.noticia{width: 180px;margin: 1%;min-height: 300px;position: relative;}
+.noticia h5{margin-bottom: 10px;border-radius: 5px;text-align: center;border: 1px solid lightgray;background-color: #E7E7E7;height: 25px;padding-top: 10px;}
 .resumo_noticia{ margin: 10px;position: relative;text-align: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;color: #555555;}
 .resumo_noticia p{position: relative;}
 
-.img_noticia img{z-index: 800;height: 100px; position: relative; width: 100%;}
+.img_noticia img{z-index: 800;height: 120px; position: relative; width: 100%;}
 
 
 #tabela{position: relative;height: 300px;width: 600px;padding-left: 100px;}
@@ -115,7 +115,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #arrowUp img{width: 20px; height: 20px;margin-left: 50%;}
 
 #publicacaoMedicos{margin-top: 30px;padding: 5px;position: relative;margin-left: 4%; margin-right: 4%;  height: 450px;}
-.publicacao{margin-left: 5px; margin-right: 5px; opacity: 0.9;background-color: white;border: 1px solid grey;height: 400px;width: 294px; border-radius: 5px;text-align: center;}
+.publicacao{margin-left: 5px; margin-right: 5px; background-color: white;border: 1px solid grey;height: 400px;width: 294px; border-radius: 5px;text-align: center;}
 .publicacao img{width: 290px; height: 180px;margin-top: 3px;}
 .publicacao h5{text-align: left;margin: 10px; color: #333333;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 24px;}
 #pub_1{float: left;position: relative;}
