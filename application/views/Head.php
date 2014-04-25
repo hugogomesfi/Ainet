@@ -5,7 +5,7 @@
         <title>Anaaa XHTML 1.0 Strict standard template</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <base href="<?php echo $this->config->item('base_url') ?>" />
-        <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css"></link>
+        <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css"/>
          <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
@@ -42,62 +42,78 @@
            
             <div id="menuTopo"> 
                 <ul> 
-                    <a href='<?php echo site_url('/Home/index');?>'>
+                    
                     <li class="noSub"> 
+                        <a href="<?php echo site_url('/Home/index');?>">
                         <span>Entrada</span>
+                        </a>
                     </li> 
-                    </a> 
-                    <a href='<?php echo site_url('/Noticias/index');?>'>
+                     
+                    
                     <li class="noSub">
+                        <a href='<?php echo site_url('/Noticias/index');?>'>
                         <span>Notícias</span>
+                        </a>
                     </li> 
-                    </a> 
-                    <a href=''>
+                     
+                    
                     <li class="noSub">
+                        <a href=''>
                         <span>Irmandade</span>
+                        </a>
                     </li> 
-                    </a>
+                    
                    
                     <li class="haveSub">
                         <span>Saúde</span>
                         <ul class="sub">
-                            <a href=''>
+                            
                             <li>
+                                <a href=''>
                                <span>Corpo Clinico</span>
+                               </a>
                             </li> 
-                            </a>
-                             <a href='<?php echo site_url('/Saude/especialidades');?>'>
+                            
+                             
                             <li>
+                                <a href='<?php echo site_url('/Saude/especialidades');?>'>
                                <span>Especialidades</span>
+                               </a>
                             </li> 
-                            </a>
-                            <a href='<?php echo site_url('/ComporNoticia/index');?>'>
+                            
+                            
                             <li>
+                                <a href='<?php echo site_url('/ComporNoticia/index');?>'>
                                 <span>submenu3</span>
+                                </a>
                             </li> 
-                            </a>
+                            
                         </ul>
                     </li> 
                    
-                    <a href=''>
+                   
                     <li class="noSub">
+                         <a href=''>
                         <span>Localização</span>
+                        </a>
                     </li>
-                    </a>
-                    <a href='<?php echo site_url('/Contactos/index');?>'>
+                    
+                    
                     <li class="noSub">
+                        <a href='<?php echo site_url('/Contactos/index');?>'>
                         <span>Contactos</span>
+                        </a>
                     </li> 
-                    </a>
+                    
                 </ul> 
             </div> 
             
             <div id="menuTopo2">
                 <div id="search">
-                    <input type="text" placeholder="Procurar" id="caixaTexto">
+                    <input type="text" placeholder="Procurar" id="caixaTexto"/>
                   
                         
-                    </input>
+                   
                     
                     
                 </div> 
@@ -142,11 +158,13 @@
 </div>
 <div id="submenuLogin">
      <h3>Entra com a tua conta:</h3>
-     <input class="loginTextFild"type="text" placeholder="Utilizador"></input>
-     <input class="loginTextFild" type="password" placeholder="Password"></input><br>
+     <input class="loginTextFild" type="text" placeholder="Utilizador"/>
+     <input class="loginTextFild" type="password" placeholder="Password"/><br>
      <input type="button" value="Entrar">
      <div id="linha"></div>
-     <h8>Ainda não tens conta? <a href="">Criar Conta</a></h8>
+     
+     
+     <a href="">Criar Conta</a> 
     
 </div>
                     
@@ -214,25 +232,25 @@
              
            <div id="imagemFundo">
                
-               <img src="Styles/Images/santa_casa.svg"/>
+               <img src="Styles/Images/santa_casa.svg" alt="Logotipo da SCML"/>
                 <table id="tabela">
                     
                     <tr>
                         <td>
                              <a href="" >
-                                 <img src="Styles/Images/especialidades.png" class="imagemDoIcon"></img>
+                                 <img src="Styles/Images/especialidades.png" alt="especialidades" class="imagemDoIcon"/>
                             <p>Especialidades</p>
                              </a>
                         </td>
                         <td>
                             <a href="" >
-                            <img src="Styles/Images/stethoscope-icon.png" class="imagemDoIcon"></img>
+                                <img src="Styles/Images/stethoscope-icon.png" alt="Consultas" class="imagemDoIcon"/>
                             <p>Consultas</p>
                             </a>
                         </td>
                         <td>
                               <a href="" >
-                            <img src="Styles/Images/seniors-icon.png" class="imagemDoIcon"></img>
+                                  <img src="Styles/Images/seniors-icon.png" alt="cuidados geriatricos" class="imagemDoIcon"/>
                           <p>Cuidados Geriatricos</p>
                               </a>
                            
@@ -242,19 +260,19 @@
                     <tr>
                         <td>
                             <a href="" >
-                            <img src="Styles/Images/User-Group-icon.png" class="imagemDoIcon"></img>
+                                <img src="Styles/Images/User-Group-icon.png" alt="voluntariado" class="imagemDoIcon"/>
                             <p>Voluntariado</p>
                             </a>
                         </td>
                         <td>
                             <a href="" >
-                            <img src="Styles/Images/family-icon.png" class="imagemDoIcon"></img>
+                                <img src="Styles/Images/family-icon.png" alt="Creche" class="imagemDoIcon"/>
                             <p>Creche</p>
                             </a>
                         </td>
                         <td>
                             <a href="" >
-                            <img src="Styles/Images/Doctor-icon.png" class="imagemDoIcon"></img>
+                                <img src="Styles/Images/Doctor-icon.png" alt="Corpo clinico" class="imagemDoIcon"/>
                             <p>Corpo Clinico</p>
                             </a>
                             
@@ -264,6 +282,6 @@
                 </table> 
               
                 
-                </img>
+                
             </div>
             

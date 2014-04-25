@@ -52,7 +52,9 @@
         <li class="question28"><a id="link">ELETROMIOGRAFIA</a></li>
     </ul>
     <div id="especialidadeCorpo">
-        <div class="clear" class="question"></div>
+        
+       
+        
         <div id="answer1" ><div class="textoAnswer"><header> <h2>Acupuntura</h2> </header>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis sem id auctor vulputate. Proin molestie eros nulla, sit amet sollicitudin risus aliquet quis. Etiam vestibulum egestas nunc, id ornare est aliquet eget. Etiam quis turpis justo. Pellentesque quis porttitor ligula. Aliquam eu odio dapibus, gravida lacus ac, rhoncus lacus. Donec sem leo, blandit sed sagittis tristique, convallis vel augue. Fusce rhoncus sagittis ligula placerat tempor.
@@ -104,7 +106,7 @@
                     <div class="parteCimaCartaoMedico">
 
                         <div class="cantoEsquerdoCartaoMedico">
-                            <img src="Styles/Images/medico.png"/>
+                            <img src="Styles/Images/medico.png" alt="foto do medico"/>
                         </div>
 
                         <div class="cantoSupDireitoCartaoMedico">
@@ -128,7 +130,7 @@
                     <div class="parteCimaCartaoMedico">
 
                         <div class="cantoEsquerdoCartaoMedico">
-                            <img src="Styles/Images/medico.png"/>
+                            <img src="Styles/Images/medico.png" alt="imagem do medico"/>
                         </div>
 
                         <div class="cantoSupDireitoCartaoMedico">
