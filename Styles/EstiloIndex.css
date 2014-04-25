@@ -298,12 +298,10 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 }
 .cantoEsquerdoCartaoProtocolo{
     float: left;
-    width: 30%;
-    
+    width: 30%;    
 }
 .cantoDireitoCartaoProtocolo{
     float: left;
-    
     width: 70%;
 }
 
