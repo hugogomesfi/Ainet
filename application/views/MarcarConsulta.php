@@ -100,4 +100,4 @@
 </div>
 </div>
 
-<?php  $this->load->view('foot_Site.html');?>
+<?php  $this->load->view('foot_Site');
