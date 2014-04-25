@@ -72,7 +72,7 @@ function mudaImagem(){
    
 
 <div id="noticias">
-            <div id="noticia1" class="noticia">
+            <div class="noticia1">
                 <h5>Titulo da Noticia</h5>
                 <div class="img_noticia">
                     <img src="Styles/Images/147657108.jpg" alt="imagem de noticia"/>
@@ -86,7 +86,7 @@ function mudaImagem(){
                     
                 </div>
             </div>
-            <div id="noticia2" class="noticia">
+            <div  class="noticia2">
                 <h5>Noticia2</h5>
                 <div class="img_noticia">
                     <img src="Styles/Images/147657108.jpg" alt="imagem de noticia"/>
@@ -98,7 +98,7 @@ function mudaImagem(){
                     <input type="button" value="Ler Mais" class="btnpub"/>
                 </div>
             </div>
-            <div id="noticia3" class="noticia">
+            <div  class="noticia2">
                 <h5>Noticia3</h5>
                 
                 <div class="img_noticia">
@@ -111,7 +111,7 @@ function mudaImagem(){
                    <input type="button" value="Ler Mais" class="btnpub"/>
                 </div>
             </div>
-            <div id="noticia4" class="noticia">
+            <div class="noticia2">
                 <h5>Noticia4</h5>
                
                 <div class="img_noticia">
@@ -133,7 +133,7 @@ function mudaImagem(){
 <div class="linhaHugo"></div>
 
    <div id="noticias">
-            <div id="noticia11" class="noticia">
+            <div class="noticia1">
                 <h5>Titulo da Noticia</h5>
                 <div class="img_noticia">
                     <img src="Styles/Images/147657108.jpg" alt="imagem de noticia"/>
@@ -147,7 +147,7 @@ function mudaImagem(){
                     
                 </div>
             </div>
-            <div id="noticia6" class="noticia">
+            <div class="noticia2" ">
                 <h5>Noticia2</h5>
                 <div class="img_noticia">
                     <img src="Styles/Images/147657108.jpg" alt="imagem de noticia"/>
@@ -159,7 +159,7 @@ function mudaImagem(){
                     <input type="button" value="Ler Mais" class="btnpub"/>
                 </div>
             </div>
-            <div id="noticia7" class="noticia">
+            <div  class="noticia2">
                 <h5>Noticia3</h5>
                 
                 <div class="img_noticia">
@@ -172,7 +172,7 @@ function mudaImagem(){
                    <input type="button" value="Ler Mais" class="btnpub"/>
                 </div>
             </div>
-            <div id="noticia8" class="noticia">
+            <div class="noticia2">
                 <h5>Noticia4</h5>
                
                 <div class="img_noticia">

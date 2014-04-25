@@ -95,11 +95,10 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #noticias{padding-top: 30px;background-image: url(Images/pw_maze_black.png); padding-left: 11%;padding-right: 11%; position: relative; min-height: 400px; }
 #noticias2{background-image: url(Images/pw_maze_black.png); padding-left: 11%;padding-right: 11%; position: relative; min-height: 400px; }
 
-#noticia1{position: relative;float: left;}
-#noticia2{float: left;}
-#noticia3{float: left;}
-#noticia4{float: left;}
-.noticia{width: 180px;margin: 1%;min-height: 300px;position: relative;}
+.noticia1{position: relative;float: left;width: 180px;margin: 1%;min-height: 300px;position: relative;}
+.noticia2{float: left;width: 180px;margin: 1%;min-height: 300px;}
+
+
 .noticia h5{margin-bottom: 10px;border-radius: 5px;text-align: center;border: 1px solid lightgray;background-color: #E7E7E7;height: 25px;padding-top: 10px;}
 .resumo_noticia{ margin: 10px;position: relative;text-align: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;color: #555555;}
 .resumo_noticia p{position: relative;}
