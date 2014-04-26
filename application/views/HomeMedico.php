@@ -45,12 +45,23 @@
             <p><span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines..</span><a href="">Ler Mais</a></p>
             </div>
         </div>
+        <div class="noticiaPessoal">
+             <img src="Styles/Images/medicin_3.jpg" alt="email" class="imagemDaNoticiaHomeMedico"/>
+            <div class="corponoticiapessoalmedico">
+            <h5>Ambulância avariou a caminho de hospital</h5>
+            <p><span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines..</span><a href="">Ler Mais</a></p>
+            </div>
+        </div>
          
     </div>
     <div id="EspecialidadesPessoalMedico">
         <h4>Especialidades</h4>
         
-        <div id="DiasConsultasPessoalMedico"></div>
+        <div id="DiasConsultasPessoalMedico">
+            <h4>Oncologia</h4>
+            <h5>Segunda a Sexta</h5>
+            <h5>09h-17h</h5>
+        </div>
     </div>
     
     
