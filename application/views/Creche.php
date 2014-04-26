@@ -39,4 +39,10 @@
     </div> 
 
 </div>
+
+<div>
+    <a>Ler mais Noticias</a>
+</div>
+
+</div>
 <?php $this->load->view('foot_Site');
