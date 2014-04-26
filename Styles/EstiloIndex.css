@@ -400,6 +400,11 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     height: 25px;
     /*display:table-cell;*/
 }
+#LerMaisNoticias a{
+    color: white;
+    text-decoration: none;
+    text-align: center; 
+}
 .btnHomeMedico{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     float: left;
@@ -421,6 +426,10 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 .btnHomeMedico a{
     text-decoration: none;
     color: white;
+}
+.tituloCrecheIrmandade{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
 }
 
 /*//////////////////////////////////////////////////////////////////////especialidedes fim ////////////////////////////////////////////*/
@@ -524,7 +533,8 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-#contentor{position: relative; padding: 2%;text-align: center; overflow:auto; }
+#contentor{position: relative; padding: 2%;text-align: center;}
+
 #container1{width: 100%;height: 196px;margin-bottom: 2%;}
 #container2{width: 100%; clear: right;height: 196px;}
 .contacto{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: 12px;border-top: 5px solid #8CC474;margin-left: 2%;float: left;background-color: #FFF; width: 30%; height: 100%;border-right: 1px solid #D8D8D8;border-left: 1px solid #D8D8D8;border-bottom: 1px solid #D8D8D8;   }
@@ -538,9 +548,12 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #InformacaoPessoalMedico img{width: 40%; height: 93px; margin-top: 5px; margin-left: 0;}
 #mapaGoogle{width: 100%;height: 400px;background-color: #CCC;margin-bottom: 20px;}
 
-#formSection{border-radius: 10px; margin: 1px 100px;padding:0 60px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; background-color: #FFFFFF ; height: 630px;}
+#formSection{border-radius: 10px; margin: 1px 100px;padding:0 60px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; background-image: url(Images/wavegrid.png); height: 630px;}
 #formSection label{display: inline-block; width: 150px;margin-left: 5px; color: #333;}
-#formSection fieldset{border: none;padding: 20px; margin-top: 50px;}
+#formSection fieldset{border: none;padding: 20px; margin-top: 50px;overflow: auto;}
+#formSection fieldset legend{
+    margin-top: 20px;
+}
 .caixaTexto{width: 400px;height: 25px;border-radius: 5px; display: inline-block; border: 1px solid #CCCCCC;}
 
 #formSection legend{font-size: 24px;font-weight: 600;}
@@ -577,4 +590,6 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-#info{text-align: center;}
+#info{text-align: center;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}

@@ -58,7 +58,7 @@
                      
                     
                     <li class="noSub">
-                        <a href=''>
+                        <a href='<?php echo site_url('/Irmandade');?>'>
                         <span>Irmandade</span>
                         </a>
                     </li> 

@@ -1,6 +1,6 @@
 <?php $this->load->view('Head'); ?>
 
-<div class="tituloCrecheIrmandade"><h1>Creche</h1></div>
+<div class="tituloCrecheIrmandade"><h1>Irmandade</h1></div>
 
 <div id="publicacaoMedicos">
     <div class="publicacao" id="pub_1">
