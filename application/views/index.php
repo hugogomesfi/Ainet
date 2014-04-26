@@ -1,6 +1,52 @@
 
 <?php  $this->load->view('Head');?>
 
+<script type="text/javascript">
+            //<![CDATA[
+          $(document).ready(function(){
+              
+             setInterval(function (){mudaImagem();},10000);
+              
+               
+               
+				$(window).bind('scroll',function(e){
+			   		parallaxScroll();
+			   	});
+			   	
+			   	
+			   	function parallaxScroll(){
+			   		var scrolledY = $(window).scrollTop();
+					//$('.bgWrapper').css('background-position','center -'+((scrolledY*0.2))+'px');
+					//$('.shark').css('top','-'+((scrolledY*0.8))+'px');
+					//$('#tabelaimagem').css('top','+'+((scrolledY*0.8))+'px');
+			   	}
+
+                                 $("#pracima").click(function (event){
+                                    
+                                         $("#imagemFundo").toggle(1000);
+                                         if($("#imagemFundo").is(":visible")){
+                                              
+                                            $('#pracima').attr('src','Styles/Images/up-arrow.png');
+                                         }else{
+                                             $('#pracima').attr('src','Styles/Images/imgDown.png');
+                                            
+                                         }
+                                     
+                                     
+                   
+                                });
+
+			   	
+			});
+          
+          
+         
+
+
+            
+            //]]>
+        </script>
+        
 <script>
     var $i=0;
 function mudaImagem(){
