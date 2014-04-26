@@ -384,6 +384,10 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
                        height: 30px;
     
 }
+
+#LerMaisNoticias{
+    text-align: center;   
+}
 .btnHomeMedico{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     float: left;
