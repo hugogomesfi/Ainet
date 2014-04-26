@@ -5,7 +5,7 @@
 <div id="contentor">
 <div id="InformacaoPessoalMedico">
        
-        <img src="Styles/Images/medico.png"></img>
+    <img src="Styles/Images/medico.png" alt="foto medico"/>
     </div>
     <div id="NoticiasPessoalMedico">
   
