@@ -3,12 +3,9 @@
 <h1 class="titulo">Pagina Pessoal</h1>
 
 <div id="contentor">
-    
-   
-
-    <div id="InformacaoPessoalMedico">
+<div id="InformacaoPessoalMedico">
        
-        <img src="Styles/Images/medico.png"></img>
+    <img src="Styles/Images/medico.png" alt="foto medico"/>
     </div>
     <div id="NoticiasPessoalMedico">
   
@@ -44,8 +41,12 @@
         <div id="DiasConsultasPessoalMedico"></div>
     </div>
     
+    
+    </div>
+   
 
-</div>
+
+
 </div>
 
 

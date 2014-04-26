@@ -34,7 +34,7 @@
         
         <p>
             <label>Imagem</label>
-            <input type="file" value="aaa"/>    
+            <input type="file" />    
         </p>
         
         <p>

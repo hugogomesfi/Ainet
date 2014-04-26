@@ -13,9 +13,9 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #navBar{ right: 0;left: 0; position: fixed; top: 0px;border-bottom: 1px solid grey;z-index: 999; height: 50px;box-shadow: inset 0 0 5px 5px blue;background-image: url(Images/noisy_net.png); box-shadow: 0px 0px 5px 0px blue;} 
 #menuTopo{position: absolute;width: 600px;left: 110px;text-align: center;height: 50px;} 
 #menuTopo ul {top: 0; bottom: 0;margin: 0; padding: 0;position: absolute; width: 100%;}
-#menuTopo ul li{ color: white; padding-top:10px; border-radius: 5px;margin-top: 5px;position: relative;display: inline-block;font-size: 13px;font-weight: 700;width: 90px;height: 30px;  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;} 
+#menuTopo ul li{ padding-top:10px; border-radius: 5px;margin-top: 5px;position: relative;display: inline-block;font-size: 13px;font-weight: 700;width: 90px;height: 30px;  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;} 
 
-#menuTopo a{text-decoration: none; position: relative;}
+#menuTopo a{text-decoration: none; position: relative;color: white;}
 #menuTopo li:hover{ background-color: white;color: black !important;}
 
 
@@ -23,7 +23,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 .noSub{ display: inline-block;} 
-.haveSub{display: inline-block;} 
+.haveSub{display: inline-block;color: white;} 
 .haveSub ul{ border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;top: 40px !important;visibility: hidden;background-image: url(Images/noisy_net.png)!important;height: 150px;width: 150px !important;}
 .haveSub:hover ul{visibility: visible;}
 .haveSub ul li:hover { display:block;background-color: white !important;} 
@@ -369,23 +369,23 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 .noticiasDir{height: 100%; position: relative; width: 60%;float: left;}
 
 
-#noticeTitle{padding-top: 1px;width: 100%; height: 50px; }
-#noticeTitle h4{  text-align: center; color: #AE4200;}
-#noticeDate{height: 80px; margin-top: 3%; margin-left: 5%;
+.noticeTitle{padding-top: 1px;width: 100%; height: 50px; }
+.noticeTitle h4{  text-align: center; color: #AE4200;}
+.noticeDate{height: 80px; margin-top: 3%; margin-left: 5%;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: small;
             font-weight: bold;font-style: italic;}
 
 
-#noticeSpecialidade h6{margin: 10px;}
-#noticeSpecialidade{margin-left: 10%; width: 100%; font-weight: bold; height:30px; padding-top: 20px;
+.noticeSpecialidade h6{margin: 10px;}
+.noticeSpecialidade{margin-left: 10%; width: 100%; font-weight: bold; height:30px; padding-top: 20px;
                     text-align: left; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
                     margin-right: 10%;}
 .linhaHugo{border-bottom: 1px solid lightgray;   margin-right: 20%; }
-#noticeText{height: 170px; padding-left: 7%; padding-right: 7%; padding-top: 5%;
+.noticeText{height: 170px; padding-left: 7%; padding-right: 7%; padding-top: 5%;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  text-align: justify; overflow: hidden; }
-#noticeAuthor{width: 100%;height: 31px; padding-left: 7%; font-weight: bold;
+.noticeAuthor{width: 100%;height: 31px; padding-left: 7%; font-weight: bold;
               font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: small;}
-#btnNoticias{float: right; margin-right: 14%; background-color:#AE4200;
+.btnNoticias{float: right; margin-right: 14%; background-color:#AE4200;
              color: #E7E7E7; width: 20%;padding:2px;text-decoration:none;border-radius:10px; }
 
 
@@ -458,7 +458,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-#contentor{position: relative; padding: 2%;text-align: center;}
+#contentor{position: relative; padding: 2%;text-align: center; overflow:auto; }
 #container1{width: 100%;height: 196px;margin-bottom: 2%;}
 #container2{width: 100%; clear: right;height: 196px;}
 .contacto{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: 12px;border-top: 5px solid #8CC474;margin-left: 2%;float: left;background-color: #FFF; width: 30%; height: 100%;border-right: 1px solid #D8D8D8;border-left: 1px solid #D8D8D8;border-bottom: 1px solid #D8D8D8;   }
