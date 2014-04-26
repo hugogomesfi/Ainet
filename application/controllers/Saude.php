@@ -15,7 +15,7 @@ class Saude extends CI_Controller{
         $this->load->view('Especialidades');
     }
      public function corpoClinico() {
-       // $this->load->view('Especialidades');
+        $this->load->view('CorpoClinico');
     }
 }
 ?>

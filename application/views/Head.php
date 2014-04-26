@@ -69,7 +69,7 @@
                         <ul class="sub">
                             
                             <li>
-                                <a href=''>
+                                <a href="<?php echo site_url('/Saude/CorpoClinico');?>">
                                <span>Corpo Clinico</span>
                                </a>
                             </li> 
