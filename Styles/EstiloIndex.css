@@ -75,10 +75,10 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #conteudoCentro{padding-bottom: 0;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888;margin-top: 100px; background-color: white; min-width: 1000px;margin-left: 10%; margin-right: 10%;}
 #conteudoFundo{position: relative;bottom: 0;background-image: url(Images/navy_blue.png); min-height: 150px;text-align: center;padding-top: 20px;}
 
-#conteudoFundo ul li{font-size: 13px;display: inline-block; padding: 5px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+
 #conteudoFundo a{text-decoration: none; color: white;}
 #conteudoFundo a:hover{color: blue;}
-#redesSociais{right: 100px;position: absolute; top: 25px;}
+
 
 
 
@@ -134,25 +134,25 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     list-style-type: none;
     margin-left: 1%;
     align-items: center;
-   
+
 }
-   #especialidades ul li{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-                          position: relative;
-                          
-    padding-top: 5px;
-    border-radius: 15px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    margin-top: 2%;
-    font-size: 18px;
-    text-transform: uppercase;
-    background: #3E8CD2;
-    color: #FFF;
-    border: 0px none;
-    outline: 0px none;
-    width: 100%;
-    height: 30px;
-   
+#especialidades ul li{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                       position: relative;
+
+                       padding-top: 5px;
+                       border-radius: 15px;
+                       color: rgb(255, 255, 255);
+                       text-align: center;
+                       margin-top: 2%;
+                       font-size: 18px;
+                       text-transform: uppercase;
+                       background: #3E8CD2;
+                       color: #FFF;
+                       border: 0px none;
+                       outline: 0px none;
+                       width: 100%;
+                       height: 30px;
+
 }
 
 #especialidades ul li:hover {
@@ -173,25 +173,25 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     border-radius: 15px;
     box-shadow: 0px 10px 40px 2px #888888;
     float: left;
-   
-   background-color: #FFF;
+
+    background-color: #FFF;
     width: 59%;
     margin-left: 5%;
     margin-top: 20px;
     margin-bottom: 5px;
     padding-bottom: 20px;
-   
+
 }
 #especialidades{
-    
+
     background-color: #ffffff;
     min-height: 1024px;
     overflow: auto;
 }
 #answer1, #answer2, #answer3, #answer4, #answer5, #answer6, #answer7, #answer8 ,#answer9, #answer10, #answer11, #answer12, #answer13, #answer14, #answer15, #answer16, #answer17, #answer18, #answer19, #answer20, #answer21, #answer22, #answer23, #answer24, #answer25, #answer26, #answer27, #answer28 {display: none;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
 .textoAnswer{
-     float: left;
- 
+    float: left;
+
     width: 50%;
     text-align: justify;
 }
@@ -199,38 +199,38 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     float: left; 
     margin-left: 40px;
     width: 40%;
-    
-    
+
+
 }
 .cartaoMedico{
-   
-   background-image: url(Images/geometry.png);
-  
-  border: 1px solid #D8D8D8;
-   border-radius: 5px;
-   position: relative;
-   margin-top: 15px;
-   margin-bottom: 15px;
-   margin-right: 2px;
-   margin-left:  2px;
-   padding: 2px;
-   
+
+    background-image: url(Images/geometry.png);
+
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 2px;
+    margin-left:  2px;
+    padding: 2px;
+
 }
 .parteCimaCartaoMedico{
     overflow: auto;
     width: 100%;
-    
-    
-    
+
+
+
 }
 .cantoEsquerdoCartaoMedico{
     float: left;
     width: 30%;
-    
+
 }
 .cantoSupDireitoCartaoMedico{
     float: left;
-    
+
     width: 70%;
 }
 
@@ -239,7 +239,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 }
 
 .cantoEsquerdoCartaoMedico img{
-      width: 60px;
+    width: 60px;
     height: 60px;
 }
 
@@ -249,8 +249,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 /*butao marcar consulta*/
 .btnMarcarConsulta{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-                          position: relative;
-                          
+    position: relative;
     border-radius: 5px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -265,9 +264,9 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     vertical-align: middle;
     display:table-cell;
 }
-    .btnMarcarConsulta:hover {
+.btnMarcarConsulta:hover {
     background: #AE4200;
-    
+
 }
 
 .btnMarcarConsulta:active {
@@ -275,20 +274,20 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 }
 
 .cartaoProtocolo{
-   
-   background-image: url(Images/geometry.png);
- 
-  border: 1px solid #D8D8D8;
-   border-radius: 5px;
-   position: relative;
-  
-   margin-top: 15px;
-   margin-bottom: 15px;
-   margin-right: 2px;
-   margin-left:  2px;
-   padding: 2px;
-   overflow: auto;
-   
+
+    background-image: url(Images/geometry.png);
+
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    position: relative;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 2px;
+    margin-left:  2px;
+    padding: 2px;
+    overflow: auto;
+
 }
 .cantoEsquerdoCartaoProtocolo{
     float: left;
@@ -309,12 +308,59 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 .cartaoProtocolo :active{
     color: #ffffff;
 }
+#conteudoFundo{
+    
+}
+#conteudoFundo ul li{font-size: 14px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                     position: relative;                      
+                     text-align: left;
+                     list-style-type: none;
+                     width: 100%;
+                     height: 20px;
+                     color: white;
+}
+
+
+#parteCimaFoot{
+    width: 100%;
+    overflow: auto;
+}
+#footLeft{
+    float: left;
+    width: 33.3%;
+}
+#footCenter{
+    float: left;
+    width: 33.3%;
+}
+#footRight{
+
+    float: left;
+    width: 33.3%;
+}
+#footRight img {
+        width: 30px;
+    height: 30px;
+}
+#parteBaixoFoot ul li{
+    text-align: center !important;
+    display: block !important;
+
+}
+.alinharImagemBloco{
+    display: block !important;
+    width: 20% !important;
+}
+#redesSociais{color: white;
+              font-size: 14px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+              right: 100px;position: absolute; top: 21px;}
+
 
 
 /*//////////////////////////////////////////////////////////////////////especialidedes fim ////////////////////////////////////////////*/
 .noticias{ position: relative; top: 30px; margin-top: 2%; border-bottom: 1px solid lightgray;
-            border-top-left-radius: 10px; border-top-right-radius: 10px; ;
-          width: 80%; height: 300px; left: 10%; background-color: #F5F5F5;}
+           border-top-left-radius: 10px; border-top-right-radius: 10px; ;
+           width: 80%; height: 300px; left: 10%; background-color: #F5F5F5;}
 
 /*.noticias div{border: 1px solid black;} */
 
@@ -371,31 +417,31 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #noticiaGdir{width: 25%; float: left;  margin-left: 4%; border-left: 2px solid #E7E7E7; padding-left: 50px; }
 #noticiaRelacionadas{ width: 250px;  }
 .campoNoticiaLitle{width: 100%; height: 180px; margin-bottom: 10px; margin: 20px auto; border-bottom-style:groove;
-                    }
+}
 #noticiaRelacionadasTitle {text-align: center; color: #3E8CD2; margin-bottom: 60px;
-                          width: 250px; height: 20px; font-style: italic; 
-                         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+                           width: 250px; height: 20px; font-style: italic; 
+                           font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 #imgNoticiaLitle{ height: 100px; width: 230px; top: 0; border-radius: 15px; margin-left: 10px;
-                    box-shadow: 0px 10px 40px 2px #888888;}
+                  box-shadow: 0px 10px 40px 2px #888888;}
 
 #titleNoticiaLitle{ width: 90%; text-align: center; color: #AE4200; 
                     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                     height: 60px; font-weight: bold;
                     transition:  1s,  width 2s, height 2s, color 2s;
                     margin: auto;
-                }
+}
 
 
 #titleNoticiaLitle:hover{
-/*                -moz-transform: rotate(360deg);
-                -ms-transform:rotate(360deg);
-                -webkit-transform: rotate(360deg);*/
+    /*                -moz-transform: rotate(360deg);
+                    -ms-transform:rotate(360deg);
+                    -webkit-transform: rotate(360deg);*/
 
-                color: #0134c5;
-                font-size: x-large;
-                font: 25px 'Trebuchet MS';
-                
-               
+    color: #0134c5;
+    font-size: x-large;
+    font: 25px 'Trebuchet MS';
+
+
 }
 
 
