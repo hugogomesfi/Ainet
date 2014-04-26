@@ -160,7 +160,7 @@
      <h3>Entra com a tua conta:</h3>
      <input class="loginTextFild" type="text" placeholder="Utilizador"/>
      <input class="loginTextFild" type="password" placeholder="Password"/><br>
-     <input type="button" value="Entrar">
+     <input type="button" value="Entrar" />
      <div id="linha"></div>
      
      
