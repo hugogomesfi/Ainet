@@ -533,7 +533,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-#contentor{position: relative; padding: 2%;text-align: center;}
+#contentor{position: relative; padding: 2%;text-align: center;overflow: auto;}
 
 #container1{width: 100%;height: 196px;margin-bottom: 2%;}
 #container2{width: 100%; clear: right;height: 196px;}
