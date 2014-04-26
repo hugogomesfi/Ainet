@@ -1,18 +1,5 @@
 <?php  $this->load->view('Head');?>
 
-<!--<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script>
-      function initialize() {
-        var map_canvas = document.getElementById('mapaGoogle');
-        var map_options = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(map_canvas, map_options)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>-->
 
 
  
@@ -27,15 +14,15 @@
         <h4>Santa Casa da Misericórdia de Leiria</h4>
         
         <p>
-            <img src="Styles/Images/location.png"></img>
+            <img src="Styles/Images/location.png" alt="localização"/>
             Rua Nossa Senhora da Encarnação</p> 
         <p>2410 Leiria</p>
         <p>
-            <img src="Styles/Images/telefone.png"></img>
+            <img src="Styles/Images/telefone.png" alt="telefone"/>
             244 106 200
         </p>
         <p>
-            <img src="Styles/Images/email.png"></img>
+            <img src="Styles/Images/email.png" alt="email"/>
             geral@misericordiadeleiria.pt
         </p>
         
@@ -43,30 +30,30 @@
     <div class="contacto">
         <h4>Lar Nossa Sra. da Encarnação</h4>
          <p>
-            <img src="Styles/Images/location.png"></img>
+             <img src="Styles/Images/location.png" alt="localizaçao"/>
             Rua Nossa Senhora da Encarnação</p> 
         <p>2410 Leiria</p>
         <p>
-            <img src="Styles/Images/telefone.png"></img>
+            <img src="Styles/Images/telefone.png" alt="telefone">
             244 106 200
         </p>
         <p>
-            <img src="Styles/Images/email.png"></img>
+            <img src="Styles/Images/email.png" alt="email"/>
             geral@misericordiadeleiria.pt
         </p>
     </div>
     <div class="contacto">
         <h4>Clínica Médica e de Reabilitação</h4>
          <p>
-            <img src="Styles/Images/location.png"></img>
+             <img src="Styles/Images/location.png" alt="localização"/>
             Rua Nossa Senhora da Encarnação</p> 
         <p>2410 Leiria</p>
         <p>
-            <img src="Styles/Images/telefone.png"></img>
+            <img src="Styles/Images/telefone.png" alt="telefone"/>
             244 106 200
         </p>
         <p>
-            <img src="Styles/Images/email.png"></img>
+            <img src="Styles/Images/email.png" alt="email"/>
             geral@misericordiadeleiria.pt
         </p>
     </div>
@@ -77,45 +64,45 @@
     <div class="contacto">
        <h4> Hospital Dom Manuel de Aguiar</h4>
         <p>
-            <img src="Styles/Images/location.png"></img>
+            <img src="Styles/Images/location.png" alt="localização"/>
             Rua Nossa Senhora da Encarnação</p> 
         <p>2410 Leiria</p>
         <p>
-            <img src="Styles/Images/telefone.png"></img>
+            <img src="Styles/Images/telefone.png" alt="telefone"/>
             244 106 200
         </p>
         <p>
-            <img src="Styles/Images/email.png"></img>
+            <img src="Styles/Images/email.png" alt="email"/>
             geral@misericordiadeleiria.pt
         </p>
     </div>
     <div class="contacto">
         <h4>Creche "Casa Sanches"</h4>
          <p>
-            <img src="Styles/Images/location.png"></img>
+             <img src="Styles/Images/location.png" alt="localizaçao"/>
             Rua Nossa Senhora da Encarnação</p> 
         <p>2410 Leiria</p>
         <p>
-            <img src="Styles/Images/telefone.png"></img>
+            <img src="Styles/Images/telefone.png" alt="telefone"/>
             244 106 200
         </p>
         <p>
-            <img src="Styles/Images/email.png"></img>
+            <img src="Styles/Images/email.png" alt="email"/>
             geral@misericordiadeleiria.pt
         </p>
     </div>
     <div class="contacto">
        <h4> Residencial XXI</h4>
         <p>
-            <img src="Styles/Images/location.png"></img>
+            <img src="Styles/Images/location.png" alt="localização"/>
             Rua Nossa Senhora da Encarnação</p> 
         <p>2410 Leiria</p>
         <p>
-            <img src="Styles/Images/telefone.png"></img>
+            <img src="Styles/Images/telefone.png" alt="telefone"/>
             244 106 200
         </p>
         <p>
-            <img src="Styles/Images/email.png"></img>
+            <img src="Styles/Images/email.png" alt="email"/>
             geral@misericordiadeleiria.pt
         </p>
     </div>
