@@ -15,8 +15,9 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #menuTopo ul {top: 0; bottom: 0;margin: 0; padding: 0;position: absolute; width: 100%;}
 #menuTopo ul li{ padding-top:10px; border-radius: 5px;margin-top: 5px;position: relative;display: inline-block;font-size: 13px;font-weight: 700;width: 90px;height: 30px;  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;} 
 
-#menuTopo a{text-decoration: none; position: relative;color: white;}
-#menuTopo li:hover{ background-color: white;color: black !important;}
+#menuTopo a{text-decoration: none; position: relative;color: white !important;}
+#menuTopo li:hover a{color: black !important;}
+#menuTopo li:hover { background-color: white;color: black !important;}
 
 
 
@@ -47,14 +48,14 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 #login{float: right; height: 50px; width: 100px;text-align: center;color: white;border-radius: 5px;} 
-#login:hover{background-color: goldenrod;border-left: 0.1px solid grey;border-right: 0.1px solid grey;}
+#login:hover{background-color: black;border-left: 0.1px solid grey;border-right: 0.1px solid grey;}
 #login {position: relative;text-decoration: none;}
 #login span{font-size: 13px;font-weight: 700;}
 #login ul{padding: 0;}
 
 
 
-#submenuLogin {height: 400px;width: 350px !important;float: right;background-color: goldenrod;opacity: 0.9; }
+#submenuLogin {height: 400px;width: 350px !important;float: right;background-image: url(Images/noisy_net.png);opacity: 0.9; }
 /*#login ul li:hover ul {visibility: visible;}
 #submenuLogin{visibility: hidden;}*/
 #mostraMenuLogin{height: 35px;margin-top: 10px;margin-bottom: 5px;}
