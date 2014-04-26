@@ -121,7 +121,14 @@
                     Um alto quadro do Eurogrupo (que integra os países da moeda única) considerou esta sexta-feira que a dispensa de um programa cautelar é a solução mais adequada nas condições actuais, isto porque Portugal não tiraria daí mais-valias assinaláveis e, por outro lado, dispensaria o condicionalismo de políticas que estaria associado a uma linha específica dos credores internacionais.</p>
             </div>
         </article>
-    </section>  
+    </section>
+    
+    <section>
+        <article id="info">
+            <h5>Necessita de mais informaçoes?</h5>
+            <a href="">Contacte-nos</a> 
+        </article>
+    </section>
 
 </div>
 
