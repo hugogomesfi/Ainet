@@ -139,7 +139,6 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 }
 #especialidades ul li{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                        position: relative;
-
                        padding-top: 5px;
                        border-radius: 15px;
                        color: rgb(255, 255, 255);
@@ -215,6 +214,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     margin-right: 2px;
     margin-left:  2px;
     padding: 2px;
+     overflow: auto;
 
 }
 .parteCimaCartaoMedico{
@@ -246,9 +246,11 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 .inferiorCartaoMedico h6{
     margin: 8px;
+   
 }
 /*butao marcar consulta*/
 .btnMarcarConsulta{
+    float: left;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     position: relative;
     border-radius: 5px;
@@ -263,9 +265,12 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     height: 25px;
     vertical-align: middle;
     display:table-cell;
-    list-style-type: none;
+}
+.btnMarcarConsulta a{
+    color: white;
     text-decoration: none;
 }
+
 .btnMarcarConsulta:hover {
     background: #AE4200;
 
@@ -376,6 +381,28 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
                        width: 100%;
                        height: 30px;
     
+}
+.btnHomeMedico{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    float: left;
+    position: relative;
+    border-radius: 5px;
+    /*color: rgb(255, 255, 255);*/
+    text-align: center;
+    font-size: 8px;
+    background: #3E8CD2;
+    color: white;
+    border: 0px none;
+    outline: 0px none;
+    width: 100px;
+    height: 25px;
+    vertical-align: middle;
+    display:table-cell;
+    left: 10px;
+}
+.btnHomeMedico a{
+    text-decoration: none;
+    color: white;
 }
 
 /*//////////////////////////////////////////////////////////////////////especialidedes fim ////////////////////////////////////////////*/
