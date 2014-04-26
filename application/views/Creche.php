@@ -41,7 +41,7 @@
 </div>
 
 <div id="LerMaisNoticias">
-    <a>Ler mais Noticias</a>
+    <a href='<?php echo site_url('/NoticiaGrande')?> '>Ler mais Noticias</a>
 </div>
 
 </div>
