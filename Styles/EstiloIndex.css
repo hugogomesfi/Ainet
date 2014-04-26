@@ -253,18 +253,19 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     position: relative;
     border-radius: 5px;
-    color: rgb(255, 255, 255);
+    /*color: rgb(255, 255, 255);*/
     text-align: center;
     font-size: 8px;
-    text-transform: uppercase;
     background: #3E8CD2;
-    color: #FFF;
+    color: white;
     border: 0px none;
     outline: 0px none;
     width: 100px;
     height: 25px;
     vertical-align: middle;
     display:table-cell;
+    list-style-type: none;
+    text-decoration: none;
 }
 .btnMarcarConsulta:hover {
     background: #AE4200;
@@ -323,6 +324,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 }
 
 
+
 #parteCimaFoot{
     width: 100%;
     overflow: auto;
@@ -347,7 +349,6 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #parteBaixoFoot ul li{
     text-align: center !important;
     display: block !important;
-
 }
 .alinharImagemBloco{
     display: block !important;
@@ -355,9 +356,28 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 }
 #redesSociais{color: white;
               font-size: 14px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-              right: 100px;position: absolute; top: 21px;}
+              right: 100px;position: absolute; top: 21px;
+}
+#escolhaPorEspecialidade{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                       position: relative;
+                       font-weight:bold;
 
-
+                       padding-top: 5px;
+                       border-radius: 0px !important;
+                       color: black !important;
+                       text-align: center;
+                       margin-top: 2%;
+                       font-size: 18px;
+                       text-transform: uppercase;
+                       background: white !important ;
+                       
+                       border: 0px none;
+                       outline: 0px none;
+                       width: 100%;
+                       height: 30px;
+    
+}
 
 /*//////////////////////////////////////////////////////////////////////especialidedes fim ////////////////////////////////////////////*/
 .noticias{ position: relative; top: 30px; margin-top: 2%; border-bottom: 1px solid lightgray;
@@ -474,9 +494,9 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #InformacaoPessoalMedico img{width: 40%; height: 93px; margin-top: 5px; margin-left: 0;}
 #mapaGoogle{width: 100%;height: 400px;background-color: #CCC;margin-bottom: 20px;}
 
-#formSection{border-radius: 10px; margin: 1px 100px;padding: 20px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; background-color: #FFFFFF }
-#formSection label{display: inline-block; width: 150px;margin-left: 5px;}
-#formSection fieldset{border: none;padding: 20px;}
+#formSection{border-radius: 10px; margin: 1px 100px;padding:0 60px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; background-color: #FFFFFF ; height: 630px;}
+#formSection label{display: inline-block; width: 150px;margin-left: 5px; color: #333;}
+#formSection fieldset{border: none;padding: 20px; margin-top: 50px;}
 .caixaTexto{width: 400px;height: 25px;border-radius: 5px; display: inline-block; border: 1px solid #CCCCCC;}
 
 #formSection legend{font-size: 24px;font-weight: 600;}
@@ -498,15 +518,18 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 /*Cuidados Geriatricos*/
 
-#pagGeriatricos{  margin-bottom: 30px; margin-top: 60px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+#pagGeriatricos{  margin-bottom: 30px; margin-top: 60px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; padding-bottom: 100px; }
 #pagGeriatricos h3{margin-top: 100px; }
-.tab { border-bottom: 2px solid #CCC; margin: 40px; margin-bottom: 0px;  }
-.tab li{display: inline;  font-size: 14px; padding-top: 10px;}
-.tab a{ text-decoration: none; padding-right: 20px; padding-left: 20px; padding-top: 20px; }
-.activa{border-left: 2px solid #DDDDDD; border-right: 2px solid #DDDDDD; border-top: 2px solid #DDDDDD; border-bottom:3px solid white;}
-#artigoDomiciliario{visibility: hidden;}
-#artigoInternamento{visibility: hidden;}
-#artigoLar{visibility: hidden;}
+.tab { border-bottom: 1px solid #CCC; margin: 40px; margin-bottom: 0px; padding-left: 0px; }
+.tab li{ display: inline;  font-size: 20px; padding-top: 10px;  padding-right: 40px;padding-left: 40px; }
+.tab a{ text-decoration: none; padding-right: 20px; padding-left: 34px; padding-top: 20px; color: #555555; font-weight: bold;}
+.activa{border-left: 2px solid #DDDDDD; border-right: 2px solid #DDDDDD; border-top: 1px solid #DDDDDD; border-bottom:3px solid white;}
+#artigoResidencial{}
+#artigoDomiciliario{display: none;}
+#artigoInternamento{display: none;}
+#artigoLar{display: none;}
 .aspecto{margin: 40px; font-size: 18px; background-color: #F5F5F5; padding: 20px; text-align: justify;}
-#seccaoPagGer article{border-left: 2px solid #DDDDDD; border-right: 2px solid #DDDDDD; border-bottom: 2px solid #DDDDDD; border-top:3px solid white; margin-top: 0px;}
+#seccaoPagGer article{border-left: 2px solid #DDDDDD; border-right: 2px solid #DDDDDD; border-bottom: 2px solid #DDDDDD; border-top:3px solid white; margin-top: 0px; padding-top: 40px;}
+
+
 

@@ -22,7 +22,7 @@
 
 <div id="especialidades"><div id="especialidadeTitulo"><h1>Especialidades</h1></div>
     <ul>
-        <li class="question1">acupuntura</li>
+        <li class="question1">acupuntura</a> </li>
         <li class="question2"> AUDIOLOGIA</li>
         <li class="question3"> CARDIOLOGIA</li>
         <li class="question4"> CIRURGIA GERAL </li>
@@ -120,7 +120,7 @@
                     <div class="inferiorCartaoMedico">
                         <h6>Especialidade: Pneumologia </h6> 
                         <h6>Área Clinica: Alergologia e Pneumologia</h6>
-                        <div class="btnMarcarConsulta">Marcar Consulta</div>
+                        <div class="btnMarcarConsulta"> <a href=""> Marcar Consulta </a> </div>
                     </div>
 
                 </div>
@@ -144,7 +144,7 @@
                     <div class="inferiorCartaoMedico">
                         <h6>Especialidade: Pneumologia </h6> 
                         <h6>Área Clinica: Alergologia e Pneumologia</h6>
-                        <div class="btnMarcarConsulta">Marcar Consulta</div>
+                        <div class="btnMarcarConsulta"><a href=""> Marcar Consulta </a></div>
                     </div>
 
                 </div>
