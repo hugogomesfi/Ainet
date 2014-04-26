@@ -525,7 +525,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 .titulo{margin-left: 5%;}
-#formulario{margin-left: 2%;height: 500px;}
+#formulario{margin-left: 2%;overflow: auto;}
 #formularioDireito{position: relative; padding: 2%;float: left;margin-left: 2%; border-radius: 5px;border: 1px solid gray;height: 475px; background-color: lightgray;}
 #corpoNoticia textarea{ height: 400px;}
 #corpoNoticia{width: 60%;float: left;}

@@ -1,6 +1,6 @@
 <?php $this->load->view('Head'); ?>
 
-
+<div id="contentor">
 <div class="noticias">
     <div class="noticiasEsq">
         <div class="noticeTitle">
@@ -94,7 +94,7 @@
 </div>
 
 
-
+</div>
 </div>
 
 <?php $this->load->view('foot_Site');
