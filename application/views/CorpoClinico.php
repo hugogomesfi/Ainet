@@ -227,6 +227,7 @@
                         <h6>Especialidade: Pneumologia </h6> 
                         <h6>Área Clinica: Alergologia e Pneumologia</h6>
                         <div class="btnMarcarConsulta"> <a href=""> Marcar Consulta </a> </div>
+                        <div class="btnHomeMedico"><a href="<?php echo site_url('/HomeMedico');?>"> Saiba Mais </a> </div>
                     </div>
 
                 </div>
@@ -251,6 +252,7 @@
                         <h6>Especialidade: Pneumologia </h6> 
                         <h6>Área Clinica: Alergologia e Pneumologia</h6>
                         <div class="btnMarcarConsulta"> <a href=""> Marcar Consulta </a> </div>
+                        <div class="btnHomeMedico"><a href="<?php echo site_url('/HomeMedico');?>"> Saiba Mais </a> </div>
                     </div>
 
                 </div>
@@ -276,6 +278,7 @@
                         <h6>Especialidade: Pneumologia </h6> 
                         <h6>Área Clinica: Alergologia e Pneumologia</h6>
                         <div class="btnMarcarConsulta"> <a href=""> Marcar Consulta </a> </div>
+                        <div class="btnHomeMedico"><a href="<?php echo site_url('/HomeMedico');?>"> Saiba Mais </a> </div>
                     </div>
 
                 </div>
