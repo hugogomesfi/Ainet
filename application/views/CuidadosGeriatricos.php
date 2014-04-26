@@ -70,7 +70,7 @@
     <section id="seccaoPagGer">
         <article id="artigoResidencial" class="aspecto">
             <p>A Residencial é o local ideal para quem pretende uma opção de repouso de cariz familiar, onde a personalidade de cada utente determina o atendimento dos diversos profissionais desta unidade. O edifício, localizado na Rua do Lis junto às instalações do Hospital Dom Manuel de Aguiar, proporciona aos seus utentes elevados padrões de qualidade ao nível dos serviços que presta.</p>
-            <input class="btnNoticias" type="button" value="Ir para Residencial" onclick="">
+            <input class="btnNoticias" type="button" value="Ir para Residencial" onclick="<?php echo site_url('/Saude/CorpoClinico');?>">
             
             <header>
                 <h3>Ultima Noticia</h3>

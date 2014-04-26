@@ -12,5 +12,9 @@ class CuidadosGeriatricos extends CI_Controller{
         //para formularios $this->load->helper(form);
          $this->load->helper('url');
     }
+    
+    public function residencial() {
+        $this->load->view('Residencial');
+    }
 }
 ?>
