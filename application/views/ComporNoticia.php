@@ -34,7 +34,7 @@
         
         <p>
             <label>Imagem</label>
-            <input type="file" value="aaa"/>    
+            <input type="file" />    
         </p>
         
         <p>
@@ -53,4 +53,4 @@
     
 </div>
 
-<?php  $this->load->view('foot_Site.html');?>
+<?php  $this->load->view('foot_Site');
