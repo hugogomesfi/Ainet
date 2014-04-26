@@ -40,7 +40,7 @@
 
 </div>
 
-<div>
+<div id="LerMaisNoticias">
     <a>Ler mais Noticias</a>
 </div>
 
