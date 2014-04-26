@@ -134,7 +134,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     height: 100%;
     list-style-type: none;
     margin-left: 1%;
-    align-items: center;
+/*    align-items: center;*/
 
 }
 #especialidades ul li{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -494,4 +494,18 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 .footLeft {
 
 }
+
+/*Cuidados Geriatricos*/
+
+#pagGeriatricos{  margin-bottom: 30px; margin-top: 60px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+#pagGeriatricos h3{margin-top: 100px; }
+.tab { border-bottom: 2px solid #CCC; margin: 40px; margin-bottom: 0px;  }
+.tab li{display: inline;  font-size: 14px; padding-top: 10px;}
+.tab a{ text-decoration: none; padding-right: 20px; padding-left: 20px; padding-top: 20px; }
+.activa{border-left: 2px solid #DDDDDD; border-right: 2px solid #DDDDDD; border-top: 2px solid #DDDDDD; border-bottom:3px solid white;}
+#artigoDomiciliario{visibility: hidden;}
+#artigoInternamento{visibility: hidden;}
+#artigoLar{visibility: hidden;}
+.aspecto{margin: 40px; font-size: 18px; background-color: #F5F5F5; padding: 20px; text-align: justify;}
+#seccaoPagGer article{border-left: 2px solid #DDDDDD; border-right: 2px solid #DDDDDD; border-bottom: 2px solid #DDDDDD; border-top:3px solid white; margin-top: 0px;}
 

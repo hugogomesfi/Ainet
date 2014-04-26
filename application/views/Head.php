@@ -205,7 +205,7 @@
                             </a>
                         </td>
                         <td>
-                              <a href="" >
+                              <a href='<?php echo site_url('/CuidadosGeriatricos/index')?> '>
                                   <img src="Styles/Images/seniors-icon.png" alt="cuidados geriatricos" class="imagemDoIcon"/>
                           <p>Cuidados Geriatricos</p>
                               </a>
