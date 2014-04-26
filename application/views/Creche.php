@@ -42,9 +42,10 @@
 
 </div>
 
-<div id="LerMaisNoticias">
-    <a href='<?php echo site_url('/NoticiaGrande')?> '>Ler mais Noticias</a>
-</div>
+
+    <input type="button" value="Ler mais Noticias" id="LerMaisNoticias" />
+
+
 <div>
        <section>
         <article id="info">
