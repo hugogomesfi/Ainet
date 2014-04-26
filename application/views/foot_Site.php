@@ -51,20 +51,6 @@
         </ul>
     </div>
 
-
-
-    <!--    <ul>
-            <li><a href=''><span>Principal</span></a></li>
-            <li><a href=''><span>Noticias</span></a></li>
-            <li><a href=''><span>Irmandade</span></a></li>
-            <li><a href=''><span>Corpo Clinico</span></a></li>
-            <li><a href=''><span>Especialidades</span></a></li>
-            <li><a href=''><span>Contactos</span></a></li>
-        </ul>
-        <div id="redesSociais">
-            <a href=""><img src="Styles/Images/google-icon.png" alt="google"/></a>
-            <a href=""><img src="Styles/Images/facebook-icon.png" alt="FACEBOOK"/></a>
-        </div>-->
 </div>
 </body>
 </html>
