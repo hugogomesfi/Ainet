@@ -11,6 +11,7 @@ class Contactos extends CI_Controller{
         parent::__construct();
         //para formularios $this->load->helper(form);
          $this->load->helper('url');
+         $this->load->helper('form');
+         $this->load->library('form_validation');
     }
 }
-?>
