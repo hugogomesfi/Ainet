@@ -6,6 +6,13 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <base href="<?php echo $this->config->item('base_url') ?>" />
         <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css"/>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
          <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
@@ -37,11 +44,57 @@
     </head>
 
     <body>
-        <nav id="navBar">
+        
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
+                <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+              </ul>
+            </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+<!--        <nav id="navBar">
        
            
             <div id="menuTopo"> 
-                <ul> 
+                <ul class="nav navbar-nav"> 
                     
                     <li class="noSub"> 
                         <a href="<?php echo site_url('/Home/index');?>">
@@ -119,7 +172,7 @@
                 </div> 
                 
                 <div id="login"> 
-<!--                    <ul>
+                    <ul>
                         <li id="mostraMenuLogin">
                             <span>Entrar</span>
                               
@@ -151,7 +204,7 @@
                             </div>
                             
                         </li>
-                    </ul>-->
+                    </ul>
                     
 <div id="mostraMenuLogin">
     <span>Entrar</span>
@@ -171,7 +224,7 @@
                 </div> 
                 
             </div>
-        </nav>
+        </nav>-->
         <div id="IconTopo"> 
             <!--        <img src="../../Styles/Images/image.png"alt="logotipo"></img>-->
         </div>
@@ -240,4 +293,7 @@
                 
                 
             </div>
-            
+        <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="Styles/js/bootstrap.min.js"></script>
+        
