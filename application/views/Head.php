@@ -2,7 +2,7 @@
 
 
     <head>
-        <title>Anaaa XHTML 1.0 Strict standard template</title>
+        <title>Santa Casa da Misericordia de Leiria</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <base href="<?php echo $this->config->item('base_url') ?>" />
         <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css"/>
