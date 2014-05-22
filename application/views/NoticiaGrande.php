@@ -68,10 +68,12 @@ Foi um dos fundadores do Instituto de Empreendedorismo Social e padrinho do proj
             <span>06/03/2014</span>
         </div>
         <div id="NGespecialidade">
-            <span>medico</span>
+<!--            vai precisar de link para a especialidade??-->
+            <span>Especialidade</span>
         </div>
+        <img id="caraMedico" src="Styles/Images/medico.png" alt="cara do medico"/>
         <div id="NGautor">
-            <span>ricardo francisco</span>
+            <a href='<?php echo site_url('/HomeMedico/index');?>'><span>ricardo francisco</span></a>     
         </div>
     </div>
     </div>
@@ -81,42 +83,42 @@ Foi um dos fundadores do Instituto de Empreendedorismo Social e padrinho do proj
         </header>
         <div id="noticiaRelacionadas">
             <div class="campoNoticiaLitle">
-                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
+                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"/>
                 <div id="titleNoticiaLitle">
                     <p>titulo da noticia</p>
                 </div>
             </div>
             
             <div class="campoNoticiaLitle">
-                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
+                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"/>
                 <div id="titleNoticiaLitle">
                     <p>titulo da noticia</p>
                 </div>
             </div>
             
             <div class="campoNoticiaLitle">
-                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
+                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"/>
                 <div id="titleNoticiaLitle">
                     <h4>titulo da noticia</h4>
                 </div>
             </div>
             
             <div class="campoNoticiaLitle">
-                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
+                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"/>
                 <div id="titleNoticiaLitle">
                     <h4>titulo da noticia</h4>
                 </div>
             </div>
             
                         <div class="campoNoticiaLitle">
-                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
+                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"/>
                 <div id="titleNoticiaLitle">
                     <h4>titulo da noticia</h4>
                 </div>
             </div>
             
             <div class="campoNoticiaLitle">
-                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"></img>
+                <img id="imgNoticiaLitle" src="Styles/Images/n_.jpg"/>
                 <div id="titleNoticiaLitle">
                     <h4>titulo da noticia</h4>
                 </div>

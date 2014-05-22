@@ -70,12 +70,13 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-#IconTopo{float: left; position: relative;height: 100%;width: 10%;} 
-#IconTopo img{padding-left: 4%; padding-top: 1%; width: 150px; height: 150px; z-index: 999; position: absolute; }
+#IconTopo{position: relative;height: 150px;width: 100%; background-color: white;  opacity: 0.9;} 
+#IconTopo blockquote{margin-left: 45%;padding-top: 5%; }
+#IconTopo img{margin-left: 30%;  width: 150px; height: 150px; z-index: 999; position: absolute; }
 
 
 
-#conteudoCentro{padding-bottom: 0;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888;margin-top: 100px; background-color: white; min-width: 1000px;margin-left: 10%; margin-right: 10%;}
+#conteudoCentro{padding-bottom: 0;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888; background-color: #E9EAED; min-width: 1000px;margin-left: 10%; margin-right: 10%;}
 #conteudoFundo{position: relative;bottom: 0;background-image: url(Images/navy_blue.png); min-height: 150px;text-align: center;padding-top: 20px;}
 
 
@@ -503,6 +504,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
                     margin: auto;
 }
 
+#caraMedico{width: 100px; height: 100px;}
 
 #titleNoticiaLitle:hover{
     /*                -moz-transform: rotate(360deg);
@@ -564,7 +566,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 .formItem{margin: 1px;text-align: left;padding: 4px;}
 
 
-#imgfundo{width: 100%;height: 450px;}
+#imgfundo{width: 100% !important;height: 300px !important; float: right !important; margin-top: 0 !important;}
 #tabelaimagem td{padding: 10px;width: 227px;}
 
 #tabelaimagem{padding-left: 20px;width: 100%;height: 500px;background-repeat: no-repeat;background-size: 100%; }
