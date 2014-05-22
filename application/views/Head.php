@@ -6,66 +6,68 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <base href="<?php echo $this->config->item('base_url') ?>" />
         <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css"/>
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+   
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
 
-    <body>
+         
+                     
+   $(document).ready(function (){
+      
+       
+       $("#submenuLogin").hide(); 
+       
+                $("#mostraMenuLogin").click(function (event){
+                    //$(this).parent().children("ul").toggle();
+                    $submenu=$("#submenuLogin");
+                    if($submenu.is(":visible")){
+                        $submenu.slideUp();
+                    }else{
+                        $submenu.slideDown();
+                    }
+                   
+                });
+    });
+          
+            
+           
+        </script>
         
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                
-            </div>
+    </head>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#services">Services</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li class="dropdown user-dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
-                <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
-                <li class="divider"></li>
-                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
-              </ul>
-            </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <body>
+       
+       
+<!--              <div id="mostraMenuLogin">
+                    <span>Entrar</span>
+                </div>
+                <div id="submenuLogin">
+                    <?php echo form_open('verifylogin'); ?>
+                    <h2 class="form-signin-heading">Please sign in</h2>
+                    <input type="email" autofocus="" name="email"  placeholder="Email address" class="form-control" value="<?php echo set_value('email'); ?>">
+                    <div class="error" style="color: red;"><?php echo form_error('email'); ?></div>
+                    <input type="password" name="passwd" placeholder="Password" class="form-control">
+                    <div class="error" style="color: red;"><?php echo form_error('passwd'); ?></div>
+                    <label class="checkbox">
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                    <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+                    <?php echo form_close('verifylogin'); ?>
+
+                </div>
         </div>
-        <!-- /.container -->
-    </nav>
+
+</nav>-->
+        
     
-<!--        <nav id="navBar">
+    <!--
+        <nav id="navBar">
        
            
             <div id="menuTopo"> 
@@ -200,8 +202,8 @@
                 
             </div>
         </nav>-->
-        <div id="IconTopo"> 
-            <!--        <img src="../../Styles/Images/image.png"alt="logotipo"></img>-->
+         <!-- <div id="IconTopo"> 
+                  <img src="../../Styles/Images/image.png"alt="logotipo"></img>
         </div>
         
            
@@ -308,12 +310,68 @@
                                             </div>
                                             
                                         </li>
-                                    </ul>-->
+                                    </ul>
+                
+                 </div> 
 
-                <div id="mostraMenuLogin">
-                    <span>Entrar</span>
-                </div>
-                <div id="submenuLogin">
+        </div>
+    </nav>-->
+
+               
+
+           
+    
+
+
+
+
+
+
+
+    <div id="conteudoCentro" >
+
+        <div class="navbar navbar-default">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Santa Casa</a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Irmandade</a></li>
+      <li><a href="#">Noticias</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Saude <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Corpo Clinico</a></li>
+          <li><a href="#">Especialidades</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">Dropdown header</li>
+          <li><a href="#">Consultas</a></li>
+          <li><a href="#">One more separated link</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Creche</a></li>
+      <li><a href="#">Cuidados geriatricos</a></li>
+      <li><a href="#">Contactos</a></li>
+    </ul>
+      <form class="navbar-form navbar-left" style="width: 250px;">
+      <input class="form-control col-lg-8" placeholder="Search" type="text">
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle glyphicon glyphicon-user" data-toggle="dropdown"> Entrar <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+<!--          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>-->
+<li style="padding:30px; height: 350px;width: 350px !important;float: right;background-color: #cccccc;opacity: 0.9; border-bottom-right-radius:5px;border-bottom-left-radius:5px;">
                     <?php echo form_open('verifylogin'); ?>
                     <h2 class="form-signin-heading">Please sign in</h2>
                     <input type="email" autofocus="" name="email"  placeholder="Email address" class="form-control" value="<?php echo set_value('email'); ?>">
@@ -325,29 +383,16 @@
                     </label>
                     <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
                     <?php echo form_close('verifylogin'); ?>
-
-                </div>
-
-            </div> 
-
-        </div>
-    </nav>
-    <div id="IconTopo"> 
-        <!--        <img src="../../Styles/Images/image.png"alt="logotipo"></img>-->
-    </div>
+                    </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
 
 
 
-
-
-
-
-    <div id="conteudoCentro" >
-
-
-
-
-        <div id="imagemFundo">
+<!--        <div id="imagemFundo">
 
             <img src="Styles/Images/santa_casa.svg" alt="Logotipo da SCML"/>
             <table id="tabela">
@@ -400,8 +445,7 @@
               
                 
                 
-            </div>
-        <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="Styles/js/bootstrap.min.js"></script>
+            </div>-->
+      
+    
         
