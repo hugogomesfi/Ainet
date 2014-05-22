@@ -6,7 +6,7 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <base href="<?php echo $this->config->item('base_url') ?>" />
         <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css"/>
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="Styles/css/bootstrap.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -325,23 +325,24 @@
 
 
 
-
-
+                
+                
 
     <div id="conteudoCentro" >
 
-        <div class="navbar navbar-default">
+        
+        <div class="navbar navbar-default" style="background-color: #44619D" >
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Santa Casa</a>
+    <a class="navbar-brand active" href="#">Santa Casa</a>
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Irmandade</a></li>
+      <li><a href="#">Irmandade</a></li>
       <li><a href="#">Noticias</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Saude <b class="caret"></b></a>
@@ -358,7 +359,7 @@
       <li><a href="#">Cuidados geriatricos</a></li>
       <li><a href="#">Contactos</a></li>
     </ul>
-      <form class="navbar-form navbar-left" style="width: 250px;">
+      <form class="navbar-form navbar-left" style="width: 100px;">
       <input class="form-control col-lg-8" placeholder="Search" type="text">
     </form>
     <ul class="nav navbar-nav navbar-right">
