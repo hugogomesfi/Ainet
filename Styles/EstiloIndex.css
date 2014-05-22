@@ -56,7 +56,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-#submenuLogin {height: 400px;width: 350px !important;float: right;background-image: url(Images/noisy_net.png);opacity: 0.9; }
+#submenuLogin {padding:30px; height: 350px;width: 350px !important;float: right;background-color: #cccccc;opacity: 0.9; border-bottom-right-radius:5px;border-bottom-left-radius:5px;}
 /*#login ul li:hover ul {visibility: visible;}
 #submenuLogin{visibility: hidden;}*/
 #mostraMenuLogin{height: 35px;margin-top: 10px;margin-bottom: 5px;}
