@@ -22,28 +22,28 @@
         $("#artigoLar").hide();
         $("#artigoDomiciliario").hide();
         $("#artigoInternamento").hide();
-        $("#artigoResidencial").show();
+        $("#artigoResidencial").delay( 200 ).slideDown( 800 ).show(0);
     }
 
     function mudalLar() {
-        $("#artigoLar").show();
         $("#artigoDomiciliario").hide();
         $("#artigoInternamento").hide();
         $("#artigoResidencial").hide();
+        $("#artigoLar").delay( 200 ).slideDown( 800 ).show(0);
     }
 
     function mudaInternamento() {
         $("#artigoLar").hide();
         $("#artigoDomiciliario").hide();
-        $("#artigoInternamento").show();
         $("#artigoResidencial").hide();
+        $("#artigoInternamento").delay( 200 ).slideDown( 800 ).show(0);
     }
 
     function mudaDomiciliario() {
-        $("#artigoLar").hide();
-        $("#artigoDomiciliario").show();
+        $("#artigoLar").hide()
         $("#artigoInternamento").hide();
         $("#artigoResidencial").hide();
+        $("#artigoDomiciliario").delay( 200 ).slideDown( 800 ).show(0);
     }
 
 </script>

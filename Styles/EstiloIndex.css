@@ -508,6 +508,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
                     margin: auto;
 }
 
+#caraMedico{width: 100px; height: 100px;}
 
 #titleNoticiaLitle:hover{
     /*                -moz-transform: rotate(360deg);
