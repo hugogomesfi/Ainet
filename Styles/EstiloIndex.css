@@ -201,14 +201,9 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     float: left; 
     margin-left: 40px;
     width: 40%;
-
-
 }
+
 .cartaoMedico{
-
-    background-image: url(Images/geometry.png);
-
-    border: 1px solid #D8D8D8;
     border-radius: 5px;
     position: relative;
     margin-top: 15px;
@@ -252,7 +247,8 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 }
 /*butao marcar consulta*/
 .btnMarcarConsulta{
-    float: left;
+    float: right;
+    margin-right: 10px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     position: relative;
     border-radius: 5px;
@@ -260,7 +256,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     text-align: center;
     font-size: 8px;
     background: #3E8CD2;
-    color: white;
+    color: blue;
     border: 0px none;
     outline: 0px none;
     width: 100px;
@@ -268,7 +264,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     vertical-align: middle;
     display:table-cell;
 }
-.btnMarcarConsulta a{
+/*.btnMarcarConsulta a{
     color: white;
     text-decoration: none;
 }
@@ -280,7 +276,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 .btnMarcarConsulta:active {
     background: #F6A953;
-}
+}*/
 
 .cartaoProtocolo{
 

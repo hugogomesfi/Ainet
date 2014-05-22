@@ -52,9 +52,9 @@
         <li class="question28"><a id="link">ELETROMIOGRAFIA</a></li>
     </ul>
     <div id="especialidadeCorpo">
-        
-       
-        
+
+
+
         <div id="answer1" ><div class="textoAnswer"><header> <h2>Acupuntura</h2> </header>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis sem id auctor vulputate. Proin molestie eros nulla, sit amet sollicitudin risus aliquet quis. Etiam vestibulum egestas nunc, id ornare est aliquet eget. Etiam quis turpis justo. Pellentesque quis porttitor ligula. Aliquam eu odio dapibus, gravida lacus ac, rhoncus lacus. Donec sem leo, blandit sed sagittis tristique, convallis vel augue. Fusce rhoncus sagittis ligula placerat tempor.
@@ -102,52 +102,50 @@
                 <!--div com toda a infor do medico cartaoMedico-->
                 <h5>PROFISSIONAIS</h5>
                 <div class="cartaoMedico">
-
-                    <div class="parteCimaCartaoMedico">
-
-                        <div class="cantoEsquerdoCartaoMedico">
-                            <img src="Styles/Images/medico.png" alt="foto do medico"/>
-                        </div>
-
-                        <div class="cantoSupDireitoCartaoMedico">
-
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="cantoEsquerdoCartaoMedico">
+                                <img src="Styles/Images/medico.png" alt="fotoMedico" class="img-rounded">
+                            </div>
                             <h6>Nome Medico</h6> 
                             <h6>Telefone: 222222222</h6>
-
+                        </div>
+                        <div class="panel-body">
+                            <div class="inferiorCartaoMedico">
+                                <h6>Especialidade: Pneumologia </h6> 
+                                <h6>Área Clinica: Alergologia e Pneumologia</h6>
+        
+                                <div class="btnMarcarConsulta"><p><a class="btn btn-default btn-sm" role="button">Marcar Consulta</a></p></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="inferiorCartaoMedico">
-                        <h6>Especialidade: Pneumologia </h6> 
-                        <h6>Área Clinica: Alergologia e Pneumologia</h6>
-                        <div class="btnMarcarConsulta"> <a href=""> Marcar Consulta </a> </div>
-                    </div>
 
                 </div>
 
-                <div class="cartaoMedico">
-
-                    <div class="parteCimaCartaoMedico">
-
-                        <div class="cantoEsquerdoCartaoMedico">
-                            <img src="Styles/Images/medico.png" alt="imagem do medico"/>
-                        </div>
-
-                        <div class="cantoSupDireitoCartaoMedico">
-
+                
+                                <div class="cartaoMedico">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="cantoEsquerdoCartaoMedico">
+                                <img src="Styles/Images/medico.png" alt="fotoMedico" class="img-rounded">
+                            </div>
                             <h6>Nome Medico</h6> 
                             <h6>Telefone: 222222222</h6>
-
+                        </div>
+                        <div class="panel-body">
+                            <div class="inferiorCartaoMedico">
+                                <h6>Especialidade: Pneumologia </h6> 
+                                <h6>Área Clinica: Alergologia e Pneumologia</h6>
+        
+                                <div class="btnMarcarConsulta"><p><a class="btn btn-default btn-sm" role="button">Marcar Consulta</a></p></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="inferiorCartaoMedico">
-                        <h6>Especialidade: Pneumologia </h6> 
-                        <h6>Área Clinica: Alergologia e Pneumologia</h6>
-                        <div class="btnMarcarConsulta"><a href=""> Marcar Consulta </a></div>
-                    </div>
 
                 </div>
+
                 <h5>PROTOCOLOS</h5>
                 <div class="cartaoProtocolo">
                     <div class="cantoEsquerdoCartaoProtocolo">
@@ -157,8 +155,8 @@
                         <h4>Nome da Entidade</h4>   
                     </div>
                 </div>
-                
-                               <div class="cartaoProtocolo">
+
+                <div class="cartaoProtocolo">
                     <div class="cantoEsquerdoCartaoProtocolo">
                         <!--<img src="Styles/Images/medico.png"/>-->
                     </div>
@@ -166,7 +164,7 @@
                         <h4>Nome da Entidade</h4>   
                     </div>
                 </div>
-                
+
 
             </div>
         </div>
@@ -205,4 +203,6 @@
 </div>
 
 
-<?php $this->load->view('foot_Site');
+<?php
+
+$this->load->view('foot_Site');

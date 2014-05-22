@@ -5,7 +5,7 @@
     <title>Santa Casa da Misericordia de Leiria</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <base href="<?php echo $this->config->item('base_url') ?>" />
-    <!--<link href="Styles/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="Styles/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
