@@ -72,8 +72,12 @@
 </script>
 
 
-
-<img id="imgfundo" src="Styles/Images/imgfundo2.jpg" alt="imagem principal de fundo"/>
+<div id="IconTopo"> 
+        <!--        <img src="../../Styles/Images/image.png"alt="logotipo"></img>-->
+        <img src="Styles/Images/santa_casa.svg" alt="Logotipo da SCML"/>
+        <h2>O Saber da Experiencia</h2>
+    </div>
+<img id="imgfundo" src="Styles/Images/imgfundo2.jpg" alt="imagem principal de fundo"></img>
 
 
 <div id="publicacaoMedicos">
