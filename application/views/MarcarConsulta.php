@@ -63,9 +63,6 @@
 
 
                 <div class="formItem" >
-                    <?php
-                    //var_dump($dados);
-                    ?>
                     <label>Especialidade:</label>
 
                     <select id="especialidade"  class="caixaTexto">

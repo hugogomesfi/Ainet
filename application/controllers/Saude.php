@@ -13,6 +13,8 @@ class Saude extends CI_Controller{
 
 
     public function especialidades() {
+         $this->load->model('consulta_model');
+        $data['dados'] = $this->consulta_model->getEspecialidade();
         $data['view'] = 'Especialidades';
         $this->load->view('includes/template', $data);
     }
@@ -26,7 +28,6 @@ class Saude extends CI_Controller{
         $this->load->model('consulta_model');
         $data['dados'] = $this->consulta_model->getEspecialidade();
         $data['view'] = 'MarcarConsulta';
-       
         $this->load->view('includes/template',$data);
         
     }

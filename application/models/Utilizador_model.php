@@ -9,8 +9,9 @@ class Utilizador_model extends CI_Model {
     public function autenticacao() {
 
     	$email = $this->input->post('email');
-    	$password = hash('sha256',$this->input->post('password'));
-
+    	$password = hash('sha512',$this->input->post('password'));
+            var_dump($password);
+            die();
 
         $this->db->where('email', $email);
         $this->db->where('hashed_password', $password);

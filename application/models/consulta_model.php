@@ -8,7 +8,9 @@ class Consulta_model extends CI_Model {
     public function getEspecialidade(){
         $query = $this->db->query("
                 SELECT *
-                FROM `clinical_specialty` ");
+                FROM `clinical_specialty`
+                ORDER BY name;
+                ");
         $query = $query->result_array();
         
         return $query;
