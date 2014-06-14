@@ -77,7 +77,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 #conteudoCentro{padding-bottom: 0;position: relative;margin-bottom: 50px; border-radius: 15px;box-shadow: 0px 10px 40px 2px #888888; background-color: #E9EAED; min-width: 1000px;margin-left: 10%; margin-right: 10%;}
-#conteudoFundo{position: relative;bottom: 0;background-image: url(Images/navy_blue.png); min-height: 150px;text-align: center;padding-top: 20px;}
+#conteudoFundo{position: relative;bottom: 0;background-color:#428BCA ; min-height: 150px;text-align: center;padding-top: 20px;}
 
 
 #conteudoFundo a{text-decoration: none; color: white;}
@@ -92,7 +92,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #imagemFundo img{width: 300px;float: left;}
 #imagemFundo{border-bottom: 1px solid #DDDDDD; margin-bottom: 2px;}
 .imagemDoIcon{width: 100px;}
-
+.imagemDoIcon ul li{margin-bottom: 50px;}
 
 
 
@@ -248,6 +248,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 }
 /*butao marcar consulta*/
 .btnMarcarConsulta{
+    
     float: right;
     margin-right: 10px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -264,6 +265,13 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     height: 25px;
     vertical-align: middle;
     display:table-cell;
+}
+.btnMarcarConsulta:hover {
+    background: #2aabd2;
+
+}
+.btnMarcarConsulta:active {
+    background: #8CC474;
 }
 /*.btnMarcarConsulta a{
     color: white;
@@ -523,16 +531,16 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 .titulo{margin-left: 5%;}
-#formulario{margin-left: 2%;overflow: auto;}
+#formulario{margin-left: 2%;overflow: auto;padding-bottom: 2%;}
 #formularioDireito{position: relative; padding: 2%;float: left;margin-left: 2%; border-radius: 5px;border: 1px solid gray;height: 475px; background-color: lightgray;}
 #corpoNoticia textarea{ height: 400px;}
-#corpoNoticia{width: 60%;float: left;}
+#corpoNoticia{width: 60%;float: left;overflow: auto}
 #publicar{ position: absolute;background-color: red; bottom: 10%;right: 10%;}
 
 
 
-
-#contentor{position: relative; padding: 2%;text-align: center;overflow: auto;}
+#homeMedico{position: relative;overflow: auto;}
+#contentor{position: relative; padding: 2%;text-align: center;min-height:500px;}
 
 #container1{width: 100%;height: 196px;margin-bottom: 2%;}
 #container2{width: 100%; clear: right;height: 196px;}
@@ -542,9 +550,9 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #fotomedico{width: 40%; height: 93px; margin-top: 5px; margin-left: 0;}
 #InformacaoPessoalMedico{background-color: white; width: 24%; float: left;min-height: 500px; margin-right: 1%;}
 #NoticiasPessoalMedico{width: 50%; float: left;}
-#EspecialidadesPessoalMedico{min-height: 350px;float: left; background-color: white; width:23%; margin-left: 1%;border: 1px solid gray;}
+#EspecialidadesPessoalMedico{min-height: 350px;float: left; background-color: white; width:23%; margin-left: 1%;}
 #EspecialidadesPessoalMedico h4{background-color: lightgray;}
-.noticiaPessoal{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; height: 100px; border: 1px solid gray; background-color: white; margin-bottom: 5px;position: relative;}
+.noticiaPessoal{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; height: 100px; background-color: white; margin-bottom: 5px;position: relative;margin-bottom: 10px;}
 #InformacaoPessoalMedico img{ }
 #mapaGoogle{width: 100%;height: 400px;background-color: #CCC;margin-bottom: 20px;}
 
@@ -553,7 +561,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 .noticiaPessoal h5 {margin-bottom: 10px;}
 
 
-#formSection{border-radius: 10px; margin: 1px 100px;padding:0 60px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; background-color: #FFFFFF ; height: 630px;}
+#formSection{border-radius: 10px; margin: 1px 100px;padding:0 60px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; background-color: #FFFFFF ; overflow: auto;}
 #formSection label{display: inline-block; width: 150px;margin-left: 5px; color: #333;}
 #formSection fieldset{border: none;padding: 20px; margin-top: 50px;overflow: auto;}
 #formSection fieldset legend{
@@ -601,3 +609,10 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
 
 #DiasConsultasPessoalMedico{border: 1px solid #CCCCCC;}
+
+
+#autenticacao {
+    text-align: left;
+    overflow: auto;
+}
+

@@ -2,16 +2,13 @@
 
 class Contactos extends CI_Controller{
     
-    public function index() {
-       
-        $this->load->view('Contactos');
+    public function __construct() {
+        parent::__construct(); 
     }
     
-    function __construct() {
-        parent::__construct();
-        //para formularios $this->load->helper(form);
-         $this->load->helper('url');
-         $this->load->helper('form');
-         $this->load->library('form_validation');
+    public function index() {
+        $data['view'] = 'Contactos';
+        $this->load->view('includes/template', $data);
     }
+
 }

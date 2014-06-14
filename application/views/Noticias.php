@@ -1,100 +1,47 @@
-<?php $this->load->view('Head'); ?>
-
 <div id="contentor">
-<div class="noticias">
-    <div class="noticiasEsq">
-        <div class="noticeTitle">
-            <h4>Ambulância avariou a caminho de hospital</h4>
-        </div>
-        <a href="<?php echo site_url('/NoticiaGrande/index');?>">
-            <img src="Styles/Images/n_.jpg" alt="imagem de noticia"/>
-        </a>
-        <div class="noticeDate">
-            <span>05/04/2014</span>
-        </div>
-    </div>
+    
+   
+<?php
 
-    <div class="noticiasDir">
-        <div class="noticeSpecialidade">
-            <h6>Ginecologia</h6>
-            <div class="linhaHugo"></div>
-        </div>
-        <div class="noticeText">
-            <span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines detectou um sinal rádio com uma frequência de 37.5kHz por segundo - a mesma que teriam as caixas negras da aeronave. No entanto, não há ainda confirmação se este sinal estará relacionado com o avião despaarecido há quatro semanas quando voava de Kuala Lumpur para Pequim.</span>
-        </div>
-        <div class="noticeAuthor">
-            <span>Dr Manel Da Costa</span>
-           
-            <input class="btnNoticias" type="button" onclick='<?php echo site_url('/NoticiaGrande/index');?>' value="Ler mais" />
-            
-        </div>
-    </div>
-</div>
+foreach ($dados as $value) {
+    
 
 
+echo "<div class=\"noticias\">\n"; 
+echo "    <div class=\"noticiasEsq\">\n"; 
+echo "        <div class=\"noticeTitle\">\n"; 
+echo "            <h4> ".$value['title']."      </h4>\n"; 
+echo "        </div>\n"; 
+echo "        <a href=\"<?php echo site_url('/NoticiaGrande/index');?>\">\n"; 
+echo "            <img src=\"Styles/Images/n_.jpg\" alt=\"imagem de noticia\"/>\n"; 
+echo "        </a>\n"; 
+echo "        <div class=\"noticeDate\">\n"; 
+echo "            <span> ".$value['date']." </span>\n"; 
+echo "        </div>\n"; 
+echo "    </div>\n"; 
+echo "\n"; 
+echo "    <div class=\"noticiasDir\">\n"; 
+echo "        <div class=\"noticeSpecialidade\">\n"; 
+echo "            <h6>Ginecologia</h6>\n"; 
+echo "            <div class=\"linhaHugo\"></div>\n"; 
+echo "        </div>\n"; 
+echo "        <div class=\"noticeText\">\n"; 
+echo "            <span>  ".$value['abstract']."  </span>\n"; 
+echo "        </div>\n"; 
+echo "        <div class=\"noticeAuthor\">\n"; 
+echo "            <span>".$value['name']."</span>\n"; 
+echo "           \n"; 
+echo "            <input class=\"btnNoticias\" type=\"button\" onclick='<?php echo site_url('/NoticiaGrande/index');?>' value=\"Ler mais\" />\n"; 
+echo "            \n"; 
+echo "        </div>\n"; 
+echo "    </div>\n"; 
+echo "</div>\n";
+}
 
-<div class="noticias">
-    <div class="noticiasEsq">
-        <div class="noticeTitle">
-            <h4>Ambulância avariou a caminho de hospital</h4>
-        </div>
-        <a href=" " >
-            <img src="Styles/Images/n_.jpg" alt="imagem de noticia" />
-        </a>
-        <div class="noticeDate">
-            <span>05/04/2014</span>
-        </div>
-    </div>
+?>
 
-    <div class="noticiasDir">
-        <div class="noticeSpecialidade">
-            <h6>Ginecologia</h6>
-            <div class="linhaHugo"></div>
-        </div>
-        <div class="noticeText">
-            <span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines detectou um sinal rádio com uma frequência de 37.5kHz por segundo - a mesma que teriam as caixas negras da aeronave. No entanto, não há ainda confirmação se este sinal estará relacionado com o avião despaarecido há quatro semanas quando voava de Kuala Lumpur para Pequim.</span>
-        </div>
-        <div class="noticeAuthor">
-            <span>Dr Manel Da Costa</span>
-            
-            <input class="btnNoticias" type="button" onclick="<?php echo site_url('/NoticiaGrande/index');?>" value="Ler mais" />
-           
-        </div>
-    </div>
-</div>
 
-<div class="noticias">
-    <div class="noticiasEsq">
-        <div class="noticeTitle">
-            <h4>Ambulância avariou a caminho de hospital </h4>
-        </div>
-        <a href=" " >
-            <img src="Styles/Images/n_.jpg" alt="imagem de noticia" />
-        </a>
-        <div class="noticeDate">
-            <span>05/04/2014</span>
-        </div>
-    </div>
 
-    <div class="noticiasDir">
-        <div class="noticeSpecialidade">
-            <h6>Ginecologia</h6>
-            <div class="linhaHugo"></div>
-        </div>
-        <div class="noticeText">
-            <span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines detectou um sinal rádio com uma frequência de 37.5kHz por segundo - a mesma que teriam as caixas negras da aeronave. No entanto, não há ainda confirmação se este sinal estará relacionado com o avião despaarecido há quatro semanas quando voava de Kuala Lumpur para Pequim.</span>
-        </div>
-        <div class="noticeAuthor">
-            <span>Dr Manel Da Costa</span>
-           
-            <input class="btnNoticias" type="button" onclick="<?php echo site_url('/NoticiaGrande/index');?>" value="Ler mais" />
-            
-        </div>
-    </div>
-</div>
 
 
 </div>
-</div>
-
-<?php $this->load->view('foot_Site');

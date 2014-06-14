@@ -1,7 +1,5 @@
+</div>
 <div id="conteudoFundo">
-
-
-
     <div id="parteCimaFoot">
         <div id="footLeft">
             <ul>
@@ -21,7 +19,6 @@
                 <li> 2410 Leiria </li>
                 <li><p> <a href=""> Contactos </a> </p> </li> 
             </ul>
-
         </div>
         <div id="footRight">
             <ul>
@@ -33,16 +30,13 @@
                 <li>Internacional </li>
                
             </ul>
-                    <div id="redesSociais">
-                        <p>Siga-nos </p>
-            <a href=""><img src="Styles/Images/google-icon.png" alt="google"/></a>
-            <a href=""><img src="Styles/Images/facebook-icon.png" alt="FACEBOOK"/></a>
-        </div>
-           
-            
+            <div id="redesSociais">
+                <p>Siga-nos </p>
+                <a href=""><img src="Styles/Images/google-icon.png" alt="google"/></a>
+                <a href=""><img src="Styles/Images/facebook-icon.png" alt="FACEBOOK"/></a>
+            </div>
         </div>
     </div>
-
     <div id="parteBaixoFoot">
         <ul>
             <li><a href=""> Avisos Legais </a> | <a href=""> Política de Privacidade </a></li>
@@ -50,7 +44,6 @@
             
         </ul>
     </div>
-
 </div>
 </body>
 </html>

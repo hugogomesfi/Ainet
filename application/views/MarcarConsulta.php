@@ -1,5 +1,3 @@
-<?php $this->load->view('Head'); ?>
-
 <h1 class="titulo">Marcar Consulta</h1>
 
 <div id="contentor">
@@ -49,7 +47,7 @@
 
                 <div class="formItem">
                     <label>Telefone:</label>
-                    <input type="number" class="caixaTexto" placeholder="Insira o seu numero de telefone" required />
+                    <input pattern="[789][0-9]{9}"  type="tel" class="caixaTexto" placeholder="Insira o seu numero de telefone" required />
                 </div>
 
 
@@ -65,12 +63,31 @@
 
 
                 <div class="formItem" >
+                    <?php
+                    //var_dump($dados);
+                    ?>
                     <label>Especialidade:</label>
-                    <input type="text" class="caixaTexto" placeholder="Indique a especialidade que pretende" required />
+
+                    <select id="especialidade"  class="caixaTexto">
+                        <?php
+                        foreach ($dados as $each) {
+                            ?>
+                            <option value="<?php echo($each['name']); ?>"> <?php echo($each['name']); ?></option>
+                            <?php
+                        }
+                        ?>
+                    </select>
                 </div>
                 <div class="formItem">
                     <label>Medico:</label>
-                    <input type="text" class="caixaTexto" placeholder="Indique um medico (opcional)" />
+                    <input list="medicos" class="caixaTexto" placeholder="Indique um medico (opcional)">
+                    <datalist id="medicos">
+                        <option value="DR Joao">
+                        <option value="Dr antonio">
+                        <option value="Dr augusto">
+                        <option value="Dra Maria">
+                        <option value="Dra antonia">
+                    </datalist>
                 </div>
                 <div class="formItem">
                     <label>Data:</label>
@@ -98,7 +115,3 @@
 
 
 </div>
-</div>
-
-<?php
-$this->load->view('foot_Site');

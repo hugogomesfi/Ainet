@@ -2,22 +2,33 @@
 
 class Saude extends CI_Controller{
     
+    public function __construct() {
+        parent::__construct(); 
+    }
+    
     public function index() {
-       // $this->load->helper('url');
-       // $this->load->view('Noticias');
+        $data['view'] = '...';
+        $this->load->view('includes/template', $data);
     }
-   function __construct() {
-        parent::__construct();
-        //para formularios $this->load->helper(form);
-         $this->load->helper('url');
-         $this->load->helper('form');
-         $this->load->library('form_validation');
-    }
+
+
     public function especialidades() {
-        $this->load->view('Especialidades');
+        $data['view'] = 'Especialidades';
+        $this->load->view('includes/template', $data);
     }
-     public function corpoClinico() {
-        $this->load->view('CorpoClinico');
+
+    public function corpoClinico() {
+        $data['view'] = 'CorpoClinico';
+        $this->load->view('includes/template', $data);
     }
+
+    public function Consultas() {
+        $this->load->model('consulta_model');
+        $data['dados'] = $this->consulta_model->getEspecialidade();
+        $data['view'] = 'MarcarConsulta';
+       
+        $this->load->view('includes/template',$data);
+        
+    }
+
 }
-?>

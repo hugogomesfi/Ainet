@@ -1,50 +1,10 @@
-<?php $this->load->view('Head'); ?>
-
-
-
-<!--<script> 
-$(document).ready(function(){
-  $("#noticiaRelacionadasTitle").hover(function(){
-    $(this).slideUp(){
-      left:'250px',
-      
-   });
- });
-  , function (){
-      $(this).slideDown()({
-      left:'250px',
-      
-    });
-  });
-});</script>-->
-
-<!--<script> 
-$(document).ready(function(){
-    
-  $("#titleBnoticia").hover(
-          function(){
-             $("#titleBnoticia").css({font: 25px 'Trebuchet MS';});  
-         },
-          function (){
-             $("#titleBnoticia").css({font: 15px 'Trebuchet MS';}); 
-          }  
-        
-        
-    
-   );
- });
-
-</script>-->
-
-
-
 <div id="noticiaGrande">
     <div id="noticiaGesq">
         <div id="titleBnoticia">
             <h2>
                 TITULOOOOOOO
             </h2>
-    </div>
+        </div>
     <div id="noticiaGimg">
         <img id="imgNoticiaBig" src="Styles/Images/n_.jpg"></img> 
     </div>
@@ -63,19 +23,18 @@ Foi um dos fundadores do Instituto de Empreendedorismo Social e padrinho do proj
     
     
     </div>
-    <div id="noticiaGdata_autor">
-        <div id="NGdata">
-            <span>06/03/2014</span>
+        <div id="noticiaGdata_autor">
+            <div id="NGdata">
+                <span>06/03/2014</span>
+            </div>
+            <div id="NGespecialidade">
+                <span>Especialidade</span>
+            </div>
+            <img id="caraMedico" src="Styles/Images/medico.png" alt="cara do medico"/>
+            <div id="NGautor">
+                <a href='<?php echo site_url('/HomeMedico/index');?>'><span>ricardo francisco</span></a>     
+            </div>
         </div>
-        <div id="NGespecialidade">
-<!--            vai precisar de link para a especialidade??-->
-            <span>Especialidade</span>
-        </div>
-        <img id="caraMedico" src="Styles/Images/medico.png" alt="cara do medico"/>
-        <div id="NGautor">
-            <a href='<?php echo site_url('/HomeMedico/index');?>'><span>ricardo francisco</span></a>     
-        </div>
-    </div>
     </div>
     <div id="noticiaGdir">
         <header id="noticiaRelacionadasTitle">
@@ -128,25 +87,3 @@ Foi um dos fundadores do Instituto de Empreendedorismo Social e padrinho do proj
       
     
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-<?php $this->load->view('foot_Site'); 

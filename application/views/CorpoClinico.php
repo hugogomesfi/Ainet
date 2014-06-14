@@ -1,5 +1,3 @@
-<?php $this->load->view('Head'); ?>
-
 <script type="text/javascript">
 
 
@@ -289,7 +287,3 @@
 
     </div>
 </div>
-</div>
-
-
-<?php $this->load->view('foot_Site');

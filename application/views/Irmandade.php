@@ -1,5 +1,3 @@
-<?php $this->load->view('Head'); ?>
-
 <div class="tituloCrecheIrmandade"><h1>Irmandade</h1></div>
 
 <div id="publicacaoMedicos">
@@ -51,6 +49,3 @@
         </article>
     </section>
 </div>
-
-</div>
-<?php $this->load->view('foot_Site');
