@@ -5,16 +5,20 @@ class Noticias extends CI_Controller{
     public function __construct() {
         parent::__construct(); 
         $this->load->library('form_validation');
+        $this->load->helper("url");
+        $this->load->model("Noticia_model");
+        
         
     }
     
     public function index() {
         $this->load->library("pagination");
-        $this->load->model('Noticia_model');
+        
          $config = array();
-        $config["base_url"] = "http://localhost/ainet201314/index.php/Noticias";
+         	
+        $config["base_url"] = base_url() ."Noticias/";
         $config["total_rows"] = $this->Noticia_model->getNumerodeNoticias();
-        $config["per_page"] = 1;
+        $config["per_page"] = 2;
         $config["uri_segment"] = 3;
         $choice = $config["total_rows"] / $config["per_page"];
         $config["num_links"] = round($choice);
@@ -22,9 +26,10 @@ class Noticias extends CI_Controller{
         $this->pagination->initialize($config);
         
         $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-        $data['view'] = 'Noticias';
+        
         $data['dados'] = $this->Noticia_model->getNoticiaPequena($config["per_page"], $this->uri->segment(3));
         $data["links"] = $this->pagination->create_links();
+        $data['view'] = 'Noticias';
         $this->load->view('includes/template', $data);
         
         

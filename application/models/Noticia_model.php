@@ -19,21 +19,19 @@ class Noticia_model extends CI_Model {
     }
     
     public function getNoticiaPequena($limit, $start){
-          $this->db->limit($limit, $start);
-         $query = $this->db->get('publication');
-//        $query = $this->db->query("
-//                SELECT publication.title,publication.abstract,publication.date,person.name
-//                FROM `publication`,`scml_user`,`person`
-//                where publication.updated_user_id=scml_user.person_id AND scml_user.person_id=person.id ");
-        
-          
- 
+//          $this->db->limit($limit, $start);
+//         $query = $this->db->get('publication');
+         	$this->db->limit($limit, $start);
+                 $query = $this->db->get("publication");
+
         if ($query->num_rows() > 0) {
-            $dados = $query->result_array();
-            return $dados;
+            foreach ($query->result() as $row) {
+                $data[] = $row;
+            }
+            return $data;
         }
         return false;
-        
+
         //return $dados;
     }
     
@@ -47,5 +45,18 @@ class Noticia_model extends CI_Model {
         return true;
     }
     
+    public function getNoticiasMedico() {
+          $id=$this->session->userdata('user_id');
+        
+          $this->db->select('*');
+          $this->db->from('scml_user');
+          $this->db->join('publication', 'scml_user.id = publication.id');
+          $this->db->where('publication.id', $id);    
+          $queryResultado=$this->db->get();
+          $dados=$queryResultado->result_array();
+          
+          //$dados = $query->result_array();  
+        return $dados;
+    }
 
 }
