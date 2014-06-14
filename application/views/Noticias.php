@@ -31,7 +31,7 @@ echo "        </div>\n";
 echo "        <div class=\"noticeAuthor\">\n"; 
 echo "            <span>".$value['name']."</span>\n"; 
 echo "           \n"; 
-echo "            <input class=\"btnNoticias\" type=\"button\" onclick='<?php echo site_url('/NoticiaGrande/index');?>' value=\"Ler mais\" />\n"; 
+echo "            <input class=\"btnNoticias\" type=\"button\" value=\"Ler mais\"  onclick='echo site_url('/NoticiaGrande/index')'/> \n"; 
 echo "            \n"; 
 echo "        </div>\n"; 
 echo "    </div>\n"; 
