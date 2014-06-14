@@ -42,7 +42,37 @@ $(document).ready(function(){
 </div>
 
 <div id="publicacaoMedicos">
-    <div class="publicacao" id="pub_1">
+    
+    <?php
+    //var_dump($dados);
+    
+    
+        foreach ($dados as $value) {
+            
+        
+echo " <div class=\"publicacao\" id=\"pub_1\">\n"; 
+echo "        <img src=\"Styles/Images/medicin_1.jpg\" alt=\"imagem de publicacao\"/>\n"; 
+echo "        <h5>".$value['title']."</h5>\n"; 
+echo "        <div class=\"resumo_noticia\"><p>\n"; 
+echo "                Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo. \n"; 
+echo "                Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo.       \n"; 
+echo "            </p></div>\n"; 
+echo "        <div>\n"; 
+echo "            <input type=\"button\" value=\"Ler Mais\" class=\"btnpub\"/>\n"; 
+echo "        </div>\n"; 
+echo "    </div> \n";
+    }
+?>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--    <div class="publicacao" id="pub_1">
         <img src="Styles/Images/medicin_1.jpg" alt="imagem de publicacao"/>
         <h5>Medicamentos</h5>
         <div class="resumo_noticia"><p>
@@ -74,7 +104,7 @@ $(document).ready(function(){
         <div>
             <input type="button" value="Ler Mais" class="btnpub"/>
         </div>
-    </div> 
+    </div> -->
 
 </div>
 

@@ -6,9 +6,26 @@ class Noticia_model extends CI_Model {
          
     }
     
+    
+        public function getNumerodeNoticias() {
+        return $this->db->count_all("publication");
+    }
+    
+      public function getTresNoticiasByDate() {
+          $this->db->limit(3);
+          $query = $this->db->get('publication');
+          
+          
+          $dados = $query->result_array();
+          
+          
+          
+        return $dados;
+    }
+    
     public function getNoticiaPequena($limit, $start){
-         $this->db->limit($limit, $start);
-         $query = $this->db->get("publication");
+          $this->db->limit($limit, $start);
+         $query = $this->db->get('publication');
 //        $query = $this->db->query("
 //                SELECT publication.title,publication.abstract,publication.date,person.name
 //                FROM `publication`,`scml_user`,`person`
@@ -24,13 +41,16 @@ class Noticia_model extends CI_Model {
         
         //return $dados;
     }
+    
+    
+    
+    
+    
       public function insertNoticia($data) {
          
         $this->db->insert('publication', $data);
         return true;
     }
     
-    public function getNumerodeNoticias() {
-        return $this->db->count_all("publication");
-    }
+
 }

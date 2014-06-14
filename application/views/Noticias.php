@@ -2,7 +2,7 @@
     
    
 <?php
-
+//var_dump($dados);
 foreach ($dados as $value) {
     
 
@@ -10,7 +10,7 @@ foreach ($dados as $value) {
 echo "<div class=\"noticias\">\n"; 
 echo "    <div class=\"noticiasEsq\">\n"; 
 echo "        <div class=\"noticeTitle\">\n"; 
-echo "            <h4> ".$value['title']."      </h4>\n"; 
+echo "            <h4> ".$value['title']."</h4>\n"; 
 echo "        </div>\n"; 
 echo "        <a href=\"<?php echo site_url('/NoticiaGrande/index');?>\">\n"; 
 echo "            <img src=\"Styles/Images/n_.jpg\" alt=\"imagem de noticia\"/>\n"; 
