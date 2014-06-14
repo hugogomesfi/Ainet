@@ -14,12 +14,7 @@ class Noticia_model extends CI_Model {
       public function getTresNoticiasByDate() {
           $this->db->limit(3);
           $query = $this->db->get('publication');
-          
-          
-          $dados = $query->result_array();
-          
-          
-          
+          $dados = $query->result_array();  
         return $dados;
     }
     
