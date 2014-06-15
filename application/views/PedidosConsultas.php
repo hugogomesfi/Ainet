@@ -1,4 +1,4 @@
-
+<h1 class="titulo">Pagina Pessoal</h1>
 
 <div id="contentor">
     <div id="homeMedico">
@@ -11,57 +11,19 @@
         <img src="Styles/Images/email.png" alt="email"/>
         <h4>Joao.Crespo@hotnail.com</h4>
         <a href="mailto:example@aaaaa.com">Enviar Email </a>
-        <p><button class="btn btn-success " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/HomeMedico'">Noticias</button></p>
+        <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/HomeMedico'">Noticias</button></p>
         <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/#'">Alterar Dados</button></p>
         <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/ComporNoticia'">Criar Noticia</button></p>       
-        <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/PedidosConsultas'">Consultas</button></p>
+        <p><button class="btn btn-success " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/PedidosConsultas'">Consultas</button></p>
+        
         
         
     </div>
     <div id="NoticiasPessoalMedico">
         <div id="infonoticiaPessoall">
             <h2>Minhas Noticias</h2>
-            <div class="error" style="color: red;"><?php echo form_error('erros'); ?></div>
-            <div class="error" style="color: red;"><?php echo form_error('sucesso'); ?></div>
         </div>
-        
-        <?php
-        foreach ($noticias as $value) {
-            ?>
-<form method="get" name="ComporNoticia" action="<?=site_url('/Noticias/eliminaNoticia');?>">
-<?php
-echo "<div class=\"noticiaPessoal\">\n"; 
-echo "            <img src=\"Styles/Images/abertura.jpg\" alt=\"email\" class=\"imagemDaNoticiaHomeMedico\"/>\n"; 
-echo "            <div class=\"corponoticiapessoalmedico\">\n"; 
-echo "            <h3>".$value['title']."</h3>\n"; 
-echo "        <div class=\"butoesNoticiaMedico\">\n";
-
-echo "<input class=\"btn btn-primary\" type=\"reset\" value=\"Editar\">\n";
-$idNotice=$value['id'];
-
-$databtn = array(
-    'name' => 'noticia',
-    'class' => 'btn btn-danger',
-    'value' => "$idNotice",
-    'type' => 'submit',
-    'content' => 'Eliminar'
-);
-//var_dump($databtn);
-//die();
-echo form_button($databtn);
- 
-
-echo "        </div>\n";
-echo "            </div>\n"; 
-echo "        </div>\n";
-?>
-</form>
-<?php
-}
-?>
-        
-  
-<!--        <div class="noticiaPessoal">
+        <div class="noticiaPessoal">
             <img src="Styles/Images/abertura.jpg" alt="email" class="imagemDaNoticiaHomeMedico"/>
             <div class="corponoticiapessoalmedico">
             <h5>Ambulância avariou a caminho de hospital</h5>
@@ -95,7 +57,7 @@ echo "        </div>\n";
             <h5>Ambulância avariou a caminho de hospital</h5>
             <p><span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines..</span><a href="">Ler Mais</a></p>
             </div>
-        </div>-->
+        </div>
          
     </div>
     <div id="EspecialidadesPessoalMedico">
@@ -110,4 +72,3 @@ echo "        </div>\n";
     </div>
 </div>
    
-
