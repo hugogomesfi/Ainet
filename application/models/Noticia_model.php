@@ -48,10 +48,6 @@ class Noticia_model extends CI_Model {
         
     }
 
-    public function getNoticiaPequena($limit, $start) {
-        $this->db->limit($limit, $start);
-        $query = $this->db->get('publication');
-
 
 
     
