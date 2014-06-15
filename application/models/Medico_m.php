@@ -47,14 +47,6 @@ public function getMedico(){
 //      
 //  }
     
-    public function getMedicoi(){
-             $query = $this->db->query("
-                SELECT name
-                FROM `doctor` ");
-        $query = $query->result_array();
-        return $query;
-    }
-    
       public function insertNoticia($data) {
          
         $this->db->insert('publication', $data);
