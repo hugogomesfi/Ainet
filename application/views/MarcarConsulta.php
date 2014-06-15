@@ -77,14 +77,15 @@
                 </div>
                 <div class="formItem">
                     <label>Medico:</label>
-                    <input list="medicos" class="caixaTexto" placeholder="Indique um medico (opcional)">
-                    <datalist id="medicos">
-                        <option value="DR Joao">
-                        <option value="Dr antonio">
-                        <option value="Dr augusto">
-                        <option value="Dra Maria">
-                        <option value="Dra antonia">
-                    </datalist>
+                     <select id="medicos"  class="caixaTexto">
+                        <?php
+                        foreach ($dadosMedico as $each) {
+                            ?>
+                            <option value="<?php echo($each['name']); ?>"> <?php echo($each['name']); ?></option>
+                            <?php
+                        }
+                        ?>
+                    </select>
                 </div>
                 <div class="formItem">
                     <label>Data:</label>
@@ -100,7 +101,7 @@
 
 
             <div> 
-                <input type="submit" value="Marcar" class="btnMarcarConsulta" />
+                <input type="submit" value="Marcar" class="btn-lg" />
             </div>
 
 
