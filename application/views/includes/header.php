@@ -5,6 +5,7 @@
     <base href="<?php echo $this->config->item('base_url') ?>" />
     <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css"/>
     <link href="Styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Styles/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -64,6 +65,7 @@
                             <ul class="dropdown-menu">
                                 <li style="padding:30px; height: 350px;width: 350px !important;float: right;background-color: #cccccc;opacity: 0.9; border-bottom-right-radius:5px;border-bottom-left-radius:5px;">
                                     <a href="<?php echo site_url('Utilizador/logout'); ?>">Logout</a>
+                                     <a href="<?php echo site_url('Utilizador/paginaPessoal'); ?>">Pagina Pessoal</a>
                                 </li>
                             </ul>
                         </li>

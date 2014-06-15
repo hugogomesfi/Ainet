@@ -79,8 +79,8 @@ class Noticia_model extends CI_Model {
         
           $this->db->select('*');
           $this->db->from('scml_user');
-          $this->db->join('publication', 'scml_user.id = publication.id');
-          $this->db->where('publication.id', $id);    
+          $this->db->join('publication', 'scml_user.id = publication.updated_user_id');
+          $this->db->where('publication.updated_user_id', $id);    
           $queryResultado=$this->db->get();
           $dados=$queryResultado->result_array();
           
@@ -104,5 +104,17 @@ class Noticia_model extends CI_Model {
 //        
 //        return $image;
 //    }
+    
+    public function getNoticia($data) {
+        $this->db->select('*');
+         $this->db->from('publication');
+         $this->db->where('id',$data['id']); 
+          $queryResultado=$this->db->get();
+          $dados=$queryResultado->result_array();
+          return $dados;
+        
+    }
+    
+    
 
 }

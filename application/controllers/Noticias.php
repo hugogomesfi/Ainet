@@ -77,21 +77,79 @@ class Noticias extends CI_Controller{
     
     function eliminaNoticia(){
         
-                $data['id']   = $this->input->post('id');
-                var_dump($data['id']);
-                die();
+                $data['id']   = $this->input->get('noticia');
+                //var_dump($data['id']);
+                //die();
                 $this->load->model('Noticia_model');
                 $resultado=$this->Noticia_model->deleteNoticia($data);
                 if ($resultado) {
-                   $data['view'] = 'ComporNoticia';
+                   $data['view'] = 'HomeMedico';
                    $data['sucesso'] = 'OK';
                     $this->load->view('includes/template', $data); 
                 }else{
-                    $data['view'] = 'ComporNoticia';
+                    $data['view'] = 'HomeMedico';
                     $data['erros'] = 'Erro a Eliminar Noticia!';
                     $this->load->view('includes/template', $data); 
                 }
                 
+    }
+    
+    function encontraNoticia() {
+       
+        $data['id']   = $this->input->get('noticia');
+        $this->load->model('Noticia_model');
+        $resultado=$this->Noticia_model->getNoticia($data);
+        
+        $data['view'] = 'NoticiaGrande';
+        $data['noticia'] = $resultado;
+        $this->load->view('includes/template', $data); 
+        
+    }
+    
+     function editaNoticia() {
+       
+        $data['id']   = $this->input->get('noticia');
+        $this->load->model('Noticia_model');
+        $resultado=$this->Noticia_model->getNoticia($data);
+        
+        $data['view'] = 'ComporNoticia';
+        $data['noticia'] = $resultado;
+        $this->load->view('includes/template', $data); 
+        
+    }
+    
+    function updateNoticia() {
+        if (!$this->session->userdata('user_id')) {
+            
+            redirect(site_url('/') . 'login');
+        } else {
+            //rules to insert
+            $this->form_validation->set_rules('corpoNoticia', 'Compor Noticia', 'required|xss_clean');
+            //$this->form_validation->set_rules('especialidades', 'Especialidades', 'required');
+            $this->form_validation->set_rules('titulo', 'Título', 'required|xss_clean');
+            $this->form_validation->set_rules('resumo', 'Resumo', 'required|xss_clean');
+            
+            if ($this->form_validation->run() == FALSE) {
+                $data['view'] = 'ComporNoticia';
+                $this->load->view('includes/template', $data);
+
+                
+
+            } else {
+
+                $data['updated_user_id'] = $this->session->userdata('user_id');
+                $data['title']   = $this->input->post('titulo');
+                $data['body'] = $this->input->post('corpoNoticia');
+                $data['abstract'] = $this->input->post('resumo');
+               // $data['name'] = $this->input->post('nomemedico');
+                
+                $this->load->model('Noticia_model');
+                $this->Noticia_model->insertNoticia($data);
+                
+                $data['view'] = 'ComporNoticia';
+                $this->load->view('includes/template', $data);
+            }
+        }
     }
     
 
