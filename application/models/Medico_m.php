@@ -5,8 +5,22 @@ class Medico_m extends CI_Model {
         parent::__construct();
     }
     
-public function getMedico(){
+    
+    public function getEspecialidadesMedico($idmedico){
         
+        $this->db->select('clinical_specialty.name,doctor_specialty.availability,doctor.name AS nomemedico');
+        $this->db->from('doctor');
+        $this->db->join('doctor_specialty', 'doctor.id=doctor_specialty.doctor_id');
+        $this->db->join('clinical_specialty', 'doctor_specialty.clinical_specialty_id=clinical_specialty.id');
+        $this->db->where('doctor.user_id', $idmedico); 
+        $queryResultado=$this->db->get();
+        $result = $queryResultado->result_array();
+        
+       return $result;
+      
+  }
+  
+  public function getMedico(){
         $this->db->select('clinical_specialty.name,doctor.name AS nomemedico,person.mobile_phone');
         $this->db->from('doctor');
         $this->db->join('doctor_specialty', 'doctor.id=doctor_specialty.doctor_id');
