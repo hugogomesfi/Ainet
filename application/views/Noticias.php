@@ -32,7 +32,23 @@ echo "        </div>\n";
 echo "        <div class=\"noticeAuthor\">\n"; 
 
 echo "           \n"; 
-echo "            <input class=\"btn btn-primary btn-sm\" type=\"button\" value=\"Ler mais\"  onclick='echo site_url('/NoticiaGrande/index')'/> \n"; 
+?>
+   
+ <form method="get" action="<?=site_url('Noticias/encontraNoticia');?>">
+     
+<?php
+$databtn = array(
+    'name' => 'noticia',
+    'class' => 'btn btn-primary btn-sm',
+    'value' => "$value->id",
+    'type' => 'submit',
+    'content' => 'Ler Mais'
+);
+
+echo form_button($databtn);
+  ?> 
+</form>
+<?php
 echo "            \n"; 
 echo "        </div>\n"; 
 echo "    </div>\n"; 
@@ -40,6 +56,7 @@ echo "</div>\n";
 }
 
 ?>
+   
     <div class="links">
         
     <p><?php echo $links; ?></p>

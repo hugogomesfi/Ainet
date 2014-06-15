@@ -41,7 +41,10 @@
 </div>
 
 
-    <input type="button" value="Ler mais Noticias" id="LerMaisNoticias" />
+<!--location.href='<?php echo site_url();?>/Noticias'-->
+
+    
+<button id="LerMaisNoticias"  onclick="location.href='<?php echo site_url();?>/Noticias'">Ler Mais Noticias</button>
 
 
 <div>

@@ -39,5 +39,33 @@ class Utilizador extends CI_Controller{
         $this->session->sess_destroy();
         redirect();
     }
+    
+    public function paginaPessoal() {
+        $tipo=$this->session->userdata('role');
+        switch ($tipo) {
+            case 0:
+                //administrador
+            
+                break;
+            case 1:
+                //Administrativo
+                break;
+             case 2:
+                //Irmao
+                break;
+            case 3:
+            redirect('HomeMedico');
+                break;
+            case 4:
+                //Utente
+            
+                break;
+
+            default:redirect('Home');
+                break;
+        }
+        $this->session->sess_destroy();
+        redirect();
+    }
 
 }
