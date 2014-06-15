@@ -214,6 +214,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     margin-left:  2px;
     padding: 2px;
      overflow: auto;
+     width: 100%;
 
 }
 .parteCimaCartaoMedico{
@@ -536,7 +537,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #formularioDireito{position: relative; padding: 2%;float: left;margin-left: 2%; border-radius: 5px;border: 1px solid gray;height: 475px; background-color: lightgray;}
 #corpoNoticia textarea{ height: 400px;}
 #corpoNoticia{width: 60%;float: left;overflow: auto}
-#publicar{ position: absolute;background-color: red; bottom: 10%;right: 10%;}
+#publicar{ position: absolute; bottom: 10%;right: 10%;}
 
 
 
@@ -546,7 +547,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #container1{width: 100%;height: 196px;margin-bottom: 2%;}
 #container2{width: 100%; clear: right;height: 196px;}
 .contacto{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: 12px;border-top: 5px solid #8CC474;margin-left: 2%;float: left;background-color: #FFF; width: 30%; height: 100%;border-right: 1px solid #D8D8D8;border-left: 1px solid #D8D8D8;border-bottom: 1px solid #D8D8D8;   }
-
+#container3{width: 100%;height: 500px;margin-bottom: 2%;}
 
 #fotomedico{width: 40%; height: 93px; margin-top: 5px; margin-left: 0;border-radius: 10px;}
 #InformacaoPessoalMedico{ width: 24%; float: left;min-height: 500px; margin-right: 1%;}
@@ -624,3 +625,20 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
 
 #EspecialidadesPessoalMedico h3{}
+.butoesNoticiaMedico{bottom: 0; position: absolute;right: 0;}
+.cartaoMedicoCorpo{    border-radius: 5px;
+    position:relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 2px;
+    margin-left:  2px;
+    padding: 2px;
+    width: 32%;
+float: left;}
+.corpoCorpoClinico{
+    min-height:auto;
+    overflow: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+    
+}
