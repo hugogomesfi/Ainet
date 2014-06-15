@@ -25,11 +25,14 @@
          <p>
         <label>Especialidade</label>
         <select name="especialidades">
-            <option value="0">Selecione uma opção</option>
-            <option value="volvo">Clinica geral</option>
-            <option value="saab">Psicologia</option>
-            <option value="fiat">Neurologia</option>
-            <option value="audi">Reumatologia</option>
+            
+            <?php
+                        foreach ($especialidades as $each) {
+                            ?>
+                            <option value="<?php echo($each['name']); ?>"> <?php echo($each['name']); ?></option>
+                            <?php
+                        }
+                        ?>
         </select>
         </p>
         
