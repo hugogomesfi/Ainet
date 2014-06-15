@@ -61,8 +61,6 @@ class Medico_m extends CI_Model {
 //      
 //  }
     
-  
-    
       public function insertNoticia($data) {
          
         $this->db->insert('publication', $data);
