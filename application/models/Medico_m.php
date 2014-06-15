@@ -5,17 +5,7 @@ class Medico_m extends CI_Model {
         parent::__construct();
     }
     
-    public function getMedico(){
-        $query = $this->db->query("
-                SELECT publication.title,publication.abstract,publication.date,person.name
-                FROM `publication`,`scml_user`,`person`
-                WHERE publication.updated_user_id=scml_user.person_id AND scml_user.person_id=person.id ");
-        $query = $query->result_array();
-        
-        return $query;
-public function getMedico(){
-        
-    }
+    
     public function getEspecialidadesMedico($idmedico){
         
         $this->db->select('clinical_specialty.name,doctor_specialty.availability,doctor.name AS nomemedico');
@@ -29,6 +19,8 @@ public function getMedico(){
        return $result;
       
   }
+  
+  public function getMedico(){
         $this->db->select('clinical_specialty.name,doctor.name AS nomemedico,person.mobile_phone');
         $this->db->from('doctor');
         $this->db->join('doctor_specialty', 'doctor.id=doctor_specialty.doctor_id');
@@ -69,13 +61,7 @@ public function getMedico(){
 //      
 //  }
     
-    public function getMedicoi(){
-             $query = $this->db->query("
-                SELECT name
-                FROM `doctor` ");
-        $query = $query->result_array();
-        return $query;
-    }
+  
     
       public function insertNoticia($data) {
          
