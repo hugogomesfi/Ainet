@@ -29,12 +29,16 @@
     <div id="especialidadeCorpo">
 
          <?php
-        foreach ($dados as $each) {
-            ?>   
-        <?php
+         
+        
+    
+               foreach ($dados as $each) {
+                          foreach ($dadosM as $each){
+           
+    
 echo "<div id=\"answer". $each['id'] . "\"><div class=\"textoAnswer\"><header> <h2>". $each['name'] . "</h2> </header>\n"; 
 echo "\n"; 
-echo "                testo corpo.\n"; 
+echo "                texto corpo.\n"; 
 echo "\n"; 
 echo "                         </div>\n"; 
 echo "\n"; 
@@ -42,13 +46,14 @@ echo "            <!--todo o conteudo do lado direito , informação do medico e
 echo "            <div class=\"textoAnswerRight\">\n"; 
 echo "                <!--div com toda a infor do medico cartaoMedico-->\n"; 
 echo "                <h5>PROFISSIONAIS</h5>\n"; 
+  
 echo "                <div class=\"cartaoMedico\">\n"; 
 echo "                    <div class=\"panel panel-primary\">\n"; 
 echo "                        <div class=\"panel-heading\">\n"; 
 echo "                            <div class=\"cantoEsquerdoCartaoMedico\">\n"; 
 echo "                                <img src=\"Styles/Images/medico.png\" alt=\"fotoMedico\" class=\"img-rounded\">\n"; 
 echo "                            </div>\n"; 
-echo "                            <h6>Nome Medico</h6> \n"; 
+echo "                            <h6>". $each['nomeMedico'] . "</h6> \n"; 
 echo "                            <h6>Telefone: 222222222</h6>\n"; 
 echo "                        </div>\n"; 
 echo "                        <div class=\"panel-body\">\n"; 
@@ -60,33 +65,13 @@ echo "                                <div class=\"btnMarcarConsulta\"><p><a cla
 echo "                            </div>\n"; 
 echo "                        </div>\n"; 
 echo "                    </div>\n"; 
-echo "\n"; 
-echo "\n"; 
 echo "                </div>\n"; 
 echo "\n"; 
 echo "\n"; 
-echo "                <div class=\"cartaoMedico\">\n"; 
-echo "                    <div class=\"panel panel-primary\">\n"; 
-echo "                        <div class=\"panel-heading\">\n"; 
-echo "                            <div class=\"cantoEsquerdoCartaoMedico\">\n"; 
-echo "                                <img src=\"Styles/Images/medico.png\" alt=\"fotoMedico\" class=\"img-rounded\">\n"; 
-echo "                            </div>\n"; 
-echo "                            <h6>Nome Medico</h6> \n"; 
-echo "                            <h6>Telefone: 222222222</h6>\n"; 
-echo "                        </div>\n"; 
-echo "                        <div class=\"panel-body\">\n"; 
-echo "                            <div class=\"inferiorCartaoMedico\">\n"; 
-echo "                                <h6>Especialidade: Pneumologia </h6> \n"; 
-echo "                                <h6>Área Clinica: Alergologia e Pneumologia</h6>\n"; 
-echo "\n"; 
-echo "                                <div class=\"btnMarcarConsulta\"><p><a class=\"btn btn-default btn-sm\" role=\"button\">Marcar Consulta</a></p></div>\n"; 
-echo "                            </div>\n"; 
-echo "                        </div>\n"; 
-echo "                    </div>\n"; 
-echo "\n"; 
-echo "\n"; 
-echo "                </div>\n"; 
-echo "\n"; 
+                         
+
+
+ 
 echo "                <h5>PROTOCOLOS</h5>\n"; 
 echo "                <div class=\"cartaoProtocolo\">\n"; 
 echo "                    <div class=\"cantoEsquerdoCartaoProtocolo\">\n"; 
@@ -108,8 +93,7 @@ echo "                </div>\n";
 echo "\n"; 
 echo "\n"; 
 echo "            </div></div>\n";
-?>
-                <?php
+            }
         }
         ?>    
        
