@@ -20,14 +20,33 @@ class Medico_m extends CI_Model {
       
   }
   
-  public function getMedico(){
-        $this->db->select('clinical_specialty.name,doctor.name AS nomemedico,person.mobile_phone');
+  public function getMedicos(){
+        $this->db->select('doctor.user_id,clinical_specialty.name,doctor.name AS nomemedico,person.mobile_phone');
         $this->db->from('doctor');
         $this->db->join('doctor_specialty', 'doctor.id=doctor_specialty.doctor_id');
         $this->db->join('clinical_specialty', 'doctor_specialty.clinical_specialty_id=clinical_specialty.id');
         $this->db->join('scml_user', 'scml_user.person_id=doctor.id');
         $this->db->join('person', 'person.id=scml_user.person_id');
-        $this->db->group_by("nomemedico");
+        $this->db->group_by("user_id");
+
+
+        $queryResultado=$this->db->get();
+        $result = $queryResultado->result_array();
+        
+       return $result;
+      
+  }
+  
+  public function getMedico($id){
+        $this->db->select('doctor.user_id,clinical_specialty.name,doctor.name AS nomemedico,person.mobile_phone');
+        $this->db->from('doctor');
+        $this->db->join('doctor_specialty', 'doctor.id=doctor_specialty.doctor_id');
+        $this->db->join('clinical_specialty', 'doctor_specialty.clinical_specialty_id=clinical_specialty.id');
+        $this->db->join('scml_user', 'scml_user.person_id=doctor.id');
+        $this->db->join('person', 'person.id=scml_user.person_id');
+        $this->db->where('user_id',$id);
+        $this->db->group_by("user_id");
+        
 
 
         $queryResultado=$this->db->get();

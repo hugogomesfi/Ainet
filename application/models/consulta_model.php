@@ -68,11 +68,12 @@ class Consulta_model extends CI_Model {
 
         $this->db->select('clinical_specialty.name AS nomeEspecialidade,person.name as nomePessoa,doctor.name as nomeDoutor,health_insurer.name as nomeSeguro,status,date_time,mobile_phone');
         $this->db->from('appointment');
+        $this->db->join('scml_user','scml_user.id = person.id');
         $this->db->join('person','appointment.person_id = person.id');
         $this->db->join('clinical_specialty', 'appointment.specialty_id = clinical_specialty.id');
         $this->db->join('doctor', 'doctor.id = appointment.doctor_id');
         $this->db->join('health_insurer', 'health_insurer.id = appointment.insurer_id');
-        $this->db->where('person.id=appointment.person_id');
+        $this->db->where('$id','scml_user.id');
         
         $query = $this->db->get();
         $consultaUser = $query->result_array();

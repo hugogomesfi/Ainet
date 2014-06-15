@@ -22,7 +22,7 @@ class Saude extends CI_Controller{
 
     public function corpoClinico() {
         $this->load->model('Medico_m');
-         $data['dados'] = $this->Medico_m->getMedico();
+         $data['dados'] = $this->Medico_m->getMedicos();
         $data['view'] = 'CorpoClinico';
         $this->load->view('includes/template', $data);
     }
@@ -30,7 +30,7 @@ class Saude extends CI_Controller{
     public function Consultas() {
         $this->load->model('consulta_model');
         $this->load->model('medico_m');
-        $data['dadosMedico'] = $this->medico_m->getMedicoi();
+        $data['dadosMedico'] = $this->medico_m->getMedicos();
         $data['dados'] = $this->consulta_model->getEspecialidade();
         $data['view'] = 'MarcarConsulta';
         $this->load->view('includes/template',$data);
