@@ -9,7 +9,9 @@ class Home extends CI_Controller {
     public function index() {
         $this->load->model('Noticia_model');
         $data['view'] = 'home';
-        $data['dados'] =$this->Noticia_model->getTresNoticiasByDate() ;
+        $data['newsMedicos'] =$this->Noticia_model->getTresNoticiasByDate() ;
+        $data['newsValencias'] =$this->Noticia_model->getLastNewsValencias() ;
+//        $data['image']=$this->Noticia_model->insertImg() ;
         $this->load->view('includes/template', $data);
     }
     

@@ -70,8 +70,9 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-#IconTopo{position: relative;height: 150px;width: 100%; background-color: white;  opacity: 0.9;} 
-#IconTopo blockquote{margin-left: 45%;padding-top: 5%; }
+#IconTopo{position: relative;height: 150px;width: 100%; background-color: white;  opacity: 0.9;
+          border-top: 1px solid #428BCA; border-bottom: 1px solid #428BCA;} 
+#IconTopo blockquote{margin-left: 45%;padding-top: 5%; font-size: 24px;}
 #IconTopo img{margin-left: 30%;  width: 150px; height: 150px; z-index: 999; position: absolute; }
 
 
@@ -96,15 +97,15 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-.noticiasprimeiro{padding-top: 30px;background-image: url(Images/pw_maze_black.png); padding-left: 11%;padding-right: 11%; position: relative; min-height: 400px; }
+.noticiasprimeiro{padding-top: 20px;background-image: url(Images/pw_maze_black.png); padding-left: 11%;padding-right: 11%; position: relative; height: 475px; }
 
-.noticia1{position: relative;float: left;width: 180px;margin: 1%;min-height: 300px;position: relative;}
+.noticia1{position: relative;float: left;width: 180px;margin: 1%;height: 400px; overflow: hidden;}
 .noticia2{float: left;width: 180px;margin: 1%;min-height: 300px;position: relative;}
 
 
-.noticiasprimeiro h5{margin-bottom: 10px;border-radius: 5px;text-align: center;border: 1px solid lightgray;background-color: #E7E7E7;height: 25px;padding-top: 10px;}
+.noticiasprimeiro h5{margin-bottom: 10px;border-radius: 5px;text-align: center;border: 1px solid lightgray;background-color: #E7E7E7;height: 50px;padding-top: 10px;}
 .resumo_noticia{ margin: 10px;position: relative;text-align: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;color: #555555;}
-.resumo_noticia p{position: relative;}
+.resumo_noticia p{position: relative; }
 
 .img_noticia img{z-index: 800;height: 120px; position: relative; width: 100%;}
 
@@ -119,7 +120,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #arrowUp img{width: 20px; height: 20px;margin-left: 50%;}
 
 #publicacaoMedicos{margin-top: 30px;position: relative;margin-left: 4%; margin-right: 4%;  height: 450px;}
-.publicacao{margin-left: 1%; margin-right: 1%; background-color: white;border: 1px solid grey;height: 400px;width: 31%; border-radius: 5px;text-align: center;}
+.publicacao{margin-left: 1%; margin-right: 1%; background-color: white;border: 1px solid grey;height: 400px;width: 31%; border-radius: 5px;text-align: center; overflow: hidden;}
 .publicacao img{width: 98%; height: 180px;margin-top: 3px;}
 .publicacao h5{text-align: left;margin: 10px; color: #333333;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 24px;}
 #pub_1{float: left;position: relative;}

@@ -37,26 +37,23 @@ $(document).ready(function(){
     <img src="Styles/Images/santa_casa.svg" alt="Logotipo da SCML"/>
     <blockquote>
         <p>O Saber da Experiencia</p>
-        <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+<!--        <small>Santa Casa Da Misericórdia <cite title="Source Title"></cite></small>-->
     </blockquote>   
 </div>
 
 <div id="publicacaoMedicos">
     
     <?php
-    //var_dump($dados);
     
     
-        foreach ($dados as $value) {
+    
+        foreach ($newsMedicos as $value) {
             
         
 echo " <div class=\"publicacao\" id=\"pub_1\">\n"; 
 echo "        <img src=\"Styles/Images/medicin_1.jpg\" alt=\"imagem de publicacao\"/>\n"; 
 echo "        <h5>".$value['title']."</h5>\n"; 
-echo "        <div class=\"resumo_noticia\"><p>\n"; 
-echo "                Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo. \n"; 
-echo "                Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo.       \n"; 
-echo "            </p></div>\n"; 
+echo "        <div class=\"resumo_noticia\"><p>".$value['abstract']."</p></div>\n"; 
 echo "        <div>\n"; 
 echo "            <input type=\"button\" value=\"Ler Mais\" class=\"btnpub\"/>\n"; 
 echo "        </div>\n"; 
@@ -109,7 +106,34 @@ echo "    </div> \n";
 </div>
 
 <div class="noticiasprimeiro">
-    <div class="noticia1">
+    
+        
+  <?php
+  //var_dump($newsValencias);
+            foreach ($newsValencias as $value) {
+
+
+echo "    <div class=\"noticia1\">\n"; 
+echo "        <h5>".$value['title']."</h5>\n"; 
+echo "        <div class=\"img_noticia\">\n"; 
+echo "            <img src=\"Styles/Images/147657108.jpg\" alt=\"imagem de noticia\"/>\n"; 
+echo "        </div>\n"; 
+echo "        <div class=\"resumo_noticia\">\n"; 
+echo "            <p>".$value['abstract']."</p></div>\n"; 
+echo "        <div>\n"; 
+echo "            <input type=\"button\" value=\"Ler Mais\" class=\"btnpub\"/>\n"; 
+echo "\n"; 
+echo "        </div>\n"; 
+echo "    </div>\n"; 
+
+
+    
+            }
+?>
+    
+    
+    
+<!--    <div class="noticia1">
         <h5>Titulo da Noticia</h5>
         <div class="img_noticia">
             <img src="Styles/Images/147657108.jpg" alt="imagem de noticia"/>
@@ -162,7 +186,7 @@ echo "    </div> \n";
         <div>
             <input type="button" value="Ler Mais" class="btnpub"/>
         </div>
-    </div>
+    </div>-->
 
 
 </div>
@@ -171,58 +195,53 @@ echo "    </div> \n";
 
 <div class="noticiasprimeiro">
     <div class="noticia1">
-        <h5>Titulo da Noticia</h5>
-        <div class="img_noticia">
+        <h5>SAUDE</h5>
+<!--        <div class="img_noticia">
             <img src="Styles/Images/147657108.jpg" alt="imagem de noticia"/>
-        </div>
+        </div>-->
         <div class="resumo_noticia">
-            <p>Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo. 
-
-            </p></div>
-        <div>
+            <p>         Irmandade
+               Santa Casa da Misericórdia de Leiria:
+                 - Hospital
+                 - Clínica</p></div>
+<!--        <div>
             <input type="button" value="Ler Mais" class="btnpub"/>
 
-        </div>
+        </div>-->
     </div>
     <div class="noticia2">
-        <h5>Noticia2</h5>
-        <div class="img_noticia">
+        <h5>LAR</h5>
+<!--        <div class="img_noticia">
             <img src="Styles/Images/147657108.jpg" alt="imagem de noticia"/>
-        </div>
-        <div class="resumo_noticia"><p>Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo. 
-
-            </p></div>
-        <div>
+        </div>-->
+        <div class="resumo_noticia"><p>O Lar N. S. da Encarnação ocupa uma área de construção de 5.000 metros quadrados com espaços ajardinados envolventes. O edifício e seu equipamento são considerados do mais moderno e funcional que se tem feito até hoje no nosso país.</p></div>
+<!--        <div>
             <input type="button" value="Ler Mais" class="btnpub"/>
-        </div>
+        </div>-->
     </div>
     <div  class="noticia2">
-        <h5>Noticia3</h5>
+        <h5>RESIDENCIAL</h5>
 
-        <div class="img_noticia">
+<!--        <div class="img_noticia">
             <img src="Styles/Images/147657108.jpg" alt="imagem de noticia"/>
-        </div>
-        <div class="resumo_noticia"><p>Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo. 
-
-            </p></div>
-        <div>
+        </div>-->
+        <div class="resumo_noticia"><p>A Residencial é o local ideal para repouso de cariz familiar, onde a personalidade de cada utente determina o atendimento dos diversos profissionais desta unidade. Localizado na Rua do Lis junto ao Hospital Dom Manuel de Aguiar, proporciona elevados padrões de qualidade ao nível dos seus serviços.</p></div>
+<!--        <div>
             <input type="button" value="Ler Mais" class="btnpub"/>
-        </div>
+        </div>-->
     </div>
     <div class="noticia2">
-        <h5>Noticia4</h5>
+        <h5>APOIO DOMICILIARIO</h5>
 
-        <div class="img_noticia">
+<!--        <div class="img_noticia">
             <img src="Styles/Images/abertura.jpg" alt="imagem de noticia"/>
-        </div>
+        </div>-->
         <div class="resumo_noticia">
-            <p>Lorem ipsum dolor sit amet,, imperdiet a, venenatis vitae, justo. 
-
-            </p>
+            <p>A Residencial é o local ideal para quem pretende uma opção de repouso de cariz familiar, onde a personalidade de cada utente determina o atendimento dos diversos profissionais desta unidade. O edifício, localizado na Rua do Lis junto às instalações do Hospital Dom Manuel de Aguiar, proporciona aos seus utentes elevados padrões de qualidade ao nível dos serviços que presta.</p>
         </div>
-        <div>
+<!--        <div>
             <input type="button" value="Ler Mais" class="btnpub"/>
-        </div>
+        </div>-->
     </div>
 
 
