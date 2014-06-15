@@ -215,9 +215,11 @@ echo "    </div>\n";
             <img src="Styles/Images/147657108.jpg" alt="imagem de noticia"/>
         </div>-->
         <div class="resumo_noticia"><p>O Lar N. S. da Encarnação ocupa uma área de construção de 5.000 metros quadrados com espaços ajardinados envolventes. O edifício e seu equipamento são considerados do mais moderno e funcional que se tem feito até hoje no nosso país.</p></div>
-<!--        <div>
-            <input type="button" value="Ler Mais" class="btnpub"/>
-        </div>-->
+        <div>
+<!--            <input type="button" value="Ler Mais" class="btnpub"/>-->
+            <button class="btn btn-primary"  onclick="location.href='<?php echo site_url();?>/CuidadosGeriatricos'">Entrar</button>
+
+        </div>
     </div>
     <div  class="noticia2">
         <h5>RESIDENCIAL</h5>
