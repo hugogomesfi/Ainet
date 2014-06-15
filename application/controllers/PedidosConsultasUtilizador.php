@@ -1,6 +1,7 @@
 <?php
 
-class PedidosConsultas extends CI_Controller{
+
+class PedidosConsultasUtilizador extends CI_Controller{
     
     public function __construct() {
         parent::__construct(); 
@@ -9,8 +10,8 @@ class PedidosConsultas extends CI_Controller{
     public function index() {
         $this->load->model('consulta_model');
         
-        $data['view'] = 'PedidosConsultas';
-        $data['consulta'] = $this->consulta_model->getPedidosConsultaAdmin() ;
+        $data['view'] = 'PedidosConsultasUtilizador';
+        $data['consulta'] = $this->consulta_model->getPedidosDesteUtilizador($id) ;
 
         $this->load->view('includes/template', $data);
 

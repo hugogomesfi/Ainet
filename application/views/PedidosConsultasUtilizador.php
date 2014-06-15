@@ -4,15 +4,15 @@
     <div id="homeMedico">
         <div id="InformacaoPessoalMedico">
             <img src="Styles/Images/medico.png" alt="foto medico" id="fotomedico"/>
-            <h4>Administrador: João Crespo</h4>
-            <h4>Nome: João Antonio Constantino Crespo</h4>
+            <h4> João Crespo</h4>
+            <h4> João Antonio Constantino Crespo</h4>
             <img src="Styles/Images/telefone.png" alt="telefone"/>
             <h4>Telefone: 9122345765</h4>
             <img src="Styles/Images/email.png" alt="email"/>
             <h4>Joao.Crespo@hotnail.com</h4>
             <a href="mailto:example@aaaaa.com">Enviar Email </a>
 <!--            <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/HomeMedico'">Noticias</button></p>
-            <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/#'">Alterar Dados</button></p>
+-->            <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/#'">Alterar Dados</button></p><!--
             <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/ComporNoticia'">Criar Noticia</button></p>       -->
             <p><button class="btn btn-success " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/PedidosConsultas'">Consultas</button></p>
 
@@ -32,7 +32,7 @@
 
 <?php
 
-    foreach ($consulta as $value) {
+    foreach ($consultaUser as $value) {
     
 
 
