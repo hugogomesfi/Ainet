@@ -10,6 +10,8 @@ class Utilizador_model extends CI_Model {
 
     	$email = $this->input->post('email');
     	$password = hash('sha256',$this->input->post('password'));
+            //var_dump($password);
+            //die();
 
 
         $this->db->where('email', $email);
@@ -23,6 +25,8 @@ class Utilizador_model extends CI_Model {
             'user_id' 	 => $user->row()->id,
             'user_name'	 => $user->row()->email,
             'logged_in'  => TRUE,
+            'role'  => $user->row()->role,
+            
         );
 
         $this->session->set_userdata($newdata);

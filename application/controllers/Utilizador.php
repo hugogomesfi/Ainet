@@ -21,10 +21,16 @@ class Utilizador extends CI_Controller{
             $this->load->model('Utilizador_model');
  
             if (!$this->Utilizador_model->autenticacao()) { 
-                $this->session->set_flashdata('error', 'Email or password incorrect.');
+                $this->session->set_flashdata('error', 'Email or password incorretos.');
                 redirect('Utilizador/autenticacao');
             } 
-            redirect('HomeMedico');
+            
+            if ($this->session->userdata('role')==3) {
+                redirect('HomeMedico');
+            }else{
+                redirect('Home');
+            }
+            
         }
 
     }

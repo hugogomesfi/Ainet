@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/ainet201314/';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +26,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
+//index.php tirei daqui
 $config['index_page'] = 'index.php';
 
 /*
