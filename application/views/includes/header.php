@@ -5,6 +5,7 @@
     <base href="<?php echo $this->config->item('base_url') ?>" />
     <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css"/>
     <link href="Styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Styles/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
