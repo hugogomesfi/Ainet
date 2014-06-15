@@ -88,8 +88,8 @@ echo "        </div>\n";
      
   
 
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="Styles/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery.js"></script>
+<script src="Styles/bootstrap/js/bootstrap.min.js"></script>-->
 
 <!--        <div class="noticiaPessoal">
             <img src="Styles/Images/abertura.jpg" alt="email" class="imagemDaNoticiaHomeMedico"/>
