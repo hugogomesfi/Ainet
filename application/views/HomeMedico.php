@@ -19,28 +19,31 @@
     <div id="NoticiasPessoalMedico">
         <div id="infonoticiaPessoall">
             <h2>Minhas Noticias</h2>
-             
+            <div class="error" style="color: red;"><?php echo form_error('erros'); ?></div>
+            <div class="error" style="color: red;"><?php echo form_error('sucesso'); ?></div>
         </div>
         
         <?php
         foreach ($noticias as $value) {
-            
-        
+            ?>
+<form method="POST" name="ComporNoticia" action="<?php site_url('Noticias/eliminaNoticia');?>">
+<?php
 echo "<div class=\"noticiaPessoal\">\n"; 
 echo "            <img src=\"Styles/Images/abertura.jpg\" alt=\"email\" class=\"imagemDaNoticiaHomeMedico\"/>\n"; 
 echo "            <div class=\"corponoticiapessoalmedico\">\n"; 
 echo "            <h3>".$value['title']."</h3>\n"; 
 echo "        <div class=\"butoesNoticiaMedico\">\n";
 echo "<input class=\"btn btn-primary\" type=\"reset\" value=\"Editar\">\n";
-echo "<input class=\"btn btn-danger\" type=\"submit\" name=\"apagar\" value=\"Eliminar\">\n"; 
+echo "<input class=\"btn btn-danger\" type=\"submit\" name=\"".$value['id']."\" value=\"Eliminar\">\n"; 
 echo "        </div>\n";
 echo "            </div>\n"; 
 echo "        </div>\n";
-
-
-
+?>
+</form>
+<?php
 }
 ?>
+        
   
 <!--        <div class="noticiaPessoal">
             <img src="Styles/Images/abertura.jpg" alt="email" class="imagemDaNoticiaHomeMedico"/>

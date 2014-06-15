@@ -75,5 +75,24 @@ class Noticias extends CI_Controller{
         }
     }
     
+    function eliminaNoticia(){
+        
+                $data['id']   = $this->input->post('id');
+                var_dump($data['id']);
+                die();
+                $this->load->model('Noticia_model');
+                $resultado=$this->Noticia_model->deleteNoticia($data);
+                if ($resultado) {
+                   $data['view'] = 'ComporNoticia';
+                   $data['sucesso'] = 'OK';
+                    $this->load->view('includes/template', $data); 
+                }else{
+                    $data['view'] = 'ComporNoticia';
+                    $data['erros'] = 'Erro a Eliminar Noticia!';
+                    $this->load->view('includes/template', $data); 
+                }
+                
+    }
+    
 
 }

@@ -58,5 +58,11 @@ class Noticia_model extends CI_Model {
           //$dados = $query->result_array();  
         return $dados;
     }
+    
+    public function deleteNoticia($data){
+       $this->db->where('id',$data['id']); 
+       $this->db->delete('publication'); 
+       return true;
+    }
 
 }
