@@ -555,9 +555,6 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #EspecialidadesPessoalMedico{min-height: 350px;float: left; background-color: #E9EAED; width:23%; margin-left: 1%;}
 #EspecialidadesPessoalMedico h4{}
 .noticiaPessoal{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; height: 100px; background-color: white; margin-bottom: 5px;position: relative;margin-bottom: 10px;border-top: 1px solid grey;border-bottom: 1px solid grey;border-left: 1px solid grey;border-top-right-radius: 3px;border-bottom-right-radius: 3px;}
-#EspecialidadesPessoalMedico{min-height: 350px;float: left; background-color: white; width:23%; margin-left: 1%;}
-#EspecialidadesPessoalMedico h4{background-color: lightgray;}
-.noticiaPessoal{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; height: 100px; background-color: white; margin-bottom: 5px;position: relative;margin-bottom: 10px;border: 1px solid grey;}
 .pedidosConsulta{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; min-height: 600px; background-color: white;
                  margin-bottom: 5px;position: relative;margin-bottom: 10px;border: 1px solid grey;
                  width: 700px;margin-left: 30px;}
