@@ -1,4 +1,4 @@
-<h1 class="titulo">Pagina Pessoal</h1>
+
 
 <div id="contentor">
     <div id="homeMedico">
@@ -11,8 +11,9 @@
         <img src="Styles/Images/email.png" alt="email"/>
         <h4>Joao.Crespo@hotnail.com</h4>
         <a href="mailto:example@aaaaa.com">Enviar Email </a>
-        <p><input class="btn btn-primary " type="reset" value="Alterar Dados"></p>
-        <p><input class="btn btn-primary " type="reset" value="Criar Noticia"></p>
+        <p><input class="btn btn-primary " type="reset" value="Alterar Dados" style="width: 100%;"></p>
+        <p><input class="btn btn-primary " type="reset" value="Criar Noticia" style="width: 100%;"></p>
+        
         
         
     </div>
@@ -26,15 +27,29 @@
         <?php
         foreach ($noticias as $value) {
             ?>
-<form method="POST" name="ComporNoticia" action="<?php site_url('Noticias/eliminaNoticia');?>">
+<form method="get" name="ComporNoticia" action="<?=site_url('/Noticias/eliminaNoticia');?>">
 <?php
 echo "<div class=\"noticiaPessoal\">\n"; 
 echo "            <img src=\"Styles/Images/abertura.jpg\" alt=\"email\" class=\"imagemDaNoticiaHomeMedico\"/>\n"; 
 echo "            <div class=\"corponoticiapessoalmedico\">\n"; 
 echo "            <h3>".$value['title']."</h3>\n"; 
 echo "        <div class=\"butoesNoticiaMedico\">\n";
+
 echo "<input class=\"btn btn-primary\" type=\"reset\" value=\"Editar\">\n";
-echo "<input class=\"btn btn-danger\" type=\"submit\" name=\"".$value['id']."\" value=\"Eliminar\">\n"; 
+$idNotice=$value['id'];
+
+$databtn = array(
+    'name' => 'noticia',
+    'class' => 'btn btn-danger',
+    'value' => "$idNotice",
+    'type' => 'submit',
+    'content' => 'Eliminar'
+);
+//var_dump($databtn);
+//die();
+echo form_button($databtn);
+ 
+
 echo "        </div>\n";
 echo "            </div>\n"; 
 echo "        </div>\n";

@@ -64,6 +64,7 @@
                             <ul class="dropdown-menu">
                                 <li style="padding:30px; height: 350px;width: 350px !important;float: right;background-color: #cccccc;opacity: 0.9; border-bottom-right-radius:5px;border-bottom-left-radius:5px;">
                                     <a href="<?php echo site_url('Utilizador/logout'); ?>">Logout</a>
+                                     <a href="<?php echo site_url('Utilizador/paginaPessoal'); ?>">Pagina Pessoal</a>
                                 </li>
                             </ul>
                         </li>
