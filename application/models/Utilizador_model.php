@@ -35,5 +35,16 @@ class Utilizador_model extends CI_Model {
     }
 
     
+    public function getInformacaoUser($idUtilizador) {
+
+    	$this->db->select('*');
+        $this->db->from('publication');
+        $this->db->where('type', '0');
+        $this->db->order_by('date','desc');
+        $this->db->where('type', $idUtilizador);
+        $query = $this->db->get();
+        
+    }
+    
 
 }

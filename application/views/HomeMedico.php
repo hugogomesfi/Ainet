@@ -16,11 +16,11 @@
         <img src="Styles/Images/email.png" alt="email"/>
    
         <a href="mailto:Joao.Crespo@hotnail.com">Joao.Crespo@hotnail.com</a>
-        <p><button class="btn btn-success " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/HomeMedico'">Minhas Noticias</button></p>
-        <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/#'">Alterar Dados Pessoais</button></p>
+        
+        <p><a href="#" style="width: 100%;" class="btn btn-primary" data-toggle="modal" data-target="#basicModal">Alterar dados</a></p>
         <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/PedidosConsultas'">Horarios</button></p>
         <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/ComporNoticia'">Compor Noticia</button></p>
-        <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal">Click to open Modal</a>
+        
 
         
         
@@ -159,11 +159,7 @@ echo form_button($databtn3);
 echo "        </div>\n";
 }
 ?>
-    <!-- Button to trigger modal -->
-  <div class="row text-center">
-            <h3>The Basic Modal</h3>
-            <a href="<?php echo site_url('PopUp'); ?>" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal">Click to open Modal</a>
-        </div>
+  
      
    
 

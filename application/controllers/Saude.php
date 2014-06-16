@@ -30,7 +30,7 @@ class Saude extends CI_Controller{
 
     public function Consultas() {
         $this->load->model('consulta_model');
-        $this->load->model('medico_m');
+        $this->load->model('Medico_m');
         $data['dadosMedico'] = $this->medico_m->getMedicos();
         $data['dados'] = $this->consulta_model->getEspecialidades();
         $data['view'] = 'MarcarConsulta';

@@ -8,7 +8,7 @@ class HomeMedico extends CI_Controller{
     
     public function index() {
         
-        if ($this->session->userdata('role')==4) {
+        if ($this->session->userdata('role')==3) {
             $this->load->model('Noticia_model');
             $data['view'] = 'HomeMedico';
             $this->load->model('Medico_m');
