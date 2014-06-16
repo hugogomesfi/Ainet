@@ -1,4 +1,4 @@
-<h1 class="titulo">Pedidos de Consulta</h1>
+
 
 <div id="contentor">
     <div id="homeMedico">
@@ -10,11 +10,12 @@
             <h4>Telefone: 9122345765</h4>
             <img src="Styles/Images/email.png" alt="email"/>
             <h4>Joao.Crespo@hotnail.com</h4>
-            <a href="mailto:example@aaaaa.com">Enviar Email </a>
+            <a href="mailto:Joao.Crespo@hotnail.com">Joao.Crespo@hotnail.com</a>
 <!--            <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/HomeMedico'">Noticias</button></p>
--->            <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/#'">Alterar Dados</button></p><!--
+-->            <p><a href="#" class="btn btn-primary" style="width: 100%;" data-toggle="modal" data-target="#basicModal">Alterar Dados</a></p><!--
             <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/ComporNoticia'">Criar Noticia</button></p>       -->
-            <p><button class="btn btn-success " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/PedidosConsultas'">Consultas</button></p>
+<!--            <p><button class="btn btn-success " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/PedidosConsultas'">Consultas</button></p>-->
+         
 
 
         </div>
@@ -32,7 +33,7 @@
 
 <?php
 
-    foreach ($consultaUser as $value) {
+    foreach ($consultas as $value) {
     
 
 
@@ -63,7 +64,7 @@ echo "                                <td >".$value['date_time']."</td>\n";
 echo "                            </tr>\n"; 
 echo "                            <tr>\n"; 
 echo "                                <td style=\"font-weight: bold;\">Seguradora:</td>\n"; 
-echo "                                <td >".$value['nomeSeguro']."</td>\n"; 
+//echo "                                <td >".$value['nomeSeguro']."</td>\n"; 
 echo "                            </tr>\n"; 
 
 
@@ -116,7 +117,7 @@ echo "</tr>\n";
 
 
 echo "                            <tr>\n"; 
-echo "                                <td  colspan=\"2\" style=\"text-align: right; height: 30px;\"><button class=\"btn-primary\" style=\" width: 25%; height: 25px;\n"; 
+echo "                                <td  colspan=\"2\" style=\"text-align: right; height: 30px;\"><button class=\"btn-primary\" style=\" width: 25%; height: 35px;\n"; 
 echo "                                    \" >Mudar estado</button></td>\n"; 
 echo "                            </tr>\n"; 
 echo "                        </tbody>\n"; 
@@ -140,3 +141,21 @@ echo "                </div> \n";
 
         </div>
         </div>
+    </div>
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Modal Body</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>

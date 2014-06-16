@@ -1,7 +1,7 @@
 <h1 class="titulo">Marcar Consulta</h1>
 
 <div id="contentor">
-
+   
     <section id="formSection">
         <form action="#" method="post" id="formulario" >
             <fieldset>
@@ -61,30 +61,36 @@
             <fieldset>
                 <legend>Marcaçao</legend>
 
+                
 
                 <div class="formItem" >
                     <label>Especialidade:</label>
 
                     <select id="especialidade"  class="caixaTexto">
                         <?php
+                        
                         foreach ($dados as $each) {
-                            ?>
-                            <option value="<?php echo($each['name']); ?>"> <?php echo($each['name']); ?></option>
-                            <?php
-                        }
-                        ?>
+                        ?>    
+                            <option value="<?php echo($each->name); ?>"> <?php echo($each->name); ?></option>
+                            
+                       
+                        
                     </select>
                 </div>
                 <div class="formItem">
                     <label>Medico:</label>
                      <select id="medicos"  class="caixaTexto">
-                     <?php
-                        foreach ($dadosMedico as $each) {
-                            ?>
-                        <option value="<?php echo($each['name']); ?>"> <?php echo($each['name']); ?></option> 
-                            <?php
+                         <?php
+                        foreach ($each->doutores as $medico) {
+                          ?>   
+                        <option value="<?php echo($medico['name']); ?>"> <?php echo($medico['name']); ?></option> 
+                        <?php    
                        }
-                        ?>
+                        
+                       }
+                       ?>  
+                        
+                        
                         
                     </select>
                 </div>

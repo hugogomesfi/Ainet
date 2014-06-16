@@ -11,7 +11,7 @@ class PedidosConsultasUtilizador extends CI_Controller{
         $this->load->model('consulta_model');
         
         $data['view'] = 'PedidosConsultasUtilizador';
-        $data['consulta'] = $this->consulta_model->getPedidosDesteUtilizador($id) ;
+        $data['consultasUser'] = $this->consulta_model->getPedidosDesteUtilizador($id) ;
 
         $this->load->view('includes/template', $data);
 
