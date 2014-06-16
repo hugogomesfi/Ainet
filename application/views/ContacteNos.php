@@ -4,7 +4,7 @@
      <!-- Alignment -->
 	<div class="col-sm-offset-3 col-sm-6">
 	   <!-- Form itself -->
-      <form method="POST" class="well" id="contactForm" name="ContacteNos" action="<?php echo site_url('ContacteNos/recebeDadosMail');?>" novalidate>
+      <form method="POST" class="well" id="contactForm" name="ContacteNos" action="<?php echo site_url('ContacteNos/sendMail');?>" novalidate>
               <blockquote>Contacte-nos</blockquote>
               
 
