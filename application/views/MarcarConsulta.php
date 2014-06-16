@@ -78,13 +78,14 @@
                 <div class="formItem">
                     <label>Medico:</label>
                      <select id="medicos"  class="caixaTexto">
-                        <?php
+                     <?php
                         foreach ($dadosMedico as $each) {
                             ?>
-                            <option value="<?php echo($each['name']); ?>"> <?php echo($each['name']); ?></option>
+                        <option value="<?php echo($each['name']); ?>"> <?php echo($each['name']); ?></option> 
                             <?php
-                        }
+                       }
                         ?>
+                        
                     </select>
                 </div>
                 <div class="formItem">

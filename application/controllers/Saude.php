@@ -23,6 +23,7 @@ class Saude extends CI_Controller{
     public function corpoClinico() {
         $this->load->model('Medico_m');
          $data['dados'] = $this->Medico_m->getMedico();
+         
         $data['view'] = 'CorpoClinico';
         $this->load->view('includes/template', $data);
     }
