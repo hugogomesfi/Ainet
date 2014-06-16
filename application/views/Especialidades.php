@@ -20,7 +20,7 @@
             ?>         
 
             <?php
-            echo "  <li class=\"question". $each['id'] . " \">" . $each['name'] . " </li>\n";
+            echo "  <li class=\"question". $each->id . " \">" . $each->name . " </li>\n";
             ?>
             <?php
         }
@@ -30,13 +30,13 @@
 
          <?php
          
-        
+       
     
                foreach ($dados as $each) {
-                          foreach ($dadosM as $each){
+                        
            
     
-echo "<div id=\"answer". $each['id'] . "\"><div class=\"textoAnswer\"><header> <h2>". $each['name'] . "</h2> </header>\n"; 
+echo "<div id=\"answer". $each->id . "\"><div class=\"textoAnswer\"><header> <h2>". $each->name . "</h2> </header>\n"; 
 echo "\n"; 
 echo "                texto corpo.\n"; 
 echo "\n"; 
@@ -46,14 +46,18 @@ echo "            <!--todo o conteudo do lado direito , informação do medico e
 echo "            <div class=\"textoAnswerRight\">\n"; 
 echo "                <!--div com toda a infor do medico cartaoMedico-->\n"; 
 echo "                <h5>PROFISSIONAIS</h5>\n"; 
-  
+
+
+foreach ($each->doutores as $value) {
+    
+
 echo "                <div class=\"cartaoMedico\">\n"; 
 echo "                    <div class=\"panel panel-primary\">\n"; 
 echo "                        <div class=\"panel-heading\">\n"; 
 echo "                            <div class=\"cantoEsquerdoCartaoMedico\">\n"; 
 echo "                                <img src=\"Styles/Images/medico.png\" alt=\"fotoMedico\" class=\"img-rounded\">\n"; 
 echo "                            </div>\n"; 
-echo "                            <h6>". $each['nomeMedico'] . "</h6> \n"; 
+echo "                            <h6>". $value['name'] . "</h6> \n"; 
 echo "                            <h6>Telefone: 222222222</h6>\n"; 
 echo "                        </div>\n"; 
 echo "                        <div class=\"panel-body\">\n"; 
@@ -70,7 +74,7 @@ echo "\n";
 echo "\n"; 
                          
 
-
+}
  
 echo "                <h5>PROTOCOLOS</h5>\n"; 
 echo "                <div class=\"cartaoProtocolo\">\n"; 
@@ -93,7 +97,7 @@ echo "                </div>\n";
 echo "\n"; 
 echo "\n"; 
 echo "            </div></div>\n";
-            }
+            
         }
         ?>    
 

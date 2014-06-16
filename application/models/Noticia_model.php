@@ -20,13 +20,10 @@ class Noticia_model extends CI_Model {
 
     public function getTresNoticiasByDate() {
         $this->db->limit(3);
-        // $query = $this->db->get('publication');
-
-
         $this->db->select('*');
         $this->db->from('publication');
-        $this->db->order_by('date');
-        $this->db->join('publication_doctor_specialty', 'publication.id = publication_doctor_specialty.publication_id');
+        $this->db->where('type', '0');
+        $this->db->order_by('date','desc');
         $query = $this->db->get();
         $newsMedicos = $query->result_array();
 

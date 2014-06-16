@@ -14,8 +14,8 @@ class Saude extends CI_Controller{
 
     public function especialidades() {
          $this->load->model('consulta_model');
-         $data['dados'] = $this->consulta_model->getEspecialidade();
-        $data['dadosM'] = $this->consulta_model->getEspecialidadePorMedico();
+         $data['dados'] = $this->consulta_model->getEspecialidades();
+        
         $data['view'] = 'Especialidades';
         $this->load->view('includes/template', $data);
     }
