@@ -63,7 +63,7 @@ echo "                                <td >".$value['date_time']."</td>\n";
 echo "                            </tr>\n"; 
 echo "                            <tr>\n"; 
 echo "                                <td style=\"font-weight: bold;\">Seguradora:</td>\n"; 
-echo "                                <td >".$value['nomeSeguro']."</td>\n"; 
+//echo "                                <td >".$value['nomeSeguro']."</td>\n"; 
 echo "                            </tr>\n"; 
 
 
@@ -116,7 +116,7 @@ echo "</tr>\n";
 
 
 echo "                            <tr>\n"; 
-echo "                                <td  colspan=\"2\" style=\"text-align: right; height: 30px;\"><button class=\"btn-primary\" style=\" width: 25%; height: 25px;\n"; 
+echo "                                <td  colspan=\"2\" style=\"text-align: right; height: 30px;\"><button class=\"btn-primary\" style=\" width: 25%; height: 35px;\n"; 
 echo "                                    \" >Mudar estado</button></td>\n"; 
 echo "                            </tr>\n"; 
 echo "                        </tbody>\n"; 
