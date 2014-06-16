@@ -1,6 +1,6 @@
 <div id="contentor">
     
-    <h1>Notícias</h1>  
+    <h1>Artigos/Notícias sobre Saúde</h1>  
 <?php
 //var_dump($dados);
 
