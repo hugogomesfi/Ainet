@@ -57,7 +57,7 @@ class Noticias extends CI_Controller{
         function insertNoticias() {
         if (!$this->session->userdata('user_id')) {
             
-            redirect(site_url('/') . 'login');
+            redirect(site_url('/') . '');
         } else {
             //rules to insert
             $this->form_validation->set_rules('corpoNoticia', 'Compor Noticia', 'required|xss_clean');
