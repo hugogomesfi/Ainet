@@ -5,30 +5,37 @@ class Consulta_model extends CI_Model {
         parent::__construct();
     }
     
-    public function getEspecialidade(){
-        $query = $this->db->query("
-                SELECT *
-                FROM `clinical_specialty`
-                ORDER BY name;
-                ");
-        $query = $query->result_array();
+    public function getEspecialidades(){
         
-        return $query;
+                $this->db->select('clinical_specialty.id,clinical_specialty.name, clinical_specialty.short_name, doctor_specialty.doctor_id');
+                $this->db->from('clinical_specialty');            
+                $this->db->join('doctor_specialty', 'doctor_specialty.clinical_specialty_id=clinical_specialty.id');
+                $result=$this->db->get(); 
+                
+         if ($result->num_rows() > 0) {
+             $final=array();
+             foreach ($result->result() as $cur_specialty) {
+                // para cada 1 das especialidades                         
+                $this->db->select('doctor.id, doctor.name');
+                $this->db->from('doctor');            
+                $this->db->where('id', $cur_specialty->doctor_id);
+                $tabeladoutores=$this->db->get();        
+                $cur_specialty->doutores = array();
+                if ($tabeladoutores->num_rows() > 0) {   
+                    $cur_specialty->doutores = $tabeladoutores->result_array();
+                }
+                $final[]=$cur_specialty;
+                 
+            }
+            //var_dump($final); 
+            //die();
+            return $final;
+         }
+
+        return false;
     }
     
-     public function getEspecialidadePorMedico(){
-                 $query = $this->db->query("
-                SELECT doctor.name AS nomeMedico,clinical_specialty.id,clinical_specialty.name,person.phone
-                FROM `clinical_specialty`,`doctor_specialty`,`doctor`,`scml_user`,person
-                WHERE clinical_specialty.id=doctor_specialty.clinical_specialty_id AND
-                    doctor_specialty.doctor_id=doctor.id AND
-                    doctor.user_id=scml_user.id AND
-                    scml_user.person_id= person.id
-                ORDER BY name;
-                ");
-        $query = $query->result_array();
-        return $query;
-        }
+     
         
         
         
