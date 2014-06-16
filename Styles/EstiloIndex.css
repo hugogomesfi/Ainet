@@ -650,3 +650,7 @@ float: left;}
 .noticiasprimeiro2 h5:hover{background-color: #2aabd2;text-decoration: none; color: #FFFFFF; }
 .noticiasprimeiro2  a:hover{text-decoration: none; }
 .noticiasprimeiro2  a {text-decoration: none;}
+
+.input-prepend input.span12  {
+	width: 1130px;
+}

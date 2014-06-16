@@ -22,9 +22,10 @@ class Medico_m extends CI_Model {
   
   public function getMedicos(){
         $this->db->select('doctor.user_id,clinical_specialty.name,doctor.name AS nomemedico,person.mobile_phone');
+  public function getMedico(){
+        $this->db->select('doctor.id as doctor_id,doctor.name AS nomemedico,person.mobile_phone');
         $this->db->from('doctor');
-        $this->db->join('doctor_specialty', 'doctor.id=doctor_specialty.doctor_id');
-        $this->db->join('clinical_specialty', 'doctor_specialty.clinical_specialty_id=clinical_specialty.id');
+       
         $this->db->join('scml_user', 'scml_user.person_id=doctor.id');
         $this->db->join('person', 'person.id=scml_user.person_id');
         $this->db->group_by("user_id");
@@ -72,12 +73,42 @@ class Medico_m extends CI_Model {
         $this->db->where('user_id',$id);
         $this->db->group_by("user_id");
         
+ //       $this->db->group_by("clinical_specialty.id");
 
 
-        $queryResultado=$this->db->get();
-        $result = $queryResultado->result_array();
+        $result=$this->db->get();
         
-       return $result;
+        //$result = $queryResultado->result_array();
+        
+        if ($result->num_rows() > 0) {
+            $final=array();
+            foreach ($result->result() as $cur_doctor) {
+                // para cada 1 dos medicos
+                              
+                $this->db->select('name, short_name');
+                $this->db->from('clinical_specialty');
+                
+                $this->db->join('doctor_specialty', 'doctor_specialty.clinical_specialty_id=clinical_specialty.id');
+                $this->db->where('doctor_id', $cur_doctor->doctor_id);
+                $tabelaespecialidades=$this->db->get();
+                     
+                $cur_doctor->especialidades = array();
+                if ($tabelaespecialidades->num_rows() > 0) {   
+                    $cur_doctor->especialidades = $tabelaespecialidades->result_array();
+   
+                }
+                $final[]=$cur_doctor;
+               // echo "teste<br/>";
+                
+            }
+           // $final=$result->result_array();
+            return $final;
+        }
+        return false;
+      
+        
+        
+       
       
   }
 //    public function getMedicoPorEspecialidade(){
@@ -106,8 +137,9 @@ class Medico_m extends CI_Model {
 //  }
     
       public function insertNoticia($data) {
-         
         $this->db->insert('publication', $data);
         return true;
     }
+    
+    
 }
