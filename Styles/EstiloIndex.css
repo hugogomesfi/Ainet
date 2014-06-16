@@ -97,15 +97,16 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-.noticiasprimeiro{padding-top: 20px;background-image: url(Images/pw_maze_black.png); padding-left: 11%;padding-right: 11%; position: relative; height: 475px; }
+.noticiasprimeiro{padding-top: 20px;background-image: url(Images/pw_maze_black.png); padding-left: 11%;padding-right: 11%;  height: 475px; }
 
-.noticia1{position: relative;float: left;width: 180px;margin: 1%;height: 400px; overflow: hidden;}
+.noticia1{float: left;width: 180px;margin: 1%; }
+.noticia1 p{ height: 180px; overflow: hidden;}
 .noticia2{float: left;width: 180px;margin: 1%;min-height: 300px;position: relative;}
 
 
 .noticiasprimeiro h5{margin-bottom: 10px;border-radius: 5px;text-align: center;border: 1px solid lightgray;background-color: #E7E7E7;height: 50px;padding-top: 10px;}
-.resumo_noticia{ margin: 10px;position: relative;text-align: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;color: #555555;}
-.resumo_noticia p{position: relative; }
+.resumo_noticia{ margin: 10px;text-align: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;color: #555555;}
+.resumo_noticia p{}
 
 .img_noticia img{z-index: 800;height: 120px; position: relative; width: 100%;}
 
@@ -127,7 +128,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 #pub_2{float: left;position: relative;}
 #pub_3{float: left;position: relative;}
 
-.btnpub{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;position: absolute; bottom: 10px; left: 10px;color: #E7E7E7;height: 30px;width: 35%; border: 1px solid grey; border-radius: 4px;margin-bottom: 0;background-color: #428BCA;}
+.btnpub{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;position: absolute; bottom: 10px; left: 10px;color: #E7E7E7;height: 30px;width: 35%; border: 1px solid grey; border-radius: 4px;background-color: #428BCA;}
 .btnpub:hover{background-color: #3276B1;}
 /*//////////////////////////////////////////////////////////////////////especialidedes ////////////////////////////////////////////*/
 
@@ -646,6 +647,7 @@ float: left;}
     margin-left: 5%;
     
 }
+
 
 .noticiasprimeiro2 h5:hover{background-color: #2aabd2;text-decoration: none; color: #FFFFFF; }
 .noticiasprimeiro2  a:hover{text-decoration: none; }

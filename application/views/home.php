@@ -122,7 +122,10 @@ echo "        <div class=\"resumo_noticia\">\n";
 echo "            <p>".$value['abstract']."</p></div>\n"; 
 echo "        <div>\n"; 
 //echo "            <input type=\"button\" value=\"Ler Mais\" class=\"btnpub\"/>\n"; 
-echo "          <button class=\"btn btn-primary\"  onclick=\"location.href='<?php echo site_url();?>/Noticias'\">Ir para Noticias</button>\n"; 
+?>          
+    <button class="btn btn-info"  onclick="location.href='<?php echo site_url();?>/Noticias'">Ler Mais</button>
+
+<?php
 echo "\n"; 
 echo "        </div>\n"; 
 echo "    </div>\n"; 
@@ -241,7 +244,7 @@ echo "    </div>\n";
             <img src="Styles/Images/abertura.jpg" alt="imagem de noticia"/>
         </div>-->
         <div class="resumo_noticia">
-            <p>A Residencial é o local ideal para quem pretende uma opção de repouso de cariz familiar, onde a personalidade de cada utente determina o atendimento dos diversos profissionais desta unidade. O edifício, localizado na Rua do Lis junto às instalações do Hospital Dom Manuel de Aguiar, proporciona aos seus utentes elevados padrões de qualidade ao nível dos serviços que presta.</p>
+            <p>A Residencial é o local ideal para quem pretende uma opção de repouso de cariz familiar, onde a personalidade de cada utente determina o atendimento dos diversos profissionais desta unidade. O edifício, localizado na Rua do Lis junto às instalações do Hospital Dom Manuel de Aguiar, proporciona aos seus utentes elevados padrões de qualidade ao nível dos serviços que presta. </p>
         </div>
 <!--        <div>
             <input type="button" value="Ler Mais" class="btnpub"/>
