@@ -1,5 +1,8 @@
 <div class="corpoCorpoClinico">
     <?php
+    var_dump($dados);
+    die();
+    
    foreach ($dados as $each){
        echo "                <div class=\"cartaoMedicoCorpo\">\n"; 
 echo "                    <div class=\"panel panel-primary\">\n"; 

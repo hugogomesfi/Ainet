@@ -58,6 +58,7 @@ class Utilizador extends CI_Controller{
                 break;
             case 4:
                 //Utente
+                redirect('HomeUtente');
             
                 break;
 

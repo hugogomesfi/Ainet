@@ -68,6 +68,33 @@ class Noticia_model extends CI_Model {
         //return $dados;
     }
 
+    
+    
+    public function getNoticiaPequenaSaude($limit, $start){
+//          $this->db->limit($limit, $start);
+//         $query = $this->db->get('publication');
+        
+         	$this->db->limit($limit, $start);
+                 $this->db->select("*");
+                  $this->db->from('publication');
+                 $this->db->where('type', '0');
+                 $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            foreach ($query->result() as $row) {
+                $data[] = $row;
+            }
+            return $data;
+        }
+        return false;
+
+        //return $dados;
+    }
+    
+    
+    
+    
+    
     public function insertNoticia($data) {
 
         $this->db->insert('publication', $data);
@@ -80,7 +107,8 @@ class Noticia_model extends CI_Model {
           $this->db->select('*');
           $this->db->from('scml_user');
           $this->db->join('publication', 'scml_user.id = publication.updated_user_id');
-          $this->db->where('publication.updated_user_id', $id);    
+          $this->db->where('publication.updated_user_id', $id); 
+          $this->db->order_by("date", "desc"); 
           $queryResultado=$this->db->get();
           $dados=$queryResultado->result_array();
           

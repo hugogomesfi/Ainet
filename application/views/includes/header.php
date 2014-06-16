@@ -43,6 +43,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Saude <b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                            <li><a href="<?php echo site_url('NoticiasMedicos'); ?>">Artigos/Noticias</a></li>
+                            <li class="divider"></li>
                             <li><a href="<?php echo site_url('Saude/CorpoClinico'); ?>">Corpo Clinico</a></li>
                             <li><a href="<?php echo site_url('Saude/Especialidades'); ?>">Especialidades</a></li>
                             <li class="divider"></li>

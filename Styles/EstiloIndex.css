@@ -448,12 +448,12 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 /*.noticias div{border: 1px solid black;} */
 
 .noticiasEsq{height: 100%; position: relative; width: 40%; float: left;}
-.noticiasEsq img{width: 95%; height: 60%; border-radius: 5px; margin-left: 5%; margin-top: 6%;}
+.noticiasEsq img{width: 100%; height: 60%; border-radius: 5px; margin-top: 6%;}
 .noticiasDir{height: 100%; position: relative; width: 60%;float: left;}
 
 
 .noticeTitle{padding-top: 1px;width: 100%; height: 50px; }
-.noticeTitle h4{  text-align: center; color: #AE4200;}
+.noticeTitle h4{  text-align: center; color: white;}
 .noticeDate{height: 80px; margin-top: 3%; margin-left: 5%;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: small;
             font-weight: bold;font-style: italic;}
@@ -464,10 +464,10 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
                     text-align: left; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
                     margin-right: 10%;}
 .linhaHugo{border-bottom: 1px solid lightgray;   margin-right: 20%; }
-.noticeText{height: 170px; padding-left: 7%; padding-right: 7%; padding-top: 5%;
+.noticeText{height: 200px; padding-left: 7%; padding-right: 7%; padding-top: 10%;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  text-align: justify; overflow: hidden; }
 .noticeAuthor{width: 100%;height: 31px; padding-left: 7%; font-weight: bold;
-              font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: small;}
+              font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: small; position: absolute; bottom: 10px;}
 .btnNoticias{float: right; margin-right: 14%; background-color:#AE4200;
              color: #E7E7E7; width: 20%;padding:2px;text-decoration:none;border-radius:10px; }
 

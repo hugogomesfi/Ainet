@@ -28,12 +28,37 @@ class Medico_m extends CI_Model {
         $this->db->join('scml_user', 'scml_user.person_id=doctor.id');
         $this->db->join('person', 'person.id=scml_user.person_id');
         $this->db->group_by("user_id");
-
-
         $queryResultado=$this->db->get();
-        $result = $queryResultado->result_array();
         
-       return $result;
+        
+        $this->db->select('clinical_specialty.name');
+        $this->db->from('doctor');
+        $this->db->join('doctor_specialty', 'doctor.id=doctor_specialty.doctor_id');
+        $this->db->join('clinical_specialty', 'doctor_specialty.clinical_specialty_id=clinical_specialty.id'); 
+        $queryResultado2=$this->db->get();
+        
+        $medicos=array();
+        $especialidades=array();
+        
+        foreach ($queryResultado2->result_array() as $value) {
+            $especialidades[]=array(
+                'name' => $value['name'],
+               
+            );
+        }
+        
+        foreach ($queryResultado->result_array() as $value) {
+            $medicos[]=array(
+                'user_id' => $value['user_id'],
+                'nomemedico'=> $value['nomemedico'],
+                'especialidade'=> $especialidades
+            );
+        }
+        
+        
+       // $result = $queryResultado->result_array();
+        
+       return $medicos;
       
   }
   
