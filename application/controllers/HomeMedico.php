@@ -12,9 +12,9 @@ class HomeMedico extends CI_Controller{
             $this->load->model('Noticia_model');
             $this->load->model('Utilizador_model');
             $data['view'] = 'HomeMedico';
-            $this->load->model('Medico_m');
+            $this->load->model('Medico_model');
             $idmedico=$this->session->userdata('user_id');
-            $data['especialidades'] =$this->Medico_m->getEspecialidadesMedico($idmedico);
+            $data['especialidades'] =$this->Medico_model->getEspecialidadesMedico($idmedico);
             $data['medico'] =$this->Utilizador_model->getInformacaoUser($idmedico);
             $data['noticias'] =$this->Noticia_model->getNoticiasMedico();
             $this->load->view('includes/template', $data); 

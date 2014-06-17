@@ -23,7 +23,7 @@ class MarcarConsulta extends CI_Controller {
 
                 //se estiver autenticado so vai inserir os dados da consulta e o seu id de sessao
                 if($this->session->userdata('user_id')){
-                $this->load->model('consulta_model');
+                $this->load->model('Consulta_model');
                 $this->load->model('Utilizador_model');
                 $id=$this->session->userdata('user_id');
                 //dados consulta
@@ -34,8 +34,8 @@ class MarcarConsulta extends CI_Controller {
                   
                 }else{
                     //caso nao esteja autenticado vai preencher todos os dados  
-                 $this->load->model('consulta_model');
-                 $this->load->model('Medico_m');
+                 $this->load->model('Consulta_model');
+                 $this->load->model('Medico_model');
                 //dados da consulta
                 $data1['specialty_id'] = $this->input->post('especialidades');
                 $data1['doctor_id'] = $this->input->post('medico');

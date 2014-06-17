@@ -9,7 +9,7 @@ class HomeUtente extends CI_Controller{
     public function index() {
         
         if ($this->session->userdata('role')==4) {
-            $this->load->model('consulta_model');
+            $this->load->model('Consulta_model');
             $this->load->model('Utilizador_model');
             $idUtente=$this->session->userdata('user_id');
             $data['view'] = 'HomeUtente';

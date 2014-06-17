@@ -41,7 +41,7 @@ class Utilizador extends CI_Controller{
         switch ($tipo) {
             case 0:
                 //administrador
-            
+                redirect('HomeAdministrador');
                 break;
             case 1:
                 //Administrativo

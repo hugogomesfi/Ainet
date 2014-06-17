@@ -1,6 +1,6 @@
 <?php
 
-class Medico_m extends CI_Model {
+class Medico_model extends CI_Model {
     public function __construct() {
         parent::__construct();
     }
