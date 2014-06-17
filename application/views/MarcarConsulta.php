@@ -42,51 +42,52 @@ $('#especialidade').change(function(){
 <div id="contentor">
    
     <section id="formSection">
-        <form action="#" method="post" id="formulario" name="formulario" onsubmit="return validateForm()">
+        <form action="<?php echo site_url('MarcarConsulta');?>" method="POST" id="formulario" name="MarcarConsulta" onsubmit="return validateForm()">
             <fieldset>
                 <legend>Informação Pessoal</legend>
 
                 <div class="formItem">
                     <label>Nome:</label>
-                    <input type="text" class="caixaTexto" placeholder="Insira o nome completo" required name="nome"/>
+                    <input type="text" class="caixaTexto" placeholder="Insira o nome completo" required name="nome" value="<?php echo set_value('nome'); ?>"/>
                 </div>
+                <div style="color: red;"><?php echo form_error('nome'); ?></div>
 
                 <div class="formItem">
                     <label>Data de Nascimento:</label>
-                    <input type="text" class="caixaTexto" placeholder="Insira a data de nascimento" required />
+                    <input type="text" class="caixaTexto" placeholder="Insira a data de nascimento" required name="dtanas" value="<?php echo set_value('dtanas'); ?>"  />
                 </div>
 
                 <div class="formItem">     
                     <label>Num seg social:</label>
-                    <input type="text" class="caixaTexto" placeholder="Insira o numero de seugrança social" required />
+                    <input type="text" class="caixaTexto" placeholder="Insira o numero de seugrança social" required name="numSS" value="<?php echo set_value('numSS'); ?>" />
                 </div>
-
+                <div style="color: red;"><?php echo form_error('numSS'); ?></div>
                 <div class="formItem"> 
                     <label>Morada:</label>
-                    <input type="text" class="caixaTexto" placeholder="Insira a sua morada" required />
+                    <input type="text" class="caixaTexto" placeholder="Insira a sua morada" required name="morada" value="<?php echo set_value('morada'); ?>" />
                 </div>
-
+                <div style="color: red;"><?php echo form_error('morada'); ?></div>
 
 
                 <div class="formItem">
 
                     <label>Sexo:</label>
 
-                    <input type="radio" name="sexo" value="masculino" />
+                    <input type="radio" name="sexo" value="masculino" <?php echo set_radio('sexo', 'masculino', TRUE ); ?>  />
                     <label>Masculino</label>
 
-                    <input type="radio" name="sexo" value="feminino" />
+                    <input type="radio" name="sexo" value="feminino" <?php echo set_radio('sexo','feminino'); ?> />
                     <label>Feminino</label>
                 </div>
                 <div class="formItem">
 
                     <label>Email:</label>
-                    <input type="email"  class="caixaTexto" placeholder="Insira o seu email" required />
+                    <input type="email"  class="caixaTexto" placeholder="Insira o seu email" required name="email" value="<?php echo set_value('email'); ?>"/>
                 </div>
 
                 <div class="formItem">
                     <label>Telefone:</label>
-                    <input pattern="[789][0-9]{9}"  type="tel" class="caixaTexto" placeholder="Insira o seu numero de telefone" required />
+                    <input pattern="[789][0-9]{9}"  type="tel" class="caixaTexto" placeholder="Insira o seu numero de telefone" name="tel" value="<?php echo set_value('tel'); ?>" />
                 </div>
 
 
@@ -112,7 +113,7 @@ $('#especialidade').change(function(){
                         foreach ($dados as $each) {
                         ?>   
                        
-                        <option value="<?php echo($each->id); ?>" onvalue="<?php echo($each->name); ?>"> <?php echo($each->name); ?></option>
+                        <option value="<?php echo($each->id); echo set_value('$each->id'); ?> " onvalue="<?php echo($each->name); ?>"> <?php echo($each->name); ?></option>
                          <?php
                        }
                         ?> 
@@ -148,6 +149,7 @@ $('#especialidade').change(function(){
 
             <div> 
                 <input type="submit" value="Marcar" class="btn-lg" />
+                
             </div>
 
 

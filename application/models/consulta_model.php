@@ -88,7 +88,11 @@ class Consulta_model extends CI_Model {
         return $consultaUser;
      }
      
-     
+      public function insertConsulta($data) {
+
+        $this->db->insert('appointment', $data);
+        return true;
+    }
      
      
 }
