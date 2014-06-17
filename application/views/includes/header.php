@@ -27,6 +27,7 @@
 </head>
 <body>
     <div id="conteudoCentro" >
+        <div class="imagemTopo"></div>
         <div class="navbar navbar-default" style="background-color: #44619D" >
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
