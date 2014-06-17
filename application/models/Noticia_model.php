@@ -37,7 +37,8 @@ class Noticia_model extends CI_Model {
         $query = $this->db->query("
                 SELECT *
                 FROM `publication` 
-                WHERE type='2' or type='3' or type='8' or type='9'");
+                WHERE type='2' or type='3' or type='8' or type='9'
+                ORDER BY date");
   
         $newsValencias = $query->result_array();
    

@@ -78,11 +78,15 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle glyphicon glyphicon-user" data-toggle="dropdown"> Entrar <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li style="padding:30px; height: 350px;width: 350px !important;float: right;background-color: #cccccc;opacity: 0.9; border-bottom-right-radius:5px;border-bottom-left-radius:5px;">
-                                    <form method="post" action="<?php echo site_url('utilizador/autenticacao'); ?>">
-                                        <h2 class="form-signin-heading">Please sign in</h2>
+                               <!-- <li style="padding:30px; height: 350px;width: 350px !important;float: right;background-color: #cccccc;opacity: 0.9; border-bottom-right-radius:5px;border-bottom-left-radius:5px;">-->
+                               <li style="padding:0px 30px 30px;;width: 350px">    
+                               <form method="post" action="<?php echo site_url('utilizador/autenticacao'); ?>">
+                                        <h2 class="form-signin-heading">Login</h2>
+                                        <p>
                                         <input type="email" autofocus="" name="email"  placeholder="Email address" class="form-control" value="<?php echo set_value('email'); ?>">
+                                        </p><p>
                                         <input type="password" name="password" placeholder="Password" class="form-control">
+                                        </p>
                                         <button type="submit" class="btn btn-lg btn-primary btn-block">Entrar</button>
                                     </form>
                                 </li>
