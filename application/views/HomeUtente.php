@@ -3,14 +3,24 @@
 <div id="contentor">
     <div id="homeMedico">
         <div id="InformacaoPessoalMedico">
-            <img src="Styles/Images/medico.png" alt="foto medico" id="fotomedico"/>
-            <h4> João Crespo</h4>
-            <h4> João Antonio Constantino Crespo</h4>
-            <img src="Styles/Images/telefone.png" alt="telefone"/>
-            <h4>Telefone: 9122345765</h4>
-            <img src="Styles/Images/email.png" alt="email"/>
-            <h4>Joao.Crespo@hotnail.com</h4>
-            <a href="mailto:Joao.Crespo@hotnail.com">Joao.Crespo@hotnail.com</a>
+            
+              <?php
+              //var_dump($utente);
+             
+
+
+      foreach ($utente as $value) {
+          echo " <img src=\"".$value['photo_url']."\" alt=\"foto medico\" id=\"fotomedico\"/>\n";
+    echo "<h4>Sr: ".$value['name']."</h4>\n";
+            echo "<h4>Tel. ".$value['mobile_phone']."</h4>\n";
+            
+           
+echo "<a href=\"mailto:".$value['email']." \">".$value['email']."</a>\n";
+
+           
+            
+          }
+        ?>
 <!--            <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/HomeMedico'">Noticias</button></p>
 -->            <p><a href="#" class="btn btn-primary" style="width: 100%;" data-toggle="modal" data-target="#basicModal">Alterar Dados</a></p><!--
             <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/ComporNoticia'">Criar Noticia</button></p>       -->

@@ -1,12 +1,43 @@
 <h1 class="titulo">Marcar Consulta</h1>
 <script>
-function validateForm() {
-    var x = document.forms["formulario"]["nome"].value;
-    if (x==null || x=="") {
-        alert("First name must be filled out");
-        return false;
-    }
-}
+
+$(document).ready(function(){   
+
+
+                    
+$('#especialidade').change(function(){
+    var country_id = {
+                            //alert("inside country3");
+                            //country:$('#country').val()
+                          country:$('#especialidade option:selected').val() 
+                          //$('#especialidade option:selected').val()  
+                           // $(this).find(':selected').val()
+                            //alert("inside country4");
+                    };
+                     console.log(country_id); 
+    
+         
+     
+    $.ajax({
+        type: "POST",
+        url: "<?php echo site_url('Saude/get_doctors'); ?>", 
+        data:country_id,
+        dataType:"json",//return type expected as json
+        success: function(states){
+                   
+               $.each(states,function(key,val){
+                   
+                    var opt = $('<option />'); 
+                    opt.val(val.user_id);
+                    opt.text(val.name);
+                    
+                    $('#medicos').html(opt);
+               });
+        },
+    });
+    
+});
+});
 </script>
 <div id="contentor">
    
@@ -75,33 +106,33 @@ function validateForm() {
                     <label>Especialidade:</label>
 
                     <select id="especialidade"  class="caixaTexto">
+                         <option value="0"></option>
                         <?php
                         
                         foreach ($dados as $each) {
-                        ?>    
-                            <option value="<?php echo($each->name); ?>"> <?php echo($each->name); ?></option>
-                            
+                        ?>   
                        
-                        
+                        <option value="<?php echo($each->id); ?>" onvalue="<?php echo($each->name); ?>"> <?php echo($each->name); ?></option>
+                         <?php
+                       }
+                        ?> 
                     </select>
+                    
                 </div>
                 <div class="formItem">
                     <label>Medico:</label>
+                    
                      <select id="medicos"  class="caixaTexto">
-                         <?php
-                        foreach ($each->doutores as $medico) {
-                          ?>   
-                        <option value="<?php echo($medico['name']); ?>"> <?php echo($medico['name']); ?></option> 
-                        <?php    
-                       }
                         
-                       }
-                       ?>  
+                          
+                           
+                         <option id="medicos"></option> 
+                         
                         
                         
                         
                     </select>
-                </div>-->
+                </div>
                 <div class="formItem">
                     <label>Data:</label>
                     <input type="date" class="caixaTexto"  />

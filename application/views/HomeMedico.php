@@ -4,15 +4,20 @@
         
     <div id="homeMedico">
     <div id="InformacaoPessoalMedico">
-        <img src="Styles/Images/medico.png" alt="foto medico" id="fotomedico"/>
+        
         <?php
-      
-            echo "<h4>Dr. ".$especialidades['nomemedico']."</h4>\n";
-        
-        
+      foreach ($medico as $value) {
+    
+            echo " <img src=\"".$value['photo_url']."\" alt=\"foto medico\" id=\"fotomedico\"/>\n";
+            echo "<h4>Dr. ".$value['name']."</h4>\n";
+            echo "<h4>Tel. ".$value['mobile_phone']."</h4>\n";
+            echo "<a href=\"mailto:".$value['email']." \">".$value['email']."</a>\n";
+
+
+        }
         ?>
        
-        <h4>Telefone: 9122345765</h4>
+        
         <img src="Styles/Images/email.png" alt="email"/>
    
         <a href="mailto:Joao.Crespo@hotnail.com">Joao.Crespo@hotnail.com</a>
@@ -179,7 +184,7 @@ echo "        </div>\n";
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
+            <h4 class="modal-title" id="myModalLabel">Definições Pessoais</h4>
           </div>
           <div class="modal-body">
             <h3>Modal Body</h3>

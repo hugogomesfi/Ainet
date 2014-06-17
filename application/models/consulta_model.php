@@ -88,6 +88,9 @@ class Consulta_model extends CI_Model {
         return $consultaUser;
      }
      
+     
+     
+     
 }
      
      

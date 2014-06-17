@@ -53,4 +53,20 @@ class Medico_m extends CI_Model {
         $this->db->insert('publication', $data);
         return true;
     }
+    
+    public function getMedicosPorEspecialidade($idespecialidade){
+         //var_dump($idespecialidade);
+         
+        $this->db->select('*');
+        $this->db->from('doctor');
+        $this->db->join('doctor_specialty', 'doctor.id=doctor_specialty.doctor_id');
+        $this->db->where('doctor_specialty.clinical_specialty_id', $idespecialidade); 
+        $queryResultado=$this->db->get();
+        $result = $queryResultado->result_array();
+        
+        
+        
+       return $result;
+      
+  }
 }

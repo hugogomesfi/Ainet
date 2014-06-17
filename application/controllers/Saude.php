@@ -30,12 +30,21 @@ class Saude extends CI_Controller{
 
     public function Consultas() {
         $this->load->model('consulta_model');
-        $this->load->model('Medico_m');
-        $data['dadosMedico'] = $this->Medico_m->getMedicos();
         $data['dados'] = $this->consulta_model->getEspecialidades();
         $data['view'] = 'MarcarConsulta';
         $this->load->view('includes/template',$data);
         
     }
+    
+    public function get_doctors(){
+       // log_message('debug', 'Value of country is '+$this->input->post('country_id'));
+        $especialidade=$this->input->post('country');
+        //var_dump($especialidade);
+        $this->load->model('Medico_m');
+        //$states = array();
+        $states = $this->Medico_m->getMedicosPorEspecialidade($especialidade);
+        
+        echo json_encode($states);
+  }
 
 }
