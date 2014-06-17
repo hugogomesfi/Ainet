@@ -4,22 +4,28 @@
         
     <div id="homeMedico">
     <div id="InformacaoPessoalMedico">
-        <img src="Styles/Images/medico.png" alt="foto medico" id="fotomedico"/>
+        
         <?php
-      
-            echo "<h4>Dr. ".$especialidades['nomemedico']."</h4>\n";
-        
-        
+      foreach ($medico as $value) {
+    
+            echo " <img src=\"".$value['photo_url']."\" alt=\"foto medico\" id=\"fotomedico\"/>\n";
+            echo "<h4>Dr. ".$value['name']."</h4>\n";
+            echo "<h4>Tel. ".$value['mobile_phone']."</h4>\n";
+            echo "<a href=\"mailto:".$value['email']." \">".$value['email']."</a>\n";
+
+
+        }
         ?>
        
-        <h4>Telefone: 9122345765</h4>
+        
         <img src="Styles/Images/email.png" alt="email"/>
    
         <a href="mailto:Joao.Crespo@hotnail.com">Joao.Crespo@hotnail.com</a>
-        <p><button class="btn btn-success " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/HomeMedico'">Minhas Noticias</button></p>
-        <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/#'">Alterar Dados Pessoais</button></p>
+        
+        <p><a href="#" style="width: 100%;" class="btn btn-primary" data-toggle="modal" data-target="#basicModal">Alterar dados</a></p>
         <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/PedidosConsultas'">Horarios</button></p>
         <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/ComporNoticia'">Compor Noticia</button></p>
+        
 
         
         
@@ -158,11 +164,7 @@ echo form_button($databtn3);
 echo "        </div>\n";
 }
 ?>
-    <!-- Button to trigger modal -->
-  <div class="row text-center">
-            <h3>The Basic Modal</h3>
-            <a href="<?php echo site_url('PopUp'); ?>" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal">Click to open Modal</a>
-        </div>
+  
      
    
 
@@ -177,3 +179,20 @@ echo "        </div>\n";
 </div>
    
 
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Definições Pessoais</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Modal Body</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>

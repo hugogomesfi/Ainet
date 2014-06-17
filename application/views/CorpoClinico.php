@@ -1,3 +1,4 @@
+<div class="contentor">
 <div class="corpoCorpoClinico">
     <?php
     //var_dump($dados);
@@ -35,6 +36,12 @@ echo "                </div>\n";
    
    
    ?>
+    
 </div>
 
 
+</div>
+<div class="links">
+        
+    <p><?php echo $links; ?></p>
+    </div>

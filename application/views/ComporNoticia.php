@@ -104,7 +104,7 @@
         <div class="error" style="color: red;"><?php echo form_error('resumo'); ?></div>
         
         <div id="publicar">
-            <input type="submit" value="Publicar" /> 
+           <input  class="btn btn-success" type="submit" value="Publicar" /> 
         </div>
         </div>
        <?php 

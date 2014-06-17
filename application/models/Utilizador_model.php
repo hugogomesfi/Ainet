@@ -35,5 +35,17 @@ class Utilizador_model extends CI_Model {
     }
 
     
+    public function getInformacaoUser($idUtilizador) {
+
+    	$this->db->select('*');
+        $this->db->from('scml_user');
+        $this->db->join('person', 'scml_user.person_id = person.id');
+        $this->db->where('scml_user.id', $idUtilizador);
+        $query = $this->db->get();
+        $array=$query->result_array();
+        return $array;
+        
+    }
+    
 
 }
