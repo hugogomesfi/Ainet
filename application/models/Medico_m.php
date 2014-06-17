@@ -20,11 +20,11 @@ class Medico_m extends CI_Model {
       
   }
   
-  public function getMedicos(){
+  public function getMedicos($limit, $start){
       $this->db->limit($limit, $start);
         $this->db->select('doctor.id as doctor_id,doctor.name AS nomemedico,person.mobile_phone');
         $this->db->from('doctor');    
-        $this->db->join('scml_user', 'scml_user.person_id=doctor.id');
+        $this->db->join('scml_user', 'scml_user.id=doctor.user_id');
         $this->db->join('person', 'person.id=scml_user.person_id');
         $result=$this->db->get();
              

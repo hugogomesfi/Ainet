@@ -25,9 +25,9 @@ class Saude extends CI_Controller{
         $this->load->library("pagination");        
          $config = array();
          	
-        $config["base_url"] = site_url() ."/Saude/corpoClinico/index";
+        $config["base_url"] = site_url() ."/Saude/corpoClinico";
         $config["total_rows"] = $this->Medico_m->getNumerodeMedicos();
-        $config["per_page"] = 3;
+        $config["per_page"] = 2;
         $config["uri_segment"] = 3;
                 $config['full_tag_open'] = '<ul class="pagination">';
                 $config['full_tag_close'] = '</ul>';            
@@ -47,7 +47,7 @@ class Saude extends CI_Controller{
         
         $this->pagination->initialize($config);
         
-        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $page = ($this->uri->segment(2)) ? $this->uri->segment(3) : 0;
         
         $data['dados'] = $this->Medico_m->getMedicos($config["per_page"], $page);
         $data["links"] = $this->pagination->create_links();
