@@ -1,15 +1,23 @@
 <h1 class="titulo">Marcar Consulta</h1>
-
+<script>
+function validateForm() {
+    var x = document.forms["formulario"]["nome"].value;
+    if (x==null || x=="") {
+        alert("First name must be filled out");
+        return false;
+    }
+}
+</script>
 <div id="contentor">
    
     <section id="formSection">
-        <form action="#" method="post" id="formulario" >
+        <form action="#" method="post" id="formulario" name="formulario" onsubmit="return validateForm()">
             <fieldset>
                 <legend>Informação Pessoal</legend>
 
                 <div class="formItem">
                     <label>Nome:</label>
-                    <input type="text" class="caixaTexto" placeholder="Insira o nome completo" required />
+                    <input type="text" class="caixaTexto" placeholder="Insira o nome completo" required name="nome"/>
                 </div>
 
                 <div class="formItem">
@@ -93,7 +101,7 @@
                         
                         
                     </select>
-                </div>
+                </div>-->
                 <div class="formItem">
                     <label>Data:</label>
                     <input type="date" class="caixaTexto"  />
