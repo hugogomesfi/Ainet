@@ -25,11 +25,7 @@ class Utilizador extends CI_Controller{
                 redirect('Utilizador/autenticacao');
             } 
             $this->paginaPessoal();
-//            if ($this->session->userdata('role')==3) {
-//                redirect('HomeMedico');
-//            }else{
-//                redirect('Home');
-//            }
+
             
         }
 
@@ -49,12 +45,14 @@ class Utilizador extends CI_Controller{
                 break;
             case 1:
                 //Administrativo
+                redirect('HomeAdministrativo');
                 break;
              case 2:
                 //Irmao
+                redirect('HomeIrmao');
                 break;
             case 3:
-            redirect('HomeMedico');
+                redirect('HomeMedico');
                 break;
             case 4:
                 //Utente
