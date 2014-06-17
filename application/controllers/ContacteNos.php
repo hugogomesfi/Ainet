@@ -20,23 +20,24 @@ class ContacteNos extends CI_Controller {
             $this->form_validation->set_rules('texto', 'Texto', 'required|xss_clean');
             $this->form_validation->set_rules('motivo', 'Motivo', 'required|xss_clean');
 
-            if ($this->form_validation->run() == FALSE) {
-                $data['view'] = 'ContacteNos';
-                $this->load->view('includes/template', $data);
-                
-            } else {
+//            if ($this->form_validation->run() == FALSE) {
+//                $data['view'] = 'ContacteNos';
+//                $this->load->view('includes/template', $data);
+//                
+//            } 
+//            else {
 
                 $data['name'] = $this->input->post('fullName');
-                $data['mail'] = $this->input->post('email');
-                $data['text'] = $this->input->post('texto');
-                $data['motive'] = $this->input->post('motivo');
+                $data['mail'] = $this->input->post('mail');
+                $data['text'] = $this->input->post('text');
+                $data['motive'] = $this->input->post('motive');
 
-                $this->load->model('ContacteNos_model');
-                $this->Noticia_model->sendMail($data);
+                $this->load->model('Mail_model');
+                $this->Mail_model->sendMail($data);
 
                 $data['view'] = 'ContacteNos';
                 $this->load->view('includes/template', $data);
-            }
+//            }
         }
     
 

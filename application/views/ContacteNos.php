@@ -4,7 +4,7 @@
      <!-- Alignment -->
 	<div class="col-sm-offset-3 col-sm-6">
 	   <!-- Form itself -->
-      <form method="POST" class="well" id="contactForm" name="ContacteNos" action="<?php echo site_url('ContacteNos/recebeDadosMail');?>" novalidate>
+      <form method="POST" class="well" id="contactForm" name="ContacteNos" action="<?php echo site_url('ContacteNos/sendMail');?>" novalidate>
               <blockquote>Contacte-nos</blockquote>
               
 
@@ -21,9 +21,9 @@
                   <div class="controls">
                        <p>
 			<input type="email" class="form-control" placeholder="Email" 
-			   	            id="email" required name="email"
+			   	            id="email" required name="mail"
 			   		   data-validation-required-message="Please enter your email" 
-                        value="<?php echo set_value('email'); ?>"/>
+                        value="<?php echo set_value('mail'); ?>"/>
                         </p>
 		</div>
 	    </div> 	
@@ -34,21 +34,21 @@
                       <p>
 				 <textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" 
                                            required name="text" data-validation-required-message="Please enter your message" 
-                                           maxlength="999" style="resize:none" ><?php echo set_value('text'); ?></textarea>
+                                           maxlength="999" style="resize:none" > <?php echo set_value('text'); ?> </textarea>
                        </p>
 
 		</div>
                </div> 		 
 	     <div id="success"> </div> <!-- For success/fail messages -->
              <label>Motivo relacionado com:</label>
-             <select id="especialidade"  class="caixaTexto">
-                 <option value="motive" <?php echo set_select('motive'); ?> >Creche</option>
-                 <option value="motive" <?php echo set_select('motive'); ?>>Irmandade</option>
-                 <option value="motive" <?php echo set_select('motive'); ?>>Saude</option>
-                 <option value="motive" <?php echo set_select('motive'); ?>>Lar</option>
-                 <option value="motive" <?php echo set_select('motive'); ?>>Residencial</option>
-                 <option value="motive" <?php echo set_select('motive'); ?>>Corpo Clinico</option>
-                 <option value="motive" <?php echo set_select('motive'); ?>>Outros</option>
+             <select name="motive" id="especialidade"  class="caixaTexto">
+                 <option  value="creche" <?php echo set_select('motive','creche'); ?> >Creche</option>
+                 <option value="irmandade" <?php echo set_select('motive','irmandade'); ?> >Irmandade</option>
+                 <option value="irmandade" <?php echo set_select('motive','saude'); ?> >Saude</option>
+                 <option value="irmandade" <?php echo set_select('motive','lar'); ?> >Lar</option>
+                 <option value="irmandade" <?php echo set_select('motive','residencial'); ?> >Residencial</option>
+                 <option value="irmandade" <?php echo set_select('motive','corpoclinico'); ?> >Corpo Clinico</option>
+                 <option value="irmandade" <?php echo set_select('motive','outros'); ?> >Outros</option>
              </select>
 	    <button type="submit" class="btn btn-primary pull-right">Send</button><br />
           </form>
