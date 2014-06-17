@@ -107,7 +107,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 .noticia2 a h5{padding-top: 15px;}
 
 .noticiasprimeiro h5{margin-bottom: 10px;border-radius: 5px;text-align: center;border: 1px solid lightgray;background-color: white;min-height:50px;padding-top: 10px;}
-.resumo_noticia{ margin: 10px;text-align: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;color: white;}
+.resumo_noticia{ margin: 10px;text-align: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;color: black;}
 .resumo_noticia p{}
 
 .img_noticia img{z-index: 800;height: 120px; position: relative; width: 100%;}
