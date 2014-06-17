@@ -88,11 +88,42 @@ class Consulta_model extends CI_Model {
         return $consultaUser;
      }
      
-      public function insertConsulta($data) {
+      public function insertConsulta($dadosPessoa,$dadosConsulta) {
+          //uso de uma trans para poder fazer mais do que uma consulta
+            $this->db->trans_start();
+            $this->db->insert('person', $dadosPessoa);
+
+            $person_id = $this->db->insert_id();
+            $dadosConsulta['person_id']="$person_id";
+            $idDoctor=$dadosConsulta['doctor_id'];
+            $di= $this->getMedico($idDoctor);
+            $dadosConsulta['doctor_id']= $di;
+            $this->db->insert('appointment', $dadosConsulta);
+            $this->db->trans_complete();
+            return  true;
+    }
+    
+          public function insertConsultaUserRegitado($data) {
 
         $this->db->insert('appointment', $data);
         return true;
     }
+    
+    public function getMedico($idDoctor){
+         //var_dump($idespecialidade);
+         
+        $this->db->select('doctor.id');
+        $this->db->from('doctor');
+        $this->db->join('scml_user', 'scml_user.id=doctor.user_id');
+        $this->db->where('doctor.user_id', $idDoctor); 
+        $queryResultado=$this->db->get();
+        $result = $queryResultado->result_array();
+        
+        
+        
+       return $result[0]['id'];
+      
+  }
      
      
 }

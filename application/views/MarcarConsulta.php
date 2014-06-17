@@ -14,7 +14,7 @@ $('#especialidade').change(function(){
                            // $(this).find(':selected').val()
                             //alert("inside country4");
                     };
-                     console.log(country_id); 
+                     //console.log(country_id); 
     
          
      
@@ -37,6 +37,11 @@ $('#especialidade').change(function(){
     });
     
 });
+
+
+
+ 
+
 });
 </script>
 <div id="contentor">
@@ -106,28 +111,30 @@ $('#especialidade').change(function(){
                 <div class="formItem" >
                     <label>Especialidade:</label>
 
-                    <select id="especialidade"  class="caixaTexto">
+                    <select id="especialidade"  class="caixaTexto" name="especialidades" >
                          <option value="0"></option>
                         <?php
                         
                         foreach ($dados as $each) {
                         ?>   
                        
-                        <option value="<?php echo($each->id); echo set_value('$each->id'); ?> " onvalue="<?php echo($each->name); ?>"> <?php echo($each->name); ?></option>
+                        <option value="<?php echo($each->id);?> " <?php echo set_select('especialidades', '$each->id'); ?> > <?php echo($each->name); ?></option>
                          <?php
                        }
                         ?> 
                     </select>
                     
+                    
+                    
                 </div>
                 <div class="formItem">
                     <label>Medico:</label>
                     
-                     <select id="medicos"  class="caixaTexto">
+                    <select id="medicos"  class="caixaTexto" name="medico">
                         
                           
                            
-                         <option id="medicos"></option> 
+                        <option></option>
                          
                         
                         
