@@ -66,7 +66,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle glyphicon glyphicon-user" data-toggle="dropdown"> <?php echo $this->session->userdata('user_name'); ?> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li style="padding:0px 30px 30px;;width: 350px"> 
+                                <li style="padding:30px 30px 30px;;width: 350px"> 
                                     <a href="<?php echo site_url('Utilizador/logout'); ?>" class="btn btn-lg btn-primary btn-block">Logout</a>
                                      <a href="<?php echo site_url('Utilizador/paginaPessoal'); ?>" class="btn btn-lg btn-primary btn-block">Pagina Pessoal</a>
                                 </li>
