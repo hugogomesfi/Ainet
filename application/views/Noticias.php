@@ -13,7 +13,7 @@
         echo "        <div class=\"noticeTitle\">\n";
         echo "            <h4> " . $value->title . "</h4>\n";
         echo "        </div>\n";
-        echo "        <a href=\"<?php echo site_url('/NoticiaGrande/index');?>\">\n";
+
         echo "            <img src=\"Styles/Images/n_.jpg\" alt=\"imagem de noticia\"/>\n";
         echo "        </a>\n";
         echo "        <div class=\"noticeDate\">\n";
@@ -31,7 +31,7 @@
         echo "            <span>  " . $value->abstract . "  </span>\n";
         echo "        </div>\n";
         echo "        <div class=\"noticeAuthor\">\n";
-
+       
         echo "           \n";
         ?>
 

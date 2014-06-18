@@ -1,5 +1,6 @@
 <div id="noticiaGrande">
     
+   
     <?php
     foreach ($noticia as $value) {
         
@@ -9,7 +10,20 @@ echo "        <div id=\"titleBnoticia\">\n";
 echo "            <h2>".$value['title']."</h2>\n"; 
 echo "        </div>\n"; 
 echo "    <div id=\"noticiaGimg\">\n"; 
-echo "        <img id=\"imgNoticiaBig\" src=\"Styles/Images/n_.jpg\"></img> \n"; 
+?>
+    <?php
+
+foreach ($noticia as $value) {
+    
+    ?>
+    <img id="imgNoticiaBig" src=<?php echo '/Styles/Images/'.$value['resource_url']; ?>/> 
+  
+    
+  
+ <?php   
+}
+
+         
 echo "    </div>\n"; 
 echo "    <div id=\"txtNoticeGrande\">\n"; 
 echo "        <span>Morreu o professor e empresário Manuel Forjaz, que, nos últimos cinco anos, viveu uma intensa batalha contra um cancro no pulmão, noticiou a TVI. Morreu neste domingo de manhã, aos 50 anos, em casa, Lisboa.\n"; 
@@ -26,14 +40,27 @@ echo "            </div>\n";
 echo "            <div id=\"NGespecialidade\">\n"; 
 echo "                <span>Especialidade</span>\n"; 
 echo "            </div>\n"; 
-echo "            <img id=\"caraMedico\" src=\"Styles/Images/medico.png\" alt=\"cara do medico\"/>\n"; 
-echo "            <div id=\"NGautor\">\n"; 
-echo "                <a href='<?php echo site_url('/HomeMedico/index');?>'><span>ricardo francisco</span></a>     \n"; 
-echo "            </div>\n"; 
+?>
+    <?php
+    
+
+foreach ($medico as $value) {
+  ?>
+
+            <img id="caraMedico" src="<?php echo $value['photo_url']?>" alt="cara do medico"/> 
+             <div id="NGautor"> 
+                 <span style="color: #0134c5;"><?php echo $value['name']?></span>  
+            </div>
+            
+<?php
 echo "        </div>\n"; 
 echo "    </div>\n";
-}
+}   
+    }
 ?>
+
+
+
     
     
     <div id="noticiaGdir">

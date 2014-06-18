@@ -43,6 +43,7 @@ class Medico_model extends CI_Model {
                 }
                 $final[]=$cur_doctor;
                // echo "teste<br/>";   
+               
             }
            // $final=$result->result_array();
             return $final;
@@ -74,6 +75,9 @@ class Medico_model extends CI_Model {
           public function getNumerodeMedicos() {
         return $this->db->count_all("doctor");
     }
+    
+    
+
       
   
 }

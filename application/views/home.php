@@ -51,11 +51,30 @@ $(document).ready(function(){
             
         
 echo " <div class=\"publicacao\" id=\"pub_1\">\n"; 
-echo "        <img src=\"Styles/Images/medicin_1.jpg\" alt=\"imagem de publicacao\"/>\n"; 
+echo "        <img src='/Styles/Images/".$value['resource_url']."\" alt=\"imagem de publicacao\"/>\n"; 
 echo "        <h5>".$value['title']."</h5>\n"; 
 echo "        <div class=\"resumo_noticia\"><p>".$value['abstract']."</p></div>\n"; 
 echo "        <div>\n"; 
-echo "            <input type=\"button\" value=\"Ler Mais\" class=\"btnpub\"/>\n"; 
+//echo "            <input type=\"button\" value=\"Ler Mais\" class=\"btnpub\"/>\n"; 
+
+?>
+ <form method="get" action="<?= site_url('Noticias/encontraNoticia'); ?>">
+
+            <?php
+            $databtn = array(
+                'name' => 'noticia',
+                'class' => 'btnpub',
+                'value' => $value['id'],
+                'type' => 'submit',
+                'content' => 'Ler Mais'
+            );
+
+            echo form_button($databtn);
+            ?> 
+        </form>
+
+
+<?php
 echo "        </div>\n"; 
 echo "    </div> \n";
     }
@@ -122,10 +141,28 @@ echo "        <div class=\"resumo_noticia\">\n";
 echo "            <p>".$value['abstract']."</p></div>\n"; 
 echo "        <div>\n"; 
 //echo "            <input type=\"button\" value=\"Ler Mais\" class=\"btnpub\"/>\n"; 
-?>          
-    <button class="btn btn-info pull-right"  onclick="location.href='<?php echo site_url();?>/Noticias'">Ler Mais</button>
+         
+
+?>
+ <form method="get" action="<?= site_url('Noticias/encontraNoticia'); ?>">
+
+            <?php
+            $databtn = array(
+                'name' => 'noticia',
+                'class' => 'btn btn-info pull-right',
+                'value' => $value['id'],
+                'type' => 'submit',
+                'content' => 'Ler Mais'
+            );
+
+            echo form_button($databtn);
+            ?> 
+        </form>
+
 
 <?php
+        
+        
 echo "\n"; 
 echo "        </div>\n"; 
 echo "    </div>\n"; 

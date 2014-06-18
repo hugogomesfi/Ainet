@@ -114,22 +114,13 @@ class Noticia_model extends CI_Model {
         return true;
     }
 
-//        public function insertImg() {
-//
-//        $this->db->select('*');
-//        $this->db->from('publication');
-//        //$this->db->order_by('date');
-//        $this->db->join('image', 'publication.id = image.publication_id');
-//        $query = $this->db->get();
-//        $image = $query->result_array();
-//        
-//        return $image;
-//    }
+
 
     public function getNoticia($data) {
         $this->db->select('*');
         $this->db->from('publication');
-        $this->db->where('id', $data['id']);
+        $this->db->join('image', 'publication.id=image.publication_id');
+        $this->db->where('publication.id', $data['id']);
         $queryResultado = $this->db->get();
         $dados = $queryResultado->result_array();
         return $dados;
@@ -157,4 +148,21 @@ class Noticia_model extends CI_Model {
         return $newsIrmandade;
     }
 
+    
+    
+        public function getEscritorNoticia($idpublication) {
+        $this->db->select('*');
+        $this->db->from('scml_user');
+        $this->db->join('publication', 'publication.updated_user_id=scml_user.id');
+        $this->db->join('person', 'scml_user.person_id=person.id');
+        $this->db->where('publication.updated_user_id', $idpublication);
+        
+        $queryResultado=$this->db->get();
+        $resultado = $queryResultado->result_array();
+    
+        return $resultado;
+    }
+    
+    
+    
 }

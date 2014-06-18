@@ -18,7 +18,7 @@ echo "    </div> \n";
 </div>
 
 
-<!--location.href='<?php echo site_url();?>/Noticias'-->
+
 
     
 <button  class="btn btn-large btn-primary center-block"  onclick="location.href='<?php echo site_url();?>/Noticias'">Ler Mais Noticias</button>
