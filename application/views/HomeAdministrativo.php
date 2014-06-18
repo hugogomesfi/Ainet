@@ -156,6 +156,11 @@ echo "                </div> \n";
 
         </div>
         </div>
+    
+    <div class="links">
+
+        <p><?php echo $links; ?></p>
+    </div>
     </div>
 <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
       <div class="modal-dialog">

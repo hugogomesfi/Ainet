@@ -50,10 +50,11 @@ class Noticia_model extends CI_Model {
 
     
     public function getNoticiaPequena($limit, $start){
-//          $this->db->limit($limit, $start);
-//         $query = $this->db->get('publication');
+
          	$this->db->limit($limit, $start);
+                $this->db->order_by('date','desc');
                  $query = $this->db->get("publication");
+                 
 
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $row) {

@@ -7,13 +7,19 @@ class ComporNoticia extends CI_Controller{
     }
     
     public function index() {
-        $idmedico=$this->session->userdata('user_id');
+        
+        if($this->session->userdata('role')==0){
+            $idmedico=$this->session->userdata('user_id');
         $this->load->model('Medico_model');
         $resultado=$this->Medico_m->getEspecialidadesMedico($idmedico);
         $data['especialidades'] = $resultado;
       
         $data['view'] = 'ComporNoticia';
         $this->load->view('includes/template', $data);
+        }else{
+            redirect('Home');
+        }
+        
     }
     
 }
