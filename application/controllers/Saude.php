@@ -57,10 +57,22 @@ class Saude extends CI_Controller{
     }
 
     public function Consultas() {
-        $this->load->model('Consulta_model');
-        $data['dados'] = $this->Consulta_model->getEspecialidades();
-        $data['view'] = 'MarcarConsulta';
-        $this->load->view('includes/template',$data);
+        if($this->session->userdata('logged_in')){
+            $id=$this->session->userdata('user_id');
+            $this->load->model('Consulta_model');
+            $data['dados'] = $this->Consulta_model->getEspecialidades();
+            $this->load->model('Utilizador_model');
+            $data['utilizador']=$this->Utilizador_model->getInformacaoUser($id); 
+            $data['view'] = 'MarcarConsulta';
+            $this->load->view('includes/template',$data); 
+        }else{
+            $this->load->model('Consulta_model');
+            $data['dados'] = $this->Consulta_model->getEspecialidades();
+            $data['view'] = 'MarcarConsulta';
+            $this->load->view('includes/template',$data); 
+        }
+                
+        
         
     }
     

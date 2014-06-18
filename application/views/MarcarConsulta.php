@@ -48,7 +48,65 @@ $('#especialidade').change(function(){
    
     <section id="formSection">
         <form action="<?php echo site_url('MarcarConsulta');?>" method="POST" id="formulario" name="MarcarConsulta" onsubmit="return validateForm()">
+            <?php if ($this->session->userdata('logged_in')): ?>
             <fieldset>
+                <legend>Informação Pessoal</legend>
+<?php  
+//var_dump($utilizador);
+//die();
+   foreach ($utilizador as $value) {  
+       
+   ?>
+                <div class="formItem">
+                    <label>Nome:</label>
+                    <input type="text" class="caixaTexto" placeholder="Insira o nome completo" required name="nome" value="<?php echo set_value('nome'); ?>  <?php echo($value['name']);?>" />
+                </div>
+                <div style="color: red;"><?php echo form_error('nome'); ?></div>
+
+                <div class="formItem">
+                    <label>Data de Nascimento:</label>
+                    <input type="text" class="caixaTexto" placeholder="Insira a data de nascimento" required name="dtanas" value="<?php echo set_value('dtanas'); ?> <?php echo($value['date_of_birth']);?>"  />
+                </div>
+
+                <div class="formItem">     
+                    <label>Num seg social:</label>
+                    <input type="text" class="caixaTexto" placeholder="Insira o numero de seugrança social" required name="numSS" value="<?php echo set_value('numSS'); ?> <?php echo($value['fiscal_id']);?>" />
+                </div>
+                <div style="color: red;"><?php echo form_error('numSS'); ?></div>
+                <div class="formItem"> 
+                    <label>Morada:</label>
+                    <input type="text" class="caixaTexto" placeholder="Insira a sua morada" required name="morada" value="<?php echo set_value('morada'); ?> <?php echo($value['address']);?>" />
+                </div>
+                <div style="color: red;"><?php echo form_error('morada'); ?></div>
+
+
+                <div class="formItem">
+
+                    <label>Sexo:</label>
+
+                    <input type="radio" name="sexo" value="masculino" <?php echo set_radio('sexo','masculino'); ?><?php echo ($value['gender']== 'M') ?  "checked" : "" ;  ?> />
+                    <label>Masculino</label>
+
+                    <input type="radio" name="sexo" value="feminino" <?php echo set_radio('sexo','feminino'); ?> <?php echo ($value['gender']== 'F') ?  "checked" : "" ;  ?> />
+                    <label>Feminino</label>
+                </div>
+                <div class="formItem">
+
+                    <label>Email:</label>
+                    <input type="email"  class="caixaTexto" placeholder="Insira o seu email" required name="email" value="<?php echo set_value('email'); ?> <?php echo($value['email']);?>"/>
+                </div>
+
+                <div class="formItem">
+                    <label>Telefone:</label>
+                    <input pattern="[0-9]{9}"  type="tel" class="caixaTexto" placeholder="Insira o seu numero de telefone" name="tel" value="<?php echo set_value('tel'); ?> <?php echo($value['mobile_phone']);?>" />
+                </div>
+<?php 
+   }
+   ?>
+            </fieldset>
+            <?php else: ?>
+            
+                    <fieldset>
                 <legend>Informação Pessoal</legend>
 
                 <div class="formItem">
@@ -95,12 +153,8 @@ $('#especialidade').change(function(){
                     <input pattern="[789][0-9]{9}"  type="tel" class="caixaTexto" placeholder="Insira o seu numero de telefone" name="tel" value="<?php echo set_value('tel'); ?>" />
                 </div>
 
-
-
-
-
-
             </fieldset>
+            <?php endif; ?>
 
 
             <fieldset>
