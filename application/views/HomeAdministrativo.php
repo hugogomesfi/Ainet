@@ -132,8 +132,13 @@ echo "</tr>\n";
 
 
 echo "                            <tr>\n"; 
-echo "                                <td  colspan=\"2\" style=\"text-align: right; height: 30px;\"><button class=\"btn-primary\" style=\" width: 25%; height: 35px;\n"; 
-echo "                                    \" >Mudar estado</button></td>\n"; 
+echo "                                <td  colspan=\"2\" style=\"text-align: right; height: 30px;\">\n"; 
+echo "<p><a href=\"#\" class=\"btn btn-primary pull-right\" style=\"width: 50%;\" data-toggle=\"modal\" data-target=\"#basicModal\">Alterar Estado</a></p>\n"; 
+echo "\n";
+echo "                                   </td>\n"; 
+
+
+
 echo "                            </tr>\n"; 
 echo "                        </tbody>\n"; 
 echo "                    </table>\n"; 
@@ -162,6 +167,8 @@ echo "                </div> \n";
         <p><?php echo $links; ?></p>
     </div>
     </div>
+
+
 <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
