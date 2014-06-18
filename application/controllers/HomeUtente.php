@@ -13,7 +13,7 @@ class HomeUtente extends CI_Controller{
             $this->load->model('Utilizador_model');
             $idUtente=$this->session->userdata('user_id');
             $data['view'] = 'HomeUtente';
-            $data['consultas'] = $this->consulta_model->getPedidosDesteUtilizador($idUtente) ;
+            $data['consultas'] = $this->Consulta_model->getPedidosDesteUtilizador($idUtente) ;
             $data['utente'] =$this->Utilizador_model->getInformacaoUser($idUtente);
             $this->load->view('includes/template', $data); 
         }else{
