@@ -340,7 +340,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 }
 
 
-
+a { color: inherit; } 
 #parteCimaFoot{
     width: 100%;
     overflow: auto;
@@ -353,11 +353,19 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     float: left;
     width: 33.3%;
 }
+#footCenter ul li a{color: #38cece;}
+#footCenter ul li a:hover{ color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer; }
 #footRight{
 
     float: left;
     width: 33.3%;
 }
+#footLeft ul li p a{color: #38cece;}
+#footLeft ul li a{color: #38cece;}
+#footLeft ul li a:hover{color:#00A0C6; text-decoration:none; cursor:pointer;}
+#footLeft ul li p a:hover{color:#00A0C6; text-decoration:none; cursor:pointer;}
 #footRight img {
         width: 30px;
     height: 30px;
@@ -366,6 +374,8 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     text-align: center !important;
     display: block !important;
 }
+#parteBaixoFoot ul li a{color: #38cece;}
+#parteBaixoFoot ul li a:hover{color:#00A0C6; text-decoration:none; cursor:pointer;}
 .alinharImagemBloco{
     display: block !important;
     width: 20% !important;
@@ -659,3 +669,4 @@ float: left;}
 	width: 1130px;
 }
 .imagemTopo{ height: 50px;background-image: url(Images/topo1.png);}
+.centrado{width: 100%;margin-left: 45%;}

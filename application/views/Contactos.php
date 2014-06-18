@@ -102,5 +102,11 @@
         </p>
     </div>
 </div>
+           <section>
+        <article id="info">
+            <h5>Necessita de mais informaçoes?</h5>
+            <a href="<?php echo site_url('ContacteNos'); ?>">Contacte-nos</a> 
+        </article>
+    </section>
 </div>
 
