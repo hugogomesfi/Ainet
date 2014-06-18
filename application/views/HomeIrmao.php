@@ -1,5 +1,3 @@
-
-
 <div id="contentor">
     <div id="homeMedico">
         <div id="InformacaoPessoalMedico">
@@ -25,7 +23,8 @@ echo "<a href=\"mailto:".$value['email']." \">".$value['email']."</a>\n";
 -->            <p><a href="#" class="btn btn-primary" style="width: 100%;" data-toggle="modal" data-target="#basicModal">Alterar Dados</a></p><!--
             <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/ComporNoticia'">Criar Noticia</button></p>       -->
 <!--            <p><button class="btn btn-success " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/PedidosConsultas'">Consultas</button></p>-->
-         
+          <p><a href="#" class="btn btn-primary" style="width: 100%;" data-toggle="modal" data-target="#basicModal">Noticias da Irmandade</a></p>
+
 
 
         </div>
@@ -126,7 +125,10 @@ echo "</tr>\n";
 } 
 
 
-
+echo "                            <tr>\n"; 
+echo "                                <td  colspan=\"2\" style=\"text-align: right; height: 30px;\"><button class=\"btn-primary\" style=\" width: 25%; height: 35px;\n"; 
+echo "                                    \" >Mudar estado</button></td>\n"; 
+echo "                            </tr>\n"; 
 echo "                        </tbody>\n"; 
 echo "                    </table>\n"; 
 echo "                </div> \n";

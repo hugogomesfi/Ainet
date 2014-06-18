@@ -123,7 +123,7 @@ echo "            <p>".$value['abstract']."</p></div>\n";
 echo "        <div>\n"; 
 //echo "            <input type=\"button\" value=\"Ler Mais\" class=\"btnpub\"/>\n"; 
 ?>          
-    <button class="btn btn-info"  onclick="location.href='<?php echo site_url();?>/Noticias'">Ler Mais</button>
+    <button class="btn btn-info pull-right"  onclick="location.href='<?php echo site_url();?>/Noticias'">Ler Mais</button>
 
 <?php
 echo "\n"; 

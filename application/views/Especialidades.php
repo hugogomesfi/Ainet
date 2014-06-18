@@ -38,7 +38,7 @@
     
 echo "<div id=\"answer". $each->id . "\"><div class=\"textoAnswer\"><header> <h2>". $each->name . "</h2> </header>\n"; 
 echo "\n"; 
-echo "                texto corpo.\n"; 
+echo "   ".$each->description.".\n"; 
 echo "\n"; 
 echo "                         </div>\n"; 
 echo "\n"; 
@@ -62,8 +62,8 @@ echo "                            <h6>Telefone: 222222222</h6>\n";
 echo "                        </div>\n"; 
 echo "                        <div class=\"panel-body\">\n"; 
 echo "                            <div class=\"inferiorCartaoMedico\">\n"; 
-echo "                                <h6>Especialidade: Pneumologia </h6> \n"; 
-echo "                                <h6>Área Clinica: Alergologia e Pneumologia</h6>\n"; 
+echo "                                <h6>Pesquisas :".$value['research']."</h6> \n"; 
+
 echo "\n"; 
 echo "                                <div class=\"btnMarcarConsulta\"><p><a class=\"btn btn-default btn-sm\" role=\"button\">Marcar Consulta</a></p></div>\n"; 
 echo "                            </div>\n"; 

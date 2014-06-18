@@ -23,9 +23,11 @@
         <a href="mailto:Joao.Crespo@hotnail.com">Joao.Crespo@hotnail.com</a>
         
         <p><a href="#" style="width: 100%;" class="btn btn-primary" data-toggle="modal" data-target="#basicModal">Alterar dados</a></p>
-        <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/PedidosConsultas'">Horarios</button></p>
+        <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/PedidosConsultas'">Acordos</button></p>
         <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href='<?php echo site_url();?>/ComporNoticia'">Compor Noticia</button></p>
-        
+        <p><a href="#" class="btn btn-primary" style="width: 100%;" data-toggle="modal" data-target="#basicModal">Consultas</a></p>
+        <p><a href="#" class="btn btn-primary" style="width: 100%;" data-toggle="modal" data-target="#basicModal">Pedidos de alteração de Dados</a></p>
+
 
         
         

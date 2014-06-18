@@ -1,5 +1,3 @@
-
-
 <div id="contentor">
     <div id="homeMedico">
         <div id="InformacaoPessoalMedico">
@@ -25,7 +23,9 @@ echo "<a href=\"mailto:".$value['email']." \">".$value['email']."</a>\n";
 -->            <p><a href="#" class="btn btn-primary" style="width: 100%;" data-toggle="modal" data-target="#basicModal">Alterar Dados</a></p><!--
             <p><button class="btn btn-primary " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/ComporNoticia'">Criar Noticia</button></p>       -->
 <!--            <p><button class="btn btn-success " style="width: 100%;"  onclick="location.href = '<?php echo site_url(); ?>/PedidosConsultas'">Consultas</button></p>-->
-         
+            <p><a href="#" class="btn btn-primary" style="width: 100%;" data-toggle="modal" data-target="#basicModal">Filtrar Consultas</a></p>
+            <p><a href="#" class="btn btn-primary" style="width: 100%;" data-toggle="modal" data-target="#basicModal">Pedidos de alteração de Dados</a></p>
+
 
 
         </div>
@@ -34,7 +34,12 @@ echo "<a href=\"mailto:".$value['email']." \">".$value['email']."</a>\n";
             <div class="pedidosConsulta">
 
                 <blockquote>Consultas</blockquote>
-
+                <label>Ordenar Por:</label>
+                <select id="especialidade"  class="caixaTexto">
+                 <option value="motive" <?php echo set_select('motive'); ?> >Data (Crescente)</option>
+                 <option value="motive" <?php echo set_select('motive'); ?>>Data (Decrescente)</option>
+                 
+             </select>
 
 
 
@@ -126,7 +131,15 @@ echo "</tr>\n";
 } 
 
 
+echo "                            <tr>\n"; 
+echo "                                <td  colspan=\"2\" style=\"text-align: right; height: 30px;\">\n"; 
+echo "<p><a href=\"#\" class=\"btn btn-primary pull-right\" style=\"width: 50%;\" data-toggle=\"modal\" data-target=\"#basicModal\">Alterar Estado</a></p>\n"; 
+echo "\n";
+echo "                                   </td>\n"; 
 
+
+
+echo "                            </tr>\n"; 
 echo "                        </tbody>\n"; 
 echo "                    </table>\n"; 
 echo "                </div> \n";
@@ -148,7 +161,21 @@ echo "                </div> \n";
 
         </div>
         </div>
+    
+    <div class="links">
+
+        <p><?php echo $links; ?></p>
     </div>
+    </div>
+
+
+
+<?php
+//var_dump($consultas);
+//die();
+    foreach ($consultas as $value) {
+        ?>
+   
 <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -166,3 +193,6 @@ echo "                </div> \n";
         </div>
       </div>
     </div>
+<?php
+ }
+ ?>

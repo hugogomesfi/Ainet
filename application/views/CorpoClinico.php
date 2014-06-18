@@ -41,7 +41,9 @@ echo "                </div>\n";
 
 
 </div>
+<div class="centrado">
 <div class="links">
         
     <p><?php echo $links; ?></p>
     </div>
+</div>

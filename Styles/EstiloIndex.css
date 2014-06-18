@@ -97,15 +97,17 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 
 
 
-.noticiasprimeiro{padding-top: 20px;background-image: url(Images/pw_maze_black.png); padding-left: 11%;padding-right: 11%;  height: 475px; }
+.noticiasprimeiro{padding-top: 20px;background:url('../Styles/Images/paginaPrincipal.jpg');background-repeat: no-repeat;  padding-left: 11%;padding-right: 11%;  min-height:500px; }
 
-.noticia1{float: left;width: 180px;margin: 1%; }
+.noticia1{float: left;width: 23%;margin: 1%; }
+.noticia1 h5{background-color: white; }
+.noticia1 a h5{padding-top: 15px;}
 .noticia1 p{ height: 180px; overflow: hidden;}
-.noticia2{float: left;width: 180px;margin: 1%;min-height: 300px;position: relative;}
+.noticia2{float: left;width: 23%;margin: 1%;min-height: 300px;position: relative;}
+.noticia2 a h5{padding-top: 15px;}
 
-
-.noticiasprimeiro h5{margin-bottom: 10px;border-radius: 5px;text-align: center;border: 1px solid lightgray;background-color: #E7E7E7;height: 50px;padding-top: 10px;}
-.resumo_noticia{ margin: 10px;text-align: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;color: #555555;}
+.noticiasprimeiro h5{margin-bottom: 10px;border-radius: 5px;text-align: center;border: 1px solid lightgray;background-color: white;min-height:50px;padding-top: 10px;}
+.resumo_noticia{ margin: 10px;text-align: left;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;color: black;}
 .resumo_noticia p{}
 
 .img_noticia img{z-index: 800;height: 120px; position: relative; width: 100%;}
@@ -338,7 +340,7 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
 }
 
 
-
+a { color: inherit; } 
 #parteCimaFoot{
     width: 100%;
     overflow: auto;
@@ -351,11 +353,19 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     float: left;
     width: 33.3%;
 }
+#footCenter ul li a{color: #38cece;}
+#footCenter ul li a:hover{ color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer; }
 #footRight{
 
     float: left;
     width: 33.3%;
 }
+#footLeft ul li p a{color: #38cece;}
+#footLeft ul li a{color: #38cece;}
+#footLeft ul li a:hover{color:#00A0C6; text-decoration:none; cursor:pointer;}
+#footLeft ul li p a:hover{color:#00A0C6; text-decoration:none; cursor:pointer;}
 #footRight img {
         width: 30px;
     height: 30px;
@@ -364,6 +374,8 @@ body{margin: 0;background-image: url(Images/subtle_dots.png);min-height: 1024px;
     text-align: center !important;
     display: block !important;
 }
+#parteBaixoFoot ul li a{color: #38cece;}
+#parteBaixoFoot ul li a:hover{color:#00A0C6; text-decoration:none; cursor:pointer;}
 .alinharImagemBloco{
     display: block !important;
     width: 20% !important;
@@ -656,3 +668,10 @@ float: left;}
 .input-prepend input.span12  {
 	width: 1130px;
 }
+.imagemTopo{ height: 80px;background-image: url(Images/topo1.png);}
+//#imagemLogo{height: 100%;width: 8%;background-image: url(Images/santa_casa.svg);background-repeat: no-repeat;}
+.centrado{width: 100%;margin-left: 45%;}
+
+#entrar{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
+#sair{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
+#nomeUser{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}

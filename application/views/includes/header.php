@@ -27,6 +27,7 @@
 </head>
 <body>
     <div id="conteudoCentro" >
+        <div class="imagemTopo"><div id="imagemLogo"></div></div>
         <div class="navbar navbar-default" style="background-color: #44619D" >
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -63,11 +64,11 @@
                 <?php if ($this->session->userdata('logged_in')): ?>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle glyphicon glyphicon-user" data-toggle="dropdown"> <?php echo $this->session->userdata('user_name'); ?> <b class="caret"></b></a>
+                            <a href="#" data-toggle="dropdown" id="nomeUser"> <?php echo $this->session->userdata('user_name'); ?> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li style="padding:30px; height: 350px;width: 350px !important;float: right;background-color: #cccccc;opacity: 0.9; border-bottom-right-radius:5px;border-bottom-left-radius:5px;">
-                                    <a href="<?php echo site_url('Utilizador/logout'); ?>">Logout</a>
-                                     <a href="<?php echo site_url('Utilizador/paginaPessoal'); ?>">Pagina Pessoal</a>
+                                <li style="padding:30px 30px 30px;;width: 200px"> 
+                                    <a href="<?php echo site_url('Utilizador/logout'); ?>" class="btn btn-small btn-danger btn-block" id="sair">Logout</a>
+                                     <a href="<?php echo site_url('Utilizador/paginaPessoal'); ?>" class="btn btn-small btn-primary btn-block">Pagina Pessoal</a>
                                 </li>
                             </ul>
                         </li>
@@ -75,13 +76,17 @@
                 <?php else: ?>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle glyphicon glyphicon-user" data-toggle="dropdown"> Entrar <b class="caret"></b></a>
+                            <a href="#" data-toggle="dropdown" id="entrar"> Entrar <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li style="padding:30px; height: 350px;width: 350px !important;float: right;background-color: #cccccc;opacity: 0.9; border-bottom-right-radius:5px;border-bottom-left-radius:5px;">
-                                    <form method="post" action="<?php echo site_url('utilizador/autenticacao'); ?>">
-                                        <h2 class="form-signin-heading">Please sign in</h2>
+                               <!-- <li style="padding:30px; height: 350px;width: 350px !important;float: right;background-color: #cccccc;opacity: 0.9; border-bottom-right-radius:5px;border-bottom-left-radius:5px;">-->
+                               <li style="padding:0px 30px 30px;;width: 350px">    
+                               <form method="post" action="<?php echo site_url('utilizador/autenticacao'); ?>">
+                                        <h2 class="form-signin-heading">Login</h2>
+                                        <p>
                                         <input type="email" autofocus="" name="email"  placeholder="Email address" class="form-control" value="<?php echo set_value('email'); ?>">
+                                        </p><p>
                                         <input type="password" name="password" placeholder="Password" class="form-control">
+                                        </p>
                                         <button type="submit" class="btn btn-lg btn-primary btn-block">Entrar</button>
                                     </form>
                                 </li>
