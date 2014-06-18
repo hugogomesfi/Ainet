@@ -67,8 +67,9 @@
                             <a href="#" data-toggle="dropdown" id="nomeUser"> <?php echo $this->session->userdata('user_name'); ?> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li style="padding:30px 30px 30px;;width: 200px"> 
-                                    <a href="<?php echo site_url('Utilizador/logout'); ?>" class="btn btn-small btn-danger btn-block" id="sair">Logout</a>
+                                    
                                      <a href="<?php echo site_url('Utilizador/paginaPessoal'); ?>" class="btn btn-small btn-primary btn-block">Pagina Pessoal</a>
+                                     <a href="<?php echo site_url('Utilizador/logout'); ?>" class="btn btn-small btn-danger btn-block" id="sair">Logout</a>
                                 </li>
                             </ul>
                         </li>
