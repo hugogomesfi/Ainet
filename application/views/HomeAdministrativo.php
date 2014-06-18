@@ -169,6 +169,13 @@ echo "                </div> \n";
     </div>
 
 
+
+<?php
+//var_dump($consultas);
+//die();
+    foreach ($consultas as $value) {
+        ?>
+   
 <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -186,3 +193,6 @@ echo "                </div> \n";
         </div>
       </div>
     </div>
+<?php
+ }
+ ?>
