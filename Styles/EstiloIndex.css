@@ -668,5 +668,10 @@ float: left;}
 .input-prepend input.span12  {
 	width: 1130px;
 }
-.imagemTopo{ height: 50px;background-image: url(Images/topo1.png);}
+.imagemTopo{ height: 80px;background-image: url(Images/topo1.png);}
+//#imagemLogo{height: 100%;width: 8%;background-image: url(Images/santa_casa.svg);background-repeat: no-repeat;}
 .centrado{width: 100%;margin-left: 45%;}
+
+#entrar{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
+#sair{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
+#nomeUser{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
