@@ -18,6 +18,8 @@
                 <li>  Leiria </li>
                 <li> 2410 Leiria </li>
                 <li><p> <a href=""> Contactos </a> </p> </li> 
+                <li> Para Mais Informaçoes: </li>
+                <li> <a href="<?php echo site_url('ContacteNos'); ?>"> Contacte-nos </li>
             </ul>
         </div>
         <div id="footRight">
