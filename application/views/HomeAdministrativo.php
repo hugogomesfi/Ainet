@@ -133,7 +133,7 @@ echo "</tr>\n";
 
 echo "                            <tr>\n"; 
 echo "                                <td  colspan=\"2\" style=\"text-align: right; height: 30px;\">\n"; 
-echo "<p><a href=\"#\" class=\"btn btn-primary pull-right\" style=\"width: 50%;\" data-toggle=\"modal\" data-target=\"#basicModal\">Alterar Estado</a></p>\n"; 
+echo "<p><a href=\"#\" class=\"btn btn-primary pull-right\" style=\"width: 50%;\" data-toggle=\"modal\" data-target=\"#".$value['id']."\">Alterar Estado</a></p>\n"; 
 echo "\n";
 echo "                                   </td>\n"; 
 
@@ -175,24 +175,57 @@ echo "                </div> \n";
 //die();
     foreach ($consultas as $value) {
         ?>
-   
-<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+ 
+<form action="<?php echo site_url('HomeAdministrativo/alteraEstadoConsulta');?>" method="POST" id="formulario" name="EditarEstado" onsubmit="return validateForm()">
+
+<div class="modal fade" id="<?php echo $value['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
+            <h4 class="modal-title" id="myModalLabel">Alterar Estado da consulta</h4>
           </div>
           <div class="modal-body">
-            <h3>Modal Body</h3>
+            <div class="formItem">
+                    
+                    <p>
+                    <label>Estado:</label>
+                    </p>
+                    <p>
+                    <input type="radio" name="estado" value="0" <?php echo set_radio('estado','0'); ?><?php echo ($value['status']== '0') ?  "checked" : "" ;  ?> />
+                    <label>Pedido de Marcação</label>
+                    </p>
+                    <p>
+                    <input type="radio" name="estado" value="1" <?php echo set_radio('estado','1'); ?> <?php echo ($value['status']== '1') ?  "checked" : "" ;  ?> />
+                    <label>Marcação Confirmada</label>
+                    </p>
+                    <p>
+                    <input type="radio" name="estado" value="2" <?php echo set_radio('estado','2'); ?> <?php echo ($value['status']== '2') ?  "checked" : "" ;  ?> />
+                    <label>Realizada</label>
+                    </p>
+                    <p>
+                    <input type="radio" name="estado" value="3" <?php echo set_radio('estado','3'); ?> <?php echo ($value['status']== '3') ?  "checked" : "" ;  ?> />
+                    <label>Cancelada pelo Utente</label>
+                    </p>
+                    <p>
+                    <input type="radio" name="estado" value="4" <?php echo set_radio('estado','4'); ?> <?php echo ($value['status']== '4') ?  "checked" : "" ;  ?> />
+                    <label>Cancelada</label>
+                    </p>
+                    <p>
+                    <input type="radio" name="estado" value="5" <?php echo set_radio('estado','5'); ?> <?php echo ($value['status']== '5') ?  "checked" : "" ;  ?> />
+                    <label>Utente Incontactavel</label>
+                    </p>
+                    
+                </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary" name="idconsulta" value="<?php echo $value['id'];?>">Guardar</button>
           </div>
         </div>
       </div>
     </div>
+</form>
 <?php
  }
  ?>

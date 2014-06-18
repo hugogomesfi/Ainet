@@ -51,4 +51,38 @@ class HomeAdministrativo extends CI_Controller{
         
         
     }
+    
+    public function alteraEstadoConsulta() {
+        if (!$this->session->userdata('user_id')) {
+            
+            redirect(site_url('/') . '');
+        } else {
+            //rules to insert
+            //$this->form_validation->set_rules('EditarEstado', 'EditarEstado', 'required|xss_clean');
+            //$this->form_validation->set_rules('especialidades', 'Especialidades', 'required');
+            $this->form_validation->set_rules('estado', 'Estado', 'required|xss_clean');
+           // $this->form_validation->set_rules('resumo', 'Resumo', 'required|xss_clean');
+            
+            if ($this->form_validation->run() == FALSE) {
+                
+                redirect('HomeAdministrativo');
+               // $data['view'] = 'HomeAdministrativo';
+               // $this->load->view('includes/template', $data);
+
+                
+
+            } else {
+                
+                $data['marcacao'] = $this->input->post('idconsulta');
+                $data['status'] = $this->input->post('estado');
+                //var_dump($data);
+                //die();
+                
+                $this->load->model('Consulta_model');
+                $this->Consulta_model->alteraEstado($data);
+                
+                redirect('HomeAdministrativo');
+            }
+        }
+    }
 }

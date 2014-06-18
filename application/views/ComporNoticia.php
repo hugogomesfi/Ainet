@@ -93,7 +93,7 @@
         
         <p>
             <label>Imagem</label>
-            <input type="file" />    
+            <input type="file" name="imagem" />    
         </p>
         
         <p>
